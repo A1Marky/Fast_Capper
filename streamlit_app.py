@@ -34,7 +34,7 @@ if date:
         player_projections_df = get_player_projections(auth_token, date, slate_ids)
         
         # Display the DataFrame in the Streamlit app
-        st.dataframe(player_projections_df)
+        st.dataframe(player_projections_df, hide_index=True)
         
     except Exception as e:
         st.error(f"Failed to get player projections: {e}")
