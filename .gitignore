@@ -1,125 +1,71 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,virtualenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,virtualenv
 
-# C extensions
-*.so
-
-# Distribution / packaging
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-# Usually these files are written by a python script from a template
-# before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-build/doctrees
-*.mo
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
 .venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+pip-selfcheck.json
 
-# Spyder project settings
-.spyderproject
-.spyproject
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Rope project settings
-.ropeproject
+# Local History for Visual Studio Code
+.history/
 
-# mkdocs documentation
-/site
+# Built Visual Studio Code Extensions
+*.vsix
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
-# Pyre type checker
-.pyre/
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# pytype static type analyzer
-.pytype/
+# Dump file
+*.stackdump
 
-# Cython debug symbols
-cython_debug/
+# Folder config file
+[Dd]esktop.ini
 
-# pycharm
-.idea/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# VSCode
-.vscode/
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,virtualenv
+
+# Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
+
+virtual_env/share/jupyter/nbextensions/pydeck/extensionRequires.js
+virtual_env/share/jupyter/nbextensions/pydeck/index.js
+*.map
+*.1
