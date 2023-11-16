@@ -122,7 +122,7 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
     # Add a new column 'game_matchup' by concatenating 'team' and 'opp'
     all_players_df['game_matchup'] = all_players_df['team'] + ' -vs- ' + all_players_df['opp']
     # Save the DataFrame to a CSV file
-    csv_file_path = 'all_players_df.csv'  # Replace with your desired file path
+    csv_file_path = 'all_players_df.csv'  # Replace with your desired file path.
     all_players_df.to_csv(csv_file_path, index=False)
 
     return all_players_df
