@@ -7,7 +7,7 @@ import seaborn as sns
 # Load the dataset
 df = pd.read_csv('all_players_df.csv')
 
-# Create combined stats for prop bets involving multiple categories
+# Create combined stats for prop bets involving multiple categories.
 df['combined_points_rebounds_assists'] = df['points'] + df['rebounds'] + df['assists']
 df['combined_points_rebounds'] = df['points'] + df['rebounds']
 df['combined_points_assists'] = df['points'] + df['assists']

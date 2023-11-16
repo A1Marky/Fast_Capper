@@ -13,7 +13,7 @@ SABERSIM_PASSWORD = os.getenv('SABERSIM_PASSWORD')
 # Initialize the Streamlit app
 st.title("NBA Player Prop Sports Betting App")
 
-# Automatically get auth token on app load
+# Automatically get auth token on app load.
 try:
     auth_token = get_auth_token(SABERSIM_EMAIL, SABERSIM_PASSWORD)
     st.success("Logged in successfully!")
