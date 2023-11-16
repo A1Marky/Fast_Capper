@@ -58,6 +58,43 @@ def get_slates(auth_token: str, date: str, sport: str = 'nba') -> list:
             raise Exception("Unexpected JSON structure.")
     else:
         raise Exception(f"Failed to get slates: HTTP {response.status_code}")
+    
+
+def get_game_schedule(auth_token: str, date: str) -> pd.DataFrame:
+    slates = get_slates(auth_token, date)
+    all_games_data = []
+
+    for slate_id in slates:
+        url = f"https://basketball-sim.appspot.com/_ah/api/nba/v1/games?date={date}&site=fd&slate={slate_id}&sport=nba"
+        headers = {
+            'Authorization': f'Bearer {auth_token}',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+        }
+
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # Raises an HTTPError for bad responses
+
+        games_data = response.json()['games']
+        all_games_data.extend(games_data)
+    
+    # Extract the relevant data
+    extracted_data = [{
+        'away_score': game['away_score'],
+        'away_team': game['away_team'],
+        'home_score': game['home_score'],
+        'home_team': game['home_team'],
+        'gid': game['gid'],
+        'start_time_js': game['start_time_js'],
+        'time_tuple': game['time_tuple']
+    } for game in all_games_data]
+
+    # Convert to a pandas DataFrame
+    games_df = pd.DataFrame(extracted_data)
+
+    # Write to a CSV file
+    games_df.to_csv('game_schedule.csv', index=False)
+
+    return games_df  # Return the DataFrame containing all games from all slates
 
 
 def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: str = 'nba', site: str = 'fd') -> pd.DataFrame:
@@ -99,7 +136,7 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
         'defensive_rebounds', 'blocks', 'steals', 'fouls', 'turnovers','two_pt_attempts', 'two_pt_fg', 'three_pt_attempts', 'three_pt_fg', 
         'free_throw_attempts', 'free_throws_made', 'roster_pos', 'confirmed', 'double_doubles','triple_doubles', 'injury', 'site', 'fd_std', 
         'fd_25_percentile', 'fd_50_percentile', 'fd_75_percentile', 'fd_85_percentile', 'fd_95_percentile', 'fd_99_percentile', 'timestamp', 
-        'date', 'slate_id'
+        'date', 'slate_id', 'gid'
     ]
     # Select only the desired columns
     all_players_df = all_players_df[columns_to_keep]
@@ -119,9 +156,6 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
     # Remove duplicates based on the 'player_names' column
     all_players_df = all_players_df.drop_duplicates(subset='player_names')
 
-    # Add a new column 'game_matchup' by concatenating 'team' and 'opp'
-    all_players_df['game_matchup'] = all_players_df['team'] + ' -vs- ' + all_players_df['opp']
-    # Save the DataFrame to a CSV file
     csv_file_path = 'all_players_df.csv'  # Replace with your desired file path
     all_players_df.to_csv(csv_file_path, index=False)
 
