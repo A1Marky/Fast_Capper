@@ -142,7 +142,7 @@ if date:
         ]
         displayed_dataframe = filtered_df[columns_to_display]
         # Change the below line back for testing purposes only just uncomment it when needed
-        #filtered_df.to_csv('optimizer_data.csv', index=False)
+        filtered_df.to_csv('filtered_data.csv', index=False)
     
     except Exception as e:
         st.error(f"Failed to retrieve data: {e}")

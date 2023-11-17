@@ -29,7 +29,7 @@ def fetch_nba_game_ids():
     return [game['id'] for game in response] if response else []
 
 # Function to fetch player prop odds for given game IDs and convert to DataFrame
-def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='playerprop_odds_nba.csv'):
+def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds_only.csv'):
     base_url = "https://api.the-odds-api.com/v4"
     dfs = []  # List to store individual DataFrames
     for game_id in game_ids:
@@ -53,7 +53,7 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='playerprop_odds_
     return final_df
 
 # Function to merge SaberSim projections (filtered_df) with odds data (final_df)
-def merge_sabersim_and_odds_data(filtered_df, final_df, csv_path='optimizer_data.csv'):
+def merge_sabersim_and_odds_data(filtered_df, final_df, csv_path='merged_data.csv'):
     # Assuming the common column for merging is 'player_names' in final_df and a similar column in filtered_df
     # The column name in filtered_df should be adjusted based on the actual structure of the dataframe in app.py
     common_column = 'player_names'  # Replace with the actual common column name in filtered_df
