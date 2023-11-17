@@ -99,5 +99,5 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
     all_players_df.rename(columns={'name': 'player_names'}, inplace=True)
     all_players_df = all_players_df.drop_duplicates(subset='player_names')
     csv_file_path = 'all_players_df.csv'
-    all_players_df.to_csv(csv_file_path, index=False)
+    #all_players_df.to_csv(csv_file_path, index=False)
     return all_players_df

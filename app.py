@@ -53,9 +53,17 @@ if date:
             selected_matchup_gid = st.sidebar.selectbox('Filter by Matchup', unique_matchups.index, format_func=lambda x: unique_matchups[x])
             filtered_df = player_projections_df[player_projections_df['gid'] == selected_matchup_gid]
 
+        # Slider for filtering by minutes
+        min_minutes, max_minutes = st.sidebar.slider(
+            'Filter by Minutes', 
+            float(player_projections_df['minutes'].min()), 
+            float(player_projections_df['minutes'].max()), 
+            (float(player_projections_df['minutes'].min()), float(player_projections_df['minutes'].max()))
+        )
+        filtered_df = filtered_df[(filtered_df['minutes'] >= min_minutes) & (filtered_df['minutes'] <= max_minutes)]
+
         # Display the filtered dataframe
         st.dataframe(filtered_df, hide_index=True)
         filtered_df.to_csv('optimizer_data.csv', index=False)
-
     except Exception as e:
         st.error(f"Failed to retrieve data: {e}")
