@@ -61,9 +61,15 @@ if date:
             (float(player_projections_df['minutes'].min()), float(player_projections_df['minutes'].max()))
         )
         filtered_df = filtered_df[(filtered_df['minutes'] >= min_minutes) & (filtered_df['minutes'] <= max_minutes)]
+        columns_to_display = [
+        'player_names', 'position', 'team', 'opp', 'minutes', 'possessions','points', 'assists', 'rebounds', 
+        'blocks', 'steals', 'fouls', 'turnovers','two_pt_attempts', 'two_pt_fg', 'three_pt_attempts', 'three_pt_fg', 
+        'free_throw_attempts', 'free_throws_made', 'roster_pos', 'confirmed', 'double_doubles','triple_doubles', 
+        'matchup'
+    ]
+        displayed_dataframe = filtered_df[columns_to_display]
 
-        # Display the filtered dataframe
-        st.dataframe(filtered_df, hide_index=True)
         filtered_df.to_csv('optimizer_data.csv', index=False)
+    
     except Exception as e:
         st.error(f"Failed to retrieve data: {e}")
