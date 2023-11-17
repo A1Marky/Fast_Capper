@@ -1,0 +1,18 @@
+The following is an example of how the Streamlit App should work:
+-Calls the function for get_auth_token to run
+-Calls the function for get_slates to run
+-Calls the function for get_game_schedule to run
+-Calls the function for get_player_projections to run
+
+
+The following is an example of the layout of the Streamlit App
+-Sidebar that has a calendar for the user to select a date which would be passed to the functions being called
+-A display of the all_players_df outside of the sidebar
+-Inside the sidebar there should also be a way for a user to select a game to filter the displayed (all_players_df) the options in which
+the user has to select would come from the (games_df) an example of how that (games_df) data looks is below
+
+away_score,away_team,home_score,home_team,gid,start_time_js,time_tuple
+106.4397,BKN,109.601,MIA,48dc6b52-7565-4036-98a4-3bfa7d81f5af,2023-11-17T00:30:00Z,1700181000000
+114.4647,OKC,112.86,GS,f5b8501a-cfab-4cd3-970c-a77d730548fa,2023-11-17T03:00:00Z,1700190000000
+
+---

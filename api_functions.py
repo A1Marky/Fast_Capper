@@ -3,6 +3,10 @@ import json
 import os
 from dotenv import load_dotenv
 import pandas as pd
+from datetime import datetime
+import datetime
+from decimal import Decimal
+
 
 # Load environment variables
 load_dotenv()
@@ -28,8 +32,7 @@ def get_auth_token(email: str, password: str) -> str:
     
     if response.status_code == 200:
         return response_data.get("idToken")
-    else:
-        raise Exception("Failed to get auth token: " + response_data.get("error", {}).get("message", ""))
+    raise Exception("Failed to get auth token: " + response_data.get("error", {}).get("message", ""))
 
 def get_slates(auth_token: str, date: str, sport: str = 'nba') -> list:
     url = f"https://basketball-sim.appspot.com/_ah/api/nba/v1/slates?date={date}&sport={sport}"
@@ -43,58 +46,12 @@ def get_slates(auth_token: str, date: str, sport: str = 'nba') -> list:
     response = requests.get(url, headers=headers)
     response_data = response.json()
     
-    if response.status_code == 200:
-        if isinstance(response_data, dict) and 'slates' in response_data:
-            slates_list = response_data.get('slates', [])
-            if isinstance(slates_list, list):
-                # Extract the slate IDs into a list
-                slate_ids = [slate.get('id') for slate in slates_list if slate.get('site').lower() == 'fd']
-                # Print the list of IDs to the terminal
-                print("Slate IDs:", slate_ids)
-                return slate_ids
-            else:
-                raise Exception("Slates data is not a list.")
-        else:
-            raise Exception("Unexpected JSON structure.")
-    else:
-        raise Exception(f"Failed to get slates: HTTP {response.status_code}")
+    if response.status_code == 200 and isinstance(response_data, dict) and 'slates' in response_data:
+        slates_list = [slate.get('id') for slate in response_data.get('slates', []) if slate.get('site').lower() == 'fd']
+        #print("Slate IDs:", slates_list)
+        return slates_list
     
-
-def get_game_schedule(auth_token: str, date: str) -> pd.DataFrame:
-    slates = get_slates(auth_token, date)
-    all_games_data = []
-
-    for slate_id in slates:
-        url = f"https://basketball-sim.appspot.com/_ah/api/nba/v1/games?date={date}&site=fd&slate={slate_id}&sport=nba"
-        headers = {
-            'Authorization': f'Bearer {auth_token}',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
-        }
-
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()  # Raises an HTTPError for bad responses
-
-        games_data = response.json()['games']
-        all_games_data.extend(games_data)
-    
-    # Extract the relevant data
-    extracted_data = [{
-        'away_score': game['away_score'],
-        'away_team': game['away_team'],
-        'home_score': game['home_score'],
-        'home_team': game['home_team'],
-        'gid': game['gid'],
-        'start_time_js': game['start_time_js'],
-        'time_tuple': game['time_tuple']
-    } for game in all_games_data]
-
-    # Convert to a pandas DataFrame
-    games_df = pd.DataFrame(extracted_data)
-
-    # Write to a CSV file
-    games_df.to_csv('game_schedule.csv', index=False)
-
-    return games_df  # Return the DataFrame containing all games from all slates
+    raise Exception("Failed to get slates: HTTP " + str(response.status_code))
 
 
 def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: str = 'nba', site: str = 'fd') -> pd.DataFrame:
@@ -107,7 +64,6 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
     }
 
     all_players_data = []
-
     for slate_id in slate_ids:
         payload = json.dumps({
             "conditionals": [],
@@ -119,7 +75,6 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
         })
 
         response = requests.post(url, headers=headers, data=payload)
-        
         if response.status_code == 200:
             players_data = response.json().get('players', [])
             for player_data in players_data:
@@ -129,37 +84,20 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
             print(f"Failed to get projections for slate {slate_id}: {response.text}")
 
     all_players_df = pd.DataFrame(all_players_data)
-
-    # List of columns to keep, as per the organized structure provided earlier
+    # Combine away_team + home_team into a enw column named "matchup"
+    all_players_df['matchup'] = all_players_df['team'] + " vs " + all_players_df['opp']
     columns_to_keep = [
         'name', 'position', 'team', 'opp', 'minutes', 'possessions','fd_points', 'points', 'assists', 'rebounds', 'offensive_rebounds', 
         'defensive_rebounds', 'blocks', 'steals', 'fouls', 'turnovers','two_pt_attempts', 'two_pt_fg', 'three_pt_attempts', 'three_pt_fg', 
         'free_throw_attempts', 'free_throws_made', 'roster_pos', 'confirmed', 'double_doubles','triple_doubles', 'injury', 'site', 'fd_std', 
         'fd_25_percentile', 'fd_50_percentile', 'fd_75_percentile', 'fd_85_percentile', 'fd_95_percentile', 'fd_99_percentile', 'timestamp', 
-        'date', 'slate_id', 'gid'
+        'date', 'slate_id', 'gid', 'matchup'
     ]
-    # Select only the desired columns
+
     all_players_df = all_players_df[columns_to_keep]
-
-    # Calculate the effective field goal percentage for each player
-    # Make sure that the columns 'two_pt_fg', 'three_pt_fg', 'two_pt_attempts', and 'three_pt_attempts' are present
-    all_players_df['effective_fg_percentage'] = (
-        (all_players_df['two_pt_fg'] + all_players_df['three_pt_fg']) +
-        0.5 * all_players_df['three_pt_fg']
-    ) / (
-        all_players_df['two_pt_attempts'] + all_players_df['three_pt_attempts']
-    ) * 100
-
-    # Rename the 'name' column to 'player_names' if it hasn't been renamed yet
+    all_players_df['effective_fg_percentage'] = ((all_players_df['two_pt_fg'] + all_players_df['three_pt_fg']) + 0.5 * all_players_df['three_pt_fg']) / (all_players_df['two_pt_attempts'] + all_players_df['three_pt_attempts']) * 100
     all_players_df.rename(columns={'name': 'player_names'}, inplace=True)
-
-    # Remove duplicates based on the 'player_names' column
     all_players_df = all_players_df.drop_duplicates(subset='player_names')
-
-    csv_file_path = 'all_players_df.csv'  # Replace with your desired file path
+    csv_file_path = 'all_players_df.csv'
     all_players_df.to_csv(csv_file_path, index=False)
-
     return all_players_df
-
-
-   
