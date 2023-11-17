@@ -1,7 +1,11 @@
 import streamlit as st
 import os
+import pandas as pd
 from datetime import datetime
 from dotenv import load_dotenv
+import seaborn as sns
+import matplotlib.colors as mcolors
+
 
 # Importing from api_functions
 from api_functions import get_auth_token, get_slates, get_player_projections
@@ -30,6 +34,40 @@ date = st.sidebar.date_input("Select a date", datetime.today())
 
 # Toggle for multiple matchup filtering
 enable_multi_filter = st.sidebar.checkbox("Enable Multiple Matchup Filtering")
+
+# Function to create statistical leaderboards for all categories
+def create_leaderboards(df, categories, top_n=10):
+    leaderboards = {}
+    for category in categories:
+        sorted_df = df.sort_values(by=category, ascending=False).head(top_n)
+        leaderboards[category] = sorted_df[['player_names', 'team', 'minutes', 'possessions', category]]
+    return leaderboards
+
+
+# Function to create a custom red-yellow-green color map
+def create_custom_color_map():
+    colors = ['red', 'yellow', 'green']  # Red for low, yellow for middle, green for high
+    nodes = [0.0, 0.5, 1.0]
+    cmap = mcolors.LinearSegmentedColormap.from_list("", list(zip(nodes, colors)))
+    return cmap
+
+# Function for applying conditional formatting with the custom red-yellow-green gradient and bold, readable text to DataFrame
+def apply_gradient_formatting(df, column):
+    cmap = create_custom_color_map()
+    min_val = df[column].min()
+    max_val = df[column].max()
+    norm = mcolors.Normalize(min_val, max_val)
+    colors = [mcolors.to_hex(cmap(norm(value))) for value in df[column]]
+
+    def color_font(x):
+        if x.name != column:
+            return [''] * len(x)
+        else:
+            return [f'color: {"white" if cmap(norm(val))[0] < 0.5 else "black"}; font-weight: bold; background-color: {color}' 
+                    for val, color in zip(x, colors)]
+
+    return df.style.apply(color_font)
+
 
 if date:
     try:
@@ -61,12 +99,26 @@ if date:
             (float(player_projections_df['minutes'].min()), float(player_projections_df['minutes'].max()))
         )
         filtered_df = filtered_df[(filtered_df['minutes'] >= min_minutes) & (filtered_df['minutes'] <= max_minutes)]
+
+        # Leaderboard Section
+        st.header("Projection Leaderboards")
+        categories = ['points', 'assists', 'rebounds']
+        leaderboards = create_leaderboards(filtered_df, categories)
+
+        # Creating columns for side by side layout
+        cols = st.columns(len(categories))
+        for i, (category, df) in enumerate(leaderboards.items()):
+            with cols[i]:
+                st.subheader(f"Top 10 in {category.capitalize()}")
+                formatted_df = apply_gradient_formatting(df, category)
+                st.dataframe(formatted_df, hide_index=True)
+
         columns_to_display = [
-        'player_names', 'position', 'team', 'opp', 'minutes', 'possessions','points', 'assists', 'rebounds', 
-        'blocks', 'steals', 'fouls', 'turnovers','two_pt_attempts', 'two_pt_fg', 'three_pt_attempts', 'three_pt_fg', 
-        'free_throw_attempts', 'free_throws_made', 'roster_pos', 'confirmed', 'double_doubles','triple_doubles', 
-        'matchup'
-    ]
+            'player_names', 'position', 'team', 'opp', 'minutes', 'possessions','points', 'assists', 'rebounds', 
+            'blocks', 'steals', 'fouls', 'turnovers','two_pt_attempts', 'two_pt_fg', 'three_pt_attempts', 'three_pt_fg', 
+            'free_throw_attempts', 'free_throws_made', 'roster_pos', 'confirmed', 'double_doubles','triple_doubles', 
+            'matchup'
+        ]
         displayed_dataframe = filtered_df[columns_to_display]
 
         filtered_df.to_csv('optimizer_data.csv', index=False)
