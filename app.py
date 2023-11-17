@@ -1,3 +1,4 @@
+from odds import fetch_nba_game_ids, fetch_nba_player_odds, merge_sabersim_and_odds_data
 import streamlit as st
 import os
 import pandas as pd
@@ -80,6 +81,7 @@ if date:
         # Automatically call get_player_projections after obtaining slate IDs
         player_projections_df = get_player_projections(auth_token, formatted_date, slate_ids)
 
+      
         # Group by 'gid' and get the first 'matchup' for each group
         unique_matchups = player_projections_df.groupby('gid')['matchup'].first()
 
@@ -99,6 +101,25 @@ if date:
             (float(player_projections_df['minutes'].min()), float(player_projections_df['minutes'].max()))
         )
         filtered_df = filtered_df[(filtered_df['minutes'] >= min_minutes) & (filtered_df['minutes'] <= max_minutes)]
+
+        # Section for Updating Odds
+        st.sidebar.header("Odds Management")
+        if st.sidebar.button("Update Odds"):
+            try:
+                # Fetch NBA game IDs
+                game_ids = fetch_nba_game_ids()
+                if game_ids:
+                    # Fetch NBA player prop odds
+                    player_odds_df = fetch_nba_player_odds(game_ids)
+                    # Assuming filtered_df is already defined in the app
+                    # Merge the odds data with the SaberSim projections
+                    merged_df = merge_sabersim_and_odds_data(filtered_df, player_odds_df)
+                    st.success("Odds updated successfully!")
+                else:
+                    st.warning("No game IDs fetched. Please check the API or network connection.")
+            except Exception as e:
+                st.error(f"Failed to update odds: {e}")
+
 
         # Leaderboard Section
         st.header("Projection Leaderboards")
@@ -120,8 +141,8 @@ if date:
             'matchup'
         ]
         displayed_dataframe = filtered_df[columns_to_display]
-
-        filtered_df.to_csv('optimizer_data.csv', index=False)
+        # Change the below line back for testing purposes only just uncomment it when needed
+        #filtered_df.to_csv('optimizer_data.csv', index=False)
     
     except Exception as e:
         st.error(f"Failed to retrieve data: {e}")
