@@ -58,6 +58,13 @@ def calculate_edge(data, filters=None):
     data.loc[:, 'edge'] = edges
     return data
 
+def decimal_to_american(decimal_odds):
+    if decimal_odds >= 2.0:
+        american_odds = (decimal_odds - 1) * 100
+    else:
+        american_odds = -100 / (decimal_odds - 1)
+    return int(american_odds)
+
 def optimize_parlay(data, num_legs, num_parlays):
     """
     Optimize and return a specified number of parlay bet combinations.
@@ -85,10 +92,16 @@ def optimize_parlay(data, num_legs, num_parlays):
     # Evaluate each combination and store its details
     parlay_details = []
     for combination_indices in top_combinations:
-        combo_df = data.loc[list(combination_indices)]
+        combo_df = data.loc[list(combination_indices)].copy()
+        
+        # Add 'us_odds' column for each bet
+        combo_df['us_odds'] = combo_df['odds'].apply(decimal_to_american)
 
+        # Calculate and convert combined odds to American format
         combined_odds = combo_df['odds'].product()
-        parlay_details.append((combo_df, combined_odds))
+        american_combined_odds = decimal_to_american(combined_odds)
+        
+        parlay_details.append((combo_df, american_combined_odds))
 
     # Sort the combinations by combined odds
     parlay_details.sort(key=lambda x: x[1], reverse=True)
@@ -96,10 +109,12 @@ def optimize_parlay(data, num_legs, num_parlays):
     # Return the top specified number of parlays
     return parlay_details[:num_parlays]
 
+
 def combine_and_save_parlays(parlays):
     combined_parlay_df = pd.DataFrame()
-    for i, (parlay_df, _) in enumerate(parlays):
+    for i, (parlay_df, total_odds) in enumerate(parlays):
         parlay_df['Parlay_Number'] = f"Parlay {i+1}"
+        parlay_df['Total_Odds'] = total_odds
         combined_parlay_df = pd.concat([combined_parlay_df, parlay_df], ignore_index=True)
     return combined_parlay_df
 
@@ -134,10 +149,13 @@ def run_parlay_optimizer_app():
             parlays = optimize_parlay(data_with_edge, num_legs, num_parlays)
             combined_parlays = combine_and_save_parlays(parlays)
 
-            # Display results with specified columns
-            columns_to_display = ['Parlay_Number','player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'edge', 
-                                  'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds']
-            st.write(combined_parlays[columns_to_display],)
+            # Display results grouped by Parlay_Number
+            unique_parlay_numbers = combined_parlays['Parlay_Number'].unique()
+            for parlay_number in unique_parlay_numbers:
+                st.subheader(f"Parlay {parlay_number.split(' ')[1]}")
+                parlay_group = combined_parlays[combined_parlays['Parlay_Number'] == parlay_number]
+                st.write(parlay_group[['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
+                                       'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']])
 
 # Run the app
 if __name__ == "__main__":
