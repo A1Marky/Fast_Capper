@@ -48,6 +48,7 @@ def get_slates(auth_token: str, date: str, sport: str = 'nba') -> list:
     
     if response.status_code == 200 and isinstance(response_data, dict) and 'slates' in response_data:
         slates_list = [slate.get('id') for slate in response_data.get('slates', []) if slate.get('site').lower() == 'fd']
+        
         #print("Slate IDs:", slates_list)
         return slates_list
     
