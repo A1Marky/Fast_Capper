@@ -6,6 +6,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 import seaborn as sns
 import matplotlib.colors as mcolors
+import matplotlib.pyplot as plt
 
 
 # Importing from api_functions
@@ -146,3 +147,5 @@ if date:
     
     except Exception as e:
         st.error(f"Failed to retrieve data: {e}")
+
+
