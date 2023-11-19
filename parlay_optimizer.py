@@ -131,13 +131,19 @@ def run_parlay_optimizer_app():
         team_input = st.multiselect('Select Teams', options=data['team'].unique(), default=data['team'].unique())
         default_bet_types = ['player_points', 'player_assists', 'player_rebounds']
         bet_type_input = st.multiselect('Select Bet Types', options=data['bet_type'].unique(), default=default_bet_types)
+        over_under_input = st.radio('Over/Under', ['Over', 'Under', 'Both'], index=0)
         min_minutes = st.slider('Minimum Minutes', 0, int(data['minutes'].max()), 28)
 
+        # Setting up filters
         filters = {
             'team': team_input,
             'bet_type': bet_type_input,
             'minutes': min_minutes
         }
+
+        # Apply over/under filter if not set to 'Both'
+        if over_under_input != 'Both':
+            filters['over/under'] = over_under_input
 
         # User inputs for parlay configuration
         num_legs = st.slider('Number of Legs', 1, 10, 3)
