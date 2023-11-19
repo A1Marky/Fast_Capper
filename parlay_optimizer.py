@@ -15,9 +15,17 @@ def calculate_edge(data, filters=None):
     """
     if filters:
         # Apply filters to the data
-        for key, value in filters.items():
+        for key, values in filters.items():
             if key in data.columns:
-                data = data[data[key] == value]
+                if isinstance(values, list):
+                    # Filter for any of the values in the list
+                    data = data[data[key].isin(values)]
+                elif isinstance(values, (int, float)):
+                    # Filter for a numerical condition (greater than or equal)
+                    data = data[data[key] >= values]
+                else:
+                    # Filter for a single value
+                    data = data[data[key] == values]
 
     # Define the relevant stat column based on bet_type
     bet_type_to_stat = {
@@ -88,9 +96,17 @@ def optimize_parlay(data, num_legs, num_parlays):
     # Return the top specified number of parlays
     return parlay_details[:num_parlays]
 
+# Define your filters
+filters = {
+    'matchup': ['LAL vs HOU', 'PHI vs BKN', 'POR vs OKC', 'PHO vs UTA'],
+    'bet_type': ['player_points', 'player_assists', 'player_rebounds'],
+    'minutes': 45  # Minimum minutes
+}
+
 # Calculate edge and optimize parlays
-data_with_edge = calculate_edge(data)
-parlays = optimize_parlay(data_with_edge, num_legs=6, num_parlays=5)
+# Apply the filters when calling calculate_edge
+data_with_edge = calculate_edge(data, filters=filters)
+parlays = optimize_parlay(data_with_edge, num_legs=3, num_parlays=4)
 
 # Combining and saving the parlays to a CSV file
 combined_parlay_df = pd.DataFrame()
