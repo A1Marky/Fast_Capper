@@ -1,9 +1,9 @@
 import pandas as pd
 import itertools
+import streamlit as st
 
-# Load the dataset
-file_path = 'merged_data.csv'
-data = pd.read_csv(file_path)
+def load_data(file_path):
+    return pd.read_csv(file_path)
 
 def calculate_edge(data, filters=None):
     """
@@ -96,29 +96,49 @@ def optimize_parlay(data, num_legs, num_parlays):
     # Return the top specified number of parlays
     return parlay_details[:num_parlays]
 
-# Define your filters
-filters = {
-    'matchup': ['PHI vs BKN'],
-    'bet_type': ['player_points', 'player_assists', 'player_rebounds'],
-    'minutes': 30  # Minimum minutes
-}
+def combine_and_save_parlays(parlays):
+    combined_parlay_df = pd.DataFrame()
+    for i, (parlay_df, _) in enumerate(parlays):
+        parlay_df['Parlay_Number'] = f"Parlay {i+1}"
+        combined_parlay_df = pd.concat([combined_parlay_df, parlay_df], ignore_index=True)
+    return combined_parlay_df
 
-# Calculate edge and optimize parlays
-# Apply the filters when calling calculate_edge
-data_with_edge = calculate_edge(data, filters=filters)
-parlays = optimize_parlay(data_with_edge, num_legs=4, num_parlays=4)
+# Streamlit app function
+def run_parlay_optimizer_app():
+    st.title("Parlay Optimizer")
 
-# Combining and saving the parlays to a CSV file
-combined_parlay_df = pd.DataFrame()
+    # File uploader
+    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    if uploaded_file is not None:
+        data = load_data(uploaded_file)
 
-for i, (parlay_df, _) in enumerate(parlays):
-    parlay_df['Parlay_Number'] = f"Parlay {i+1}"
-    combined_parlay_df = pd.concat([combined_parlay_df, parlay_df], ignore_index=True)
+        # User inputs for filters
+        team_input = st.multiselect('Select Teams', options=data['team'].unique(), default=data['team'].unique())
+        default_bet_types = ['player_points', 'player_assists', 'player_rebounds']
+        bet_type_input = st.multiselect('Select Bet Types', options=data['bet_type'].unique(), default=default_bet_types)
+        min_minutes = st.slider('Minimum Minutes', 0, int(data['minutes'].max()), 28)
 
-# Writing the combined DataFrame to a CSV file
-output_file_path = "optimized_parlays.csv"
-combined_parlay_df.to_csv(output_file_path, index=False)
+        filters = {
+            'team': team_input,
+            'bet_type': bet_type_input,
+            'minutes': min_minutes
+        }
 
-print(f"Parlays have been saved to '{output_file_path}'.")
+        # User inputs for parlay configuration
+        num_legs = st.slider('Number of Legs', 1, 10, 3)
+        num_parlays = st.slider('Number of Parlays', 1, 10, 5)
 
+        if st.button('Calculate Parlays'):
+            # Apply filters and calculate
+            data_with_edge = calculate_edge(data, filters=filters)
+            parlays = optimize_parlay(data_with_edge, num_legs, num_parlays)
+            combined_parlays = combine_and_save_parlays(parlays)
 
+            # Display results with specified columns
+            columns_to_display = ['Parlay_Number','player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'edge', 
+                                  'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds']
+            st.write(combined_parlays[columns_to_display],)
+
+# Run the app
+if __name__ == "__main__":
+    run_parlay_optimizer_app()
