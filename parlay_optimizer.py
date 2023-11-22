@@ -65,104 +65,93 @@ def decimal_to_american(decimal_odds):
         american_odds = -100 / (decimal_odds - 1)
     return int(american_odds)
 
-def optimize_parlay(data, num_legs, num_parlays):
-    """
-    Optimize and return a specified number of parlay bet combinations.
-    
-    :param data: DataFrame containing the betting data with edge calculations.
-    :param num_legs: Number of legs in each parlay bet.
-    :param num_parlays: Number of parlay combinations to return.
-    :return: List of DataFrames, each containing an optimized combination of bets.
-    """
+def optimize_parlay(data, num_legs, num_parlays, strategy):
     # Ensure 'odds' column exists
     if 'odds' not in data.columns:
         raise ValueError("Data does not contain 'odds' column.")
 
-    # Filter out bets with a negative edge
-    positive_edge_bets = data[data['edge'] > 0].copy()
+    # Make a copy of the data to avoid SettingWithCopyWarning
+    data = data.copy()
 
-    # Create a 'score' column to sort bets
-    positive_edge_bets.loc[:, 'score'] = positive_edge_bets['edge'] * positive_edge_bets['odds']
-    sorted_bets = positive_edge_bets.sort_values(by='score', ascending=False)
+    # Filter out bets with a negative edge for Conservative and Balanced strategies
+    if strategy != "High-Risk, High-Reward":
+        data = data[data['edge'] > 0]
 
-    # Generate combinations using indices of the sorted bets
-    top_indices = sorted_bets.head(num_legs * 10).index
-    top_combinations = itertools.combinations(top_indices, num_legs)
+    # Sort bets based on the strategy
+    if strategy == "High-Risk, High-Reward":
+        sorted_bets = data.sort_values(by='odds', ascending=False)
+    elif strategy == "Balanced":
+        data['balanced_score'] = data['edge'] * data['odds']
+        sorted_bets = data.sort_values(by='balanced_score', ascending=False)
+    else:  # Conservative
+        sorted_bets = data.sort_values(by='edge', ascending=True)
 
-    # Evaluate each combination and store its details
+    # Initialize a set to track bets used in previous parlays
+    used_bets = set()
     parlay_details = []
-    for combination_indices in top_combinations:
-        combo_df = data.loc[list(combination_indices)].copy()
-        
-        # Add 'us_odds' column for each bet
-        combo_df['us_odds'] = combo_df['odds'].apply(decimal_to_american)
 
-        # Calculate and convert combined odds to American format
-        combined_odds = combo_df['odds'].product()
-        american_combined_odds = decimal_to_american(combined_odds)
-        
-        parlay_details.append((combo_df, american_combined_odds))
+    # Iterate to create each parlay
+    for _ in range(num_parlays):
+        top_indices = sorted_bets.index.difference(used_bets).tolist()
+        top_combinations = itertools.combinations(top_indices[:num_legs * 10], num_legs)
 
-    # Sort the combinations by combined odds
-    parlay_details.sort(key=lambda x: x[1], reverse=True)
+        for combination_indices in top_combinations:
+            if not set(combination_indices).intersection(used_bets):
+                combo_df = data.loc[list(combination_indices)].copy()
+                combo_df['us_odds'] = combo_df['odds'].apply(decimal_to_american)
+                combined_odds = combo_df['odds'].product()
+                american_combined_odds = decimal_to_american(combined_odds)
+                parlay_details.append((combo_df, american_combined_odds))
+                used_bets.update(combination_indices)
+                break
 
-    # Return the top specified number of parlays
     return parlay_details[:num_parlays]
 
-
-def combine_and_save_parlays(parlays):
+def combine_and_save_parlays(parlays, strategy):
     combined_parlay_df = pd.DataFrame()
     for i, (parlay_df, total_odds) in enumerate(parlays):
-        parlay_df['Parlay_Number'] = f"Parlay {i+1}"
+        parlay_df['Parlay_Number'] = f"Parlay {i+1} ({strategy})"
         parlay_df['Total_Odds'] = total_odds
         combined_parlay_df = pd.concat([combined_parlay_df, parlay_df], ignore_index=True)
     return combined_parlay_df
 
-# Streamlit app function
 def run_parlay_optimizer_app():
     st.title("Parlay Optimizer")
 
-    # File uploader
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     if uploaded_file is not None:
         data = load_data(uploaded_file)
 
-        # User inputs for filters
         team_input = st.multiselect('Select Teams', options=data['team'].unique(), default=data['team'].unique())
         default_bet_types = ['player_points', 'player_assists', 'player_rebounds']
         bet_type_input = st.multiselect('Select Bet Types', options=data['bet_type'].unique(), default=default_bet_types)
         over_under_input = st.radio('Over/Under', ['Over', 'Under', 'Both'], index=0)
         min_minutes = st.slider('Minimum Minutes', 0, int(data['minutes'].max()), 28)
 
-        # Setting up filters
         filters = {
             'team': team_input,
             'bet_type': bet_type_input,
             'minutes': min_minutes
         }
-
-        # Apply over/under filter if not set to 'Both'
         if over_under_input != 'Both':
             filters['over/under'] = over_under_input
 
-        # User inputs for parlay configuration
+        strategy = st.selectbox('Choose Your Strategy', ('High-Risk, High-Reward', 'Balanced', 'Conservative'))
+
         num_legs = st.slider('Number of Legs', 1, 10, 3)
         num_parlays = st.slider('Number of Parlays', 1, 10, 5)
 
         if st.button('Calculate Parlays'):
-            # Apply filters and calculate
             data_with_edge = calculate_edge(data, filters=filters)
-            parlays = optimize_parlay(data_with_edge, num_legs, num_parlays)
-            combined_parlays = combine_and_save_parlays(parlays)
+            parlays = optimize_parlay(data_with_edge, num_legs, num_parlays, strategy)
+            combined_parlays = combine_and_save_parlays(parlays, strategy)
 
-            # Display results grouped by Parlay_Number
             unique_parlay_numbers = combined_parlays['Parlay_Number'].unique()
             for parlay_number in unique_parlay_numbers:
-                st.subheader(f"Parlay {parlay_number.split(' ')[1]}")
+                st.subheader(f"{parlay_number}")
                 parlay_group = combined_parlays[combined_parlays['Parlay_Number'] == parlay_number]
                 st.write(parlay_group[['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
                                        'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']])
 
-# Run the app
 if __name__ == "__main__":
     run_parlay_optimizer_app()
