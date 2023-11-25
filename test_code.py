@@ -2,103 +2,102 @@ import pandas as pd
 import itertools
 import streamlit as st
 
+# Set Streamlit page configuration to wide mode
+st.set_page_config(layout="wide")
+
 def load_data(file_path):
     """
     Load data from a CSV file.
     """
     return pd.read_csv(file_path)
 
-def calculate_edge(data, filters=None):
+def apply_filters(data, filters):
     """
-    Calculate the edge for each bet in the dataset based on the projected stats and stat_threshold.
+    Apply filters to the dataset.
     """
-    if filters:
-        for key, values in filters.items():
-            if key in data.columns:
-                if isinstance(values, list):
-                    data = data[data[key].isin(values)]
-                elif isinstance(values, (int, float)):
-                    data = data[data[key] >= values]
-                else:
-                    data = data[data[key] == values]
-
-    bet_type_to_stat = {
-        "player_points": "points",
-        "player_rebounds": "rebounds",
-        "player_assists": "assists",
-        # Add other bet types and corresponding stat columns as needed
-    }
-
-    data = data[data['bet_type'].isin(bet_type_to_stat.keys())].copy()
-
-    edges = []
-    for index, row in data.iterrows():
-        bet_type = row['bet_type']
-        over_under = row['over/under']
-        stat_threshold = row['stat_threshold']
-        projected_stat = row[bet_type_to_stat[bet_type]] if bet_type in bet_type_to_stat else 0
-
-        if over_under == 'Over':
-            edge = projected_stat - stat_threshold
-        else:
-            edge = stat_threshold - projected_stat
-
-        edges.append(edge)
-
-    data.loc[:, 'edge'] = edges
+    for key, values in filters.items():
+        if key in data.columns:
+            if isinstance(values, list):
+                data = data[data[key].isin(values)]
+            elif isinstance(values, (int, float)):
+                data = data[data[key] >= values]
+            else:
+                data = data[data[key] == values]
     return data
+
+def calculate_edge(data, bet_type_to_stat):
+    """
+    Calculate the edge for each bet in the dataset.
+    """
+    data['projected_stat'] = data['bet_type'].map(bet_type_to_stat)
+    data['edge'] = data.apply(lambda row: row[row['projected_stat']] - row['stat_threshold']
+                                        if row['over/under'] == 'Over'
+                                        else row['stat_threshold'] - row[row['projected_stat']],
+                              axis=1)
+    return data.drop(columns=['projected_stat'])
 
 def decimal_to_american(decimal_odds):
     """
     Convert decimal odds to American odds.
     """
-    if decimal_odds >= 2.0:
-        american_odds = (decimal_odds - 1) * 100
-    else:
-        american_odds = -100 / (decimal_odds - 1)
-    return int(american_odds)
+    return int((decimal_odds - 1) * 100 if decimal_odds >= 2.0 else -100 / (decimal_odds - 1))
 
-def player_stat_strength_position_based(data):
+def calculate_position_strength(data):
     """
-    Calculates each player's performance relative to the average performance of their position.
+    Calculates each player's performance relative to their position average.
     """
-    position_averages = data.groupby('position')[['points', 'assists', 'rebounds']].mean()
-    data_with_position_avg = data.join(position_averages, on='position', rsuffix='_pos_avg')
+    position_averages = data.groupby('position')[['points', 'assists', 'rebounds']].mean().add_suffix('_pos_avg')
+    data = data.join(position_averages, on='position')
     for stat in ['points', 'assists', 'rebounds']:
-        data_with_position_avg[f'{stat}_diff'] = data_with_position_avg[stat] - data_with_position_avg[f'{stat}_pos_avg']
-    player_best_stat = data_with_position_avg.groupby('player_names')[['points_diff', 'assists_diff', 'rebounds_diff']].mean()
+        data[f'{stat}_diff'] = data[stat] - data[f'{stat}_pos_avg']
+    return data
+
+def get_best_stat(data):
+    """
+    Determine the best stat for each player.
+    """
+    stats_diff = data[['player_names', 'points_diff', 'assists_diff', 'rebounds_diff']]
+    player_best_stat = stats_diff.groupby('player_names').mean()
     player_best_stat['best_stat'] = player_best_stat.idxmax(axis=1).str.replace('_diff', '')
     return player_best_stat
 
-def optimize_parlay(data, num_legs, num_parlays, strategy, player_strengths):
+def optimize_parlay(data, num_legs, num_parlays, player_strengths):
+    """
+    Optimize parlay bets with the "Edge Maximizing" strategy.
+    This strategy prioritizes bets with the highest edge.
+    """
     if 'odds' not in data.columns:
         raise ValueError("Data does not contain 'odds' column.")
-    data = data.copy()
-    data = data.join(player_strengths['best_stat'], on='player_names')
 
-    # Sort and filter data based on the selected strategy
-    if strategy != "High-Risk, High-Reward":
-        data = data[data['edge'] > 0]
-    if strategy == "High-Risk, High-Reward":
-        sorted_bets = data.sort_values(by='odds', ascending=False)
-    elif strategy == "Balanced":
-        data['balanced_score'] = data['edge'] * data['odds']
-        sorted_bets = data.sort_values(by='balanced_score', ascending=False)
-    else:  # Conservative
-        sorted_bets = data.sort_values(by='edge', ascending=True)
+    data['best_stat'] = data['player_names'].map(player_strengths['best_stat'])
+    
+    # Sort data by 'edge' in descending order to prioritize high edge bets
+    data = data.sort_values(by='edge', ascending=False)
 
-    # Identifying the core bets (num_legs - 1 strongest bets)
+    # Remove bets with negative edge
+    data = data[data['edge'] > 0]
+
+    core_bets, variable_bets_indices = select_core_and_variable_bets(data, num_legs)
+
+    return create_parlay_combinations(data, core_bets, variable_bets_indices, num_parlays)
+
+def select_core_and_variable_bets(sorted_bets, num_legs):
+    """
+    Select core and variable bets for the parlays.
+    """
     core_bets = sorted_bets.head(num_legs - 1)
-    variable_bets_indices = sorted_bets.drop(core_bets.index).index
+    return core_bets, sorted_bets.drop(core_bets.index).index
 
+def create_parlay_combinations(data, core_bets, variable_bets_indices, num_parlays):
+    """
+    Create combinations for the parlays.
+    """
     parlay_details = []
     used_bets = set(core_bets.index.tolist())
 
-    # Creating parlays with varied legs using only the indices of variable bets
     for index in variable_bets_indices:
         if len(parlay_details) >= num_parlays:
-            break  # Limit the number of parlays generated
-
+            break
         if index not in used_bets:
             parlay_indices = core_bets.index.tolist() + [index]
             combo_df = data.loc[parlay_indices].copy()
@@ -110,20 +109,20 @@ def optimize_parlay(data, num_legs, num_parlays, strategy, player_strengths):
 
     return parlay_details
 
-def combine_and_save_parlays(parlays, strategy):
+def combine_and_save_parlays(parlays):
     """
     Combines and saves parlay details.
     """
     combined_parlay_df = pd.DataFrame()
     for i, (parlay_df, total_odds) in enumerate(parlays):
-        parlay_df['Parlay_Number'] = f"Parlay {i+1} ({strategy})"
+        parlay_df['Parlay_Number'] = f"Parlay {i+1} (Edge Maximizing)"
         parlay_df['Total_Odds'] = total_odds
         combined_parlay_df = pd.concat([combined_parlay_df, parlay_df], ignore_index=True)
     return combined_parlay_df
 
 def run_parlay_optimizer_app():
     """
-    Streamlit app to run the parlay optimizer.
+    Streamlit app to run the parlay optimizer with the "Edge Maximizing" strategy.
     """
     st.title("Parlay Optimizer")
 
@@ -145,33 +144,41 @@ def run_parlay_optimizer_app():
         if over_under_input != 'Both':
             filters['over/under'] = over_under_input
 
-        strategy = st.selectbox('Choose Your Strategy', ('High-Risk, High-Reward', 'Balanced', 'Conservative'))
+        # Removed multiple strategy options, defaulting to "Edge Maximizing"
+        strategy = "Edge Maximizing"
 
         num_legs = st.slider('Number of Legs', 1, 10, 3)
         num_parlays = st.slider('Number of Parlays', 1, 10, 5)
 
         if st.button('Calculate Parlays'):
-            data_with_edge = calculate_edge(data, filters=filters)
-            player_strengths = player_stat_strength_position_based(data)
+            filtered_data = apply_filters(data, filters)
+            bet_type_to_stat = {
+                "player_points": "points",
+                "player_rebounds": "rebounds",
+                "player_assists": "assists"
+            }
+            data_with_edge = calculate_edge(filtered_data, bet_type_to_stat)
+            data_with_position_strength = calculate_position_strength(data)
+            player_strengths = get_best_stat(data_with_position_strength)
             
-            # Check the number of unique bets available after filters
             available_bets_count = len(data_with_edge['player_names'].unique())
             
-            # Adjust the number of legs if necessary
             if num_legs > available_bets_count:
                 num_legs = available_bets_count
                 st.warning(f"Adjusted number of legs to {num_legs} due to limited available bets.")
 
-            parlays = optimize_parlay(data_with_edge, num_legs, num_parlays, strategy, player_strengths)
+            parlays = optimize_parlay(data_with_edge, num_legs, num_parlays, player_strengths)
             if len(parlays) > 0:
-                combined_parlays = combine_and_save_parlays(parlays, strategy)
+                combined_parlays = combine_and_save_parlays(parlays)
                 unique_parlay_numbers = combined_parlays['Parlay_Number'].unique()
                 
                 for parlay_number in unique_parlay_numbers:
                     st.subheader(f"{parlay_number}")
                     parlay_group = combined_parlays[combined_parlays['Parlay_Number'] == parlay_number]
-                    st.write(parlay_group[['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
-                                           'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']])
+                    # Sort the parlay group by 'edge' in descending order
+                    parlay_group_sorted = parlay_group.sort_values(by='edge', ascending=False)
+                    st.write(parlay_group_sorted[['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
+                                                  'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']])
             else:
                 st.error("Not enough bets available to form a parlay with the specified criteria.")
 
