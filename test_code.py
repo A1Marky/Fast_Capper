@@ -1,5 +1,4 @@
 import pandas as pd
-import itertools
 import streamlit as st
 
 # Set Streamlit page configuration to wide mode
@@ -13,7 +12,7 @@ def load_data(file_path):
 
 def apply_filters(data, filters):
     """
-    Apply filters to the dataset.
+    Apply filters to the dataset based on user input.
     """
     for key, values in filters.items():
         if key in data.columns:
@@ -64,7 +63,6 @@ def get_best_stat(data):
 def optimize_parlay(data, num_legs, num_parlays, player_strengths):
     """
     Optimize parlay bets with the "Edge Maximizing" strategy.
-    This strategy prioritizes bets with the highest edge.
     """
     if 'odds' not in data.columns:
         raise ValueError("Data does not contain 'odds' column.")
@@ -123,6 +121,7 @@ def combine_and_save_parlays(parlays):
 def run_parlay_optimizer_app():
     """
     Streamlit app to run the parlay optimizer with the "Edge Maximizing" strategy.
+    Maintains the state of the parlays across reruns using st.session_state.
     """
     st.title("Parlay Optimizer")
 
@@ -144,13 +143,11 @@ def run_parlay_optimizer_app():
         if over_under_input != 'Both':
             filters['over/under'] = over_under_input
 
-        # Removed multiple strategy options, defaulting to "Edge Maximizing"
-        strategy = "Edge Maximizing"
-
         num_legs = st.slider('Number of Legs', 1, 10, 3)
         num_parlays = st.slider('Number of Parlays', 1, 10, 5)
 
-        if st.button('Calculate Parlays'):
+        calculate_button = st.button('Calculate Parlays')
+        if calculate_button or 'parlays' not in st.session_state:
             filtered_data = apply_filters(data, filters)
             bet_type_to_stat = {
                 "player_points": "points",
@@ -170,17 +167,47 @@ def run_parlay_optimizer_app():
             parlays = optimize_parlay(data_with_edge, num_legs, num_parlays, player_strengths)
             if len(parlays) > 0:
                 combined_parlays = combine_and_save_parlays(parlays)
-                unique_parlay_numbers = combined_parlays['Parlay_Number'].unique()
-                
-                for parlay_number in unique_parlay_numbers:
-                    st.subheader(f"{parlay_number}")
-                    parlay_group = combined_parlays[combined_parlays['Parlay_Number'] == parlay_number]
-                    # Sort the parlay group by 'edge' in descending order
-                    parlay_group_sorted = parlay_group.sort_values(by='edge', ascending=False)
-                    st.write(parlay_group_sorted[['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
-                                                  'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']])
+                st.session_state.parlays = combined_parlays  # Store parlays in session_state
             else:
                 st.error("Not enough bets available to form a parlay with the specified criteria.")
+
+        if 'parlays' in st.session_state:
+            for parlay_number in st.session_state.parlays['Parlay_Number'].unique():
+                st.subheader(f"{parlay_number}")
+                parlay_group = st.session_state.parlays[st.session_state.parlays['Parlay_Number'] == parlay_number]
+                display_cols = ['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
+                                'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']
+                st.write(parlay_group[display_cols])
+
+                # Dropdown to select legs to remove
+                legs_to_remove = st.multiselect(
+                    f"Select legs to remove from {parlay_number}",
+                    options=parlay_group.index.tolist(),
+                    format_func=lambda x: f"{parlay_group.at[x, 'player_names']} - {parlay_group.at[x, 'bet_type']}",
+                    key=f"remove_{parlay_number}"
+                )
+
+                # Button to recalculate odds
+                recalculate_key = f'recalculate_{parlay_number}'
+                if st.button('Recalculate Odds', key=recalculate_key):
+                    remaining_legs = parlay_group.drop(legs_to_remove)
+                    if not remaining_legs.empty:
+                        new_combined_odds = remaining_legs['odds'].product()
+                        new_american_odds = decimal_to_american(new_combined_odds)
+                        
+                        # Update the session state with the remaining legs and recalculated odds
+                        st.session_state.parlays.loc[remaining_legs.index, 'Total_Odds'] = new_american_odds
+                        
+                        # Display the new total odds above the Recalculate button, specifying the parlay number
+                        st.write(f"{parlay_number} - New Total Odds (American): {new_american_odds}")
+                        
+                        # Display the updated parlay group
+                        st.write(remaining_legs[display_cols])
+                    else:
+                        st.write("No legs left in the parlay.")
+                else:
+                    # Display a message if there are no parlays to show
+                    st.write("No parlays to display.")
 
 if __name__ == "__main__":
     run_parlay_optimizer_app()
