@@ -63,51 +63,50 @@ def get_best_stat(data):
 
 def optimize_parlay(data, num_legs, num_parlays, player_strengths):
     """
-    Optimize parlay bets with the "Edge Maximizing" strategy.
-    This strategy prioritizes bets with the highest edge.
+    Optimize parlay bets with the specified number of legs and parlays, ensuring uniqueness.
     """
     if 'odds' not in data.columns:
         raise ValueError("Data does not contain 'odds' column.")
 
     data['best_stat'] = data['player_names'].map(player_strengths['best_stat'])
-    
+
     # Sort data by 'edge' in descending order to prioritize high edge bets
     data = data.sort_values(by='edge', ascending=False)
 
     # Remove bets with negative edge
     data = data[data['edge'] > 0]
 
-    core_bets, variable_bets_indices = select_core_and_variable_bets(data, num_legs)
+    # Use all available bets indices for creating parlays
+    all_bets_indices = data.index
 
-    return create_parlay_combinations(data, core_bets, variable_bets_indices, num_parlays)
+    return create_parlay_combinations(data, all_bets_indices, num_parlays, num_legs)
 
-def select_core_and_variable_bets(sorted_bets, num_legs):
+def create_parlay_combinations(data, all_bets_indices, num_parlays, num_legs):
     """
-    Select core and variable bets for the parlays.
-    """
-    core_bets = sorted_bets.head(num_legs - 1)
-    return core_bets, sorted_bets.drop(core_bets.index).index
-
-def create_parlay_combinations(data, core_bets, variable_bets_indices, num_parlays):
-    """
-    Create combinations for the parlays.
+    Create parlays with specified number of legs, ensuring each parlay is unique.
     """
     parlay_details = []
-    used_bets = set(core_bets.index.tolist())
+    used_bets = set()
 
-    for index in variable_bets_indices:
+    # Generate all possible combinations of bets
+    all_combinations = list(itertools.combinations(all_bets_indices, num_legs))
+
+    for combo in all_combinations:
         if len(parlay_details) >= num_parlays:
             break
-        if index not in used_bets:
-            parlay_indices = core_bets.index.tolist() + [index]
-            combo_df = data.loc[parlay_indices].copy()
+        if not used_bets.intersection(set(combo)):
+            combo_df = data.loc[list(combo)].copy()
             combo_df['us_odds'] = combo_df['odds'].apply(decimal_to_american)
             combined_odds = combo_df['odds'].product()
             american_combined_odds = decimal_to_american(combined_odds)
             parlay_details.append((combo_df, american_combined_odds))
-            used_bets.add(index)
+            used_bets.update(combo)  # Add these bets to the used set
 
     return parlay_details
+
+
+
+
 
 def combine_and_save_parlays(parlays):
     """
