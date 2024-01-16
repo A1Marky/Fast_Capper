@@ -1,561 +1,636 @@
-sports_book,bet_type,over/under,player_names,odds,stat_threshold
-fanduel,player_assists,Over,Aaron Gordon,1.68,2.5
-fanduel,player_assists,Under,Aaron Gordon,2.14,2.5
-fanduel,player_assists,Over,Tyrese Maxey,1.87,6.5
-fanduel,player_assists,Under,Tyrese Maxey,1.9,6.5
-fanduel,player_assists,Over,Joel Embiid,1.71,4.5
-fanduel,player_assists,Under,Joel Embiid,2.1,4.5
-fanduel,player_assists,Over,Nikola Jokic,2.0,9.5
-fanduel,player_assists,Under,Nikola Jokic,1.78,9.5
-fanduel,player_assists,Over,Tobias Harris,2.12,3.5
-fanduel,player_assists,Under,Tobias Harris,1.7,3.5
-fanduel,player_assists_alternate,Over,Tyrese Maxey,1.08,3.5
-fanduel,player_assists_alternate,Over,Joel Embiid,1.34,3.5
-fanduel,player_assists_alternate,Over,Tobias Harris,2.1,3.5
-fanduel,player_assists_alternate,Over,Aaron Gordon,2.75,3.5
-fanduel,player_assists_alternate,Over,Nikola Jokic,1.31,7.5
-fanduel,player_assists_alternate,Over,Tyrese Maxey,2.6,7.5
-fanduel,player_assists_alternate,Over,Joel Embiid,6.5,7.5
-fanduel,player_assists_alternate,Over,Nikola Jokic,1.07,5.5
-fanduel,player_assists_alternate,Over,Tyrese Maxey,1.45,5.5
-fanduel,player_assists_alternate,Over,Joel Embiid,2.5,5.5
-fanduel,player_assists_alternate,Over,Tobias Harris,6.0,5.5
-fanduel,player_assists_alternate,Over,Aaron Gordon,8.5,5.5
-fanduel,player_points,Over,Kentavious Caldwell Pope,1.76,9.5
-fanduel,player_points,Under,Kentavious Caldwell Pope,2.04,9.5
-fanduel,player_points,Over,Aaron Gordon,1.98,14.5
-fanduel,player_points,Under,Aaron Gordon,1.8,14.5
-fanduel,player_points,Over,Nikola Jokic,1.88,25.5
-fanduel,player_points,Under,Nikola Jokic,1.88,25.5
-fanduel,player_points,Over,Joel Embiid,1.8,32.5
-fanduel,player_points,Under,Joel Embiid,1.98,32.5
-fanduel,player_points,Over,Tobias Harris,1.78,16.5
-fanduel,player_points,Under,Tobias Harris,2.0,16.5
-fanduel,player_points,Over,Tyrese Maxey,1.88,25.5
-fanduel,player_points,Under,Tyrese Maxey,1.88,25.5
-fanduel,player_points_alternate,Over,Joel Embiid,4.1,39.5
-fanduel,player_points_alternate,Over,Joel Embiid,1.01,19.5
-fanduel,player_points_alternate,Over,Nikola Jokic,1.23,19.5
-fanduel,player_points_alternate,Over,Tyrese Maxey,1.24,19.5
-fanduel,player_points_alternate,Over,Tobias Harris,2.6,19.5
-fanduel,player_points_alternate,Over,Aaron Gordon,4.6,19.5
-fanduel,player_points_alternate,Over,Tobias Harris,1.09,9.5
-fanduel,player_points_alternate,Over,Aaron Gordon,1.23,9.5
-fanduel,player_points_alternate,Over,Kentavious Caldwell Pope,1.77,9.5
-fanduel,player_points_alternate,Over,Joel Embiid,1.11,24.5
-fanduel,player_points_alternate,Over,Tyrese Maxey,1.74,24.5
-fanduel,player_points_alternate,Over,Nikola Jokic,1.74,24.5
-fanduel,player_points_alternate,Over,Tobias Harris,6.0,24.5
-fanduel,player_points_alternate,Over,Tyrese Maxey,1.02,14.5
-fanduel,player_points_alternate,Over,Nikola Jokic,1.02,14.5
-fanduel,player_points_alternate,Over,Tobias Harris,1.5,14.5
-fanduel,player_points_alternate,Over,Aaron Gordon,2.0,14.5
-fanduel,player_points_alternate,Over,Kentavious Caldwell Pope,4.6,14.5
-fanduel,player_points_alternate,Over,Joel Embiid,1.43,29.5
-fanduel,player_points_alternate,Over,Tyrese Maxey,2.9,29.5
-fanduel,player_points_alternate,Over,Nikola Jokic,2.9,29.5
-fanduel,player_points_alternate,Over,Joel Embiid,2.2,34.5
-fanduel,player_points_alternate,Over,Tyrese Maxey,6.0,34.5
-fanduel,player_points_alternate,Over,Nikola Jokic,6.0,34.5
-fanduel,player_points_assists,Over,Aaron Gordon,1.98,17.5
-fanduel,player_points_assists,Under,Aaron Gordon,1.8,17.5
-fanduel,player_points_assists,Over,Tobias Harris,1.9,20.5
-fanduel,player_points_assists,Under,Tobias Harris,1.87,20.5
-fanduel,player_points_assists,Over,Joel Embiid,1.83,37.5
-fanduel,player_points_assists,Under,Joel Embiid,1.94,37.5
-fanduel,player_points_assists,Over,Nikola Jokic,1.8,34.5
-fanduel,player_points_assists,Under,Nikola Jokic,1.98,34.5
-fanduel,player_points_assists,Over,Tyrese Maxey,1.94,32.5
-fanduel,player_points_assists,Under,Tyrese Maxey,1.83,32.5
-fanduel,player_points_rebounds,Over,Nikola Jokic,1.88,37.5
-fanduel,player_points_rebounds,Under,Nikola Jokic,1.88,37.5
-fanduel,player_points_rebounds,Over,Tyrese Maxey,1.83,28.5
-fanduel,player_points_rebounds,Under,Tyrese Maxey,1.94,28.5
-fanduel,player_points_rebounds,Over,Kentavious Caldwell Pope,1.85,12.5
-fanduel,player_points_rebounds,Under,Kentavious Caldwell Pope,1.93,12.5
-fanduel,player_points_rebounds,Over,Aaron Gordon,1.88,20.5
-fanduel,player_points_rebounds,Under,Aaron Gordon,1.88,20.5
-fanduel,player_points_rebounds,Over,Joel Embiid,1.85,44.5
-fanduel,player_points_rebounds,Under,Joel Embiid,1.93,44.5
-fanduel,player_points_rebounds,Over,Tobias Harris,1.83,22.5
-fanduel,player_points_rebounds,Under,Tobias Harris,1.94,22.5
-fanduel,player_points_rebounds_assists,Over,Aaron Gordon,1.88,23.5
-fanduel,player_points_rebounds_assists,Under,Aaron Gordon,1.88,23.5
-fanduel,player_points_rebounds_assists,Over,Nikola Jokic,1.83,46.5
-fanduel,player_points_rebounds_assists,Under,Nikola Jokic,1.94,46.5
-fanduel,player_points_rebounds_assists,Over,Joel Embiid,1.85,49.5
-fanduel,player_points_rebounds_assists,Under,Joel Embiid,1.93,49.5
-fanduel,player_points_rebounds_assists,Over,Tyrese Maxey,1.88,35.5
-fanduel,player_points_rebounds_assists,Under,Tyrese Maxey,1.88,35.5
-fanduel,player_points_rebounds_assists,Over,Tobias Harris,1.94,26.5
-fanduel,player_points_rebounds_assists,Under,Tobias Harris,1.83,26.5
-fanduel,player_rebounds,Over,Tobias Harris,1.82,5.5
-fanduel,player_rebounds,Under,Tobias Harris,1.96,5.5
-fanduel,player_rebounds,Over,Kentavious Caldwell Pope,2.0,2.5
-fanduel,player_rebounds,Under,Kentavious Caldwell Pope,1.78,2.5
-fanduel,player_rebounds,Over,Aaron Gordon,2.1,6.5
-fanduel,player_rebounds,Under,Aaron Gordon,1.71,6.5
-fanduel,player_rebounds,Over,Tyrese Maxey,2.3,3.5
-fanduel,player_rebounds,Under,Tyrese Maxey,1.6,3.5
-fanduel,player_rebounds,Over,Nikola Jokic,1.87,11.5
-fanduel,player_rebounds,Under,Nikola Jokic,1.88,11.5
-fanduel,player_rebounds,Over,Joel Embiid,1.9,11.5
-fanduel,player_rebounds,Under,Joel Embiid,1.87,11.5
-fanduel,player_rebounds_alternate,Over,Aaron Gordon,1.17,3.5
-fanduel,player_rebounds_alternate,Over,Tobias Harris,1.23,3.5
-fanduel,player_rebounds_alternate,Over,Tyrese Maxey,2.3,3.5
-fanduel,player_rebounds_alternate,Over,Kentavious Caldwell Pope,3.3,3.5
-fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.87,11.5
-fanduel,player_rebounds_alternate,Over,Joel Embiid,1.91,11.5
-fanduel,player_rebounds_alternate,Over,Aaron Gordon,11.0,11.5
-fanduel,player_rebounds_alternate,Over,Joel Embiid,1.12,7.5
-fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.12,7.5
-fanduel,player_rebounds_alternate,Over,Aaron Gordon,2.8,7.5
-fanduel,player_rebounds_alternate,Over,Tobias Harris,3.4,7.5
-fanduel,player_rebounds_alternate,Over,Joel Embiid,1.01,5.5
-fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.02,5.5
-fanduel,player_rebounds_alternate,Over,Aaron Gordon,1.65,5.5
-fanduel,player_rebounds_alternate,Over,Tobias Harris,1.83,5.5
-fanduel,player_rebounds_alternate,Over,Tyrese Maxey,6.0,5.5
-fanduel,player_rebounds_alternate,Over,Kentavious Caldwell Pope,10.0,5.5
-fanduel,player_rebounds_alternate,Over,Nikola Jokic,2.9,13.5
-fanduel,player_rebounds_alternate,Over,Joel Embiid,3.1,13.5
-fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.34,9.5
-fanduel,player_rebounds_alternate,Over,Joel Embiid,1.36,9.5
-fanduel,player_rebounds_alternate,Over,Aaron Gordon,5.6,9.5
-fanduel,player_rebounds_alternate,Over,Tobias Harris,7.5,9.5
-fanduel,player_rebounds_alternate,Over,Nikola Jokic,5.2,15.5
-fanduel,player_rebounds_alternate,Over,Joel Embiid,5.5,15.5
-fanduel,player_rebounds_assists,Over,Tyrese Maxey,1.77,9.5
-fanduel,player_rebounds_assists,Under,Tyrese Maxey,2.02,9.5
-fanduel,player_rebounds_assists,Over,Joel Embiid,1.94,16.5
-fanduel,player_rebounds_assists,Under,Joel Embiid,1.83,16.5
-fanduel,player_rebounds_assists,Over,Aaron Gordon,2.08,9.5
-fanduel,player_rebounds_assists,Under,Aaron Gordon,1.74,9.5
-fanduel,player_rebounds_assists,Over,Nikola Jokic,1.76,20.5
-fanduel,player_rebounds_assists,Under,Nikola Jokic,2.04,20.5
-fanduel,player_rebounds_assists,Over,Tobias Harris,2.08,9.5
-fanduel,player_rebounds_assists,Under,Tobias Harris,1.72,9.5
-fanduel,player_threes,Over,Tyrese Maxey,1.68,2.5
-fanduel,player_threes,Under,Tyrese Maxey,2.14,2.5
-fanduel,player_threes,Over,Tobias Harris,2.06,1.5
-fanduel,player_threes,Under,Tobias Harris,1.74,1.5
-fanduel,player_threes,Over,Kentavious Caldwell Pope,1.7,1.5
-fanduel,player_threes,Under,Kentavious Caldwell Pope,2.12,1.5
-fanduel,player_threes,Over,Joel Embiid,2.64,1.5
-fanduel,player_threes,Under,Joel Embiid,1.47,1.5
-fanduel,player_threes_alternate,Over,Tyrese Maxey,1.71,2.5
-fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,3.4,2.5
-fanduel,player_threes_alternate,Over,Tobias Harris,4.7,2.5
-fanduel,player_threes_alternate,Over,Joel Embiid,7.0,2.5
-fanduel,player_threes_alternate,Over,Tyrese Maxey,1.02,0.5
-fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,1.12,0.5
-fanduel,player_threes_alternate,Over,Tobias Harris,1.2,0.5
-fanduel,player_threes_alternate,Over,Joel Embiid,1.34,0.5
-fanduel,player_threes_alternate,Over,Tyrese Maxey,2.75,3.5
-fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,8.0,3.5
-fanduel,player_threes_alternate,Over,Tyrese Maxey,1.18,1.5
-fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,1.71,1.5
-fanduel,player_threes_alternate,Over,Tobias Harris,2.05,1.5
-fanduel,player_threes_alternate,Over,Joel Embiid,2.65,1.5
-fanduel,player_threes_alternate,Over,Tyrese Maxey,5.6,4.5
-fanduel,player_assists,Over,Grayson Allen,1.78,2.5
-fanduel,player_assists,Under,Grayson Allen,2.0,2.5
-fanduel,player_assists,Over,Devin Booker,2.04,7.5
-fanduel,player_assists,Under,Devin Booker,1.76,7.5
-fanduel,player_assists,Over,Jusuf Nurkic,1.74,2.5
-fanduel,player_assists,Under,Jusuf Nurkic,2.06,2.5
-fanduel,player_assists,Over,Kevin Durant,2.22,5.5
-fanduel,player_assists,Under,Kevin Durant,1.65,5.5
-fanduel,player_assists,Over,Bradley Beal,1.8,4.5
-fanduel,player_assists,Under,Bradley Beal,1.98,4.5
-fanduel,player_assists,Over,De'Aaron Fox,1.63,4.5
-fanduel,player_assists,Under,De'Aaron Fox,2.24,4.5
-fanduel,player_assists,Over,Domantas Sabonis,1.82,7.5
-fanduel,player_assists,Under,Domantas Sabonis,1.96,7.5
-fanduel,player_assists_alternate,Over,Domantas Sabonis,1.21,5.5
-fanduel,player_assists_alternate,Over,Devin Booker,1.28,5.5
-fanduel,player_assists_alternate,Over,Kevin Durant,2.2,5.5
-fanduel,player_assists_alternate,Over,De'Aaron Fox,2.3,5.5
-fanduel,player_assists_alternate,Over,Bradley Beal,2.6,5.5
-fanduel,player_assists_alternate,Over,Domantas Sabonis,1.02,3.5
-fanduel,player_assists_alternate,Over,Devin Booker,1.03,3.5
-fanduel,player_assists_alternate,Over,Kevin Durant,1.27,3.5
-fanduel,player_assists_alternate,Over,De'Aaron Fox,1.29,3.5
-fanduel,player_assists_alternate,Over,Bradley Beal,1.37,3.5
-fanduel,player_assists_alternate,Over,Jusuf Nurkic,2.85,3.5
-fanduel,player_assists_alternate,Over,Grayson Allen,3.0,3.5
-fanduel,player_assists_alternate,Over,Domantas Sabonis,1.83,7.5
-fanduel,player_assists_alternate,Over,Devin Booker,2.05,7.5
-fanduel,player_assists_alternate,Over,Kevin Durant,5.3,7.5
-fanduel,player_assists_alternate,Over,De'Aaron Fox,5.8,7.5
-fanduel,player_assists_alternate,Over,Bradley Beal,7.0,7.5
-fanduel,player_points,Over,Kevin Durant,1.94,27.5
-fanduel,player_points,Under,Kevin Durant,1.83,27.5
-fanduel,player_points,Over,De'Aaron Fox,1.9,27.5
-fanduel,player_points,Under,De'Aaron Fox,1.87,27.5
-fanduel,player_points,Over,Harrison Barnes,1.82,9.5
-fanduel,player_points,Under,Harrison Barnes,1.96,9.5
-fanduel,player_points,Over,Keegan Murray,1.94,15.5
-fanduel,player_points,Under,Keegan Murray,1.83,15.5
-fanduel,player_points,Over,Domantas Sabonis,1.88,20.5
-fanduel,player_points,Under,Domantas Sabonis,1.88,20.5
-fanduel,player_points,Over,Devin Booker,1.87,26.5
-fanduel,player_points,Under,Devin Booker,1.9,26.5
-fanduel,player_points,Over,Bradley Beal,1.96,20.5
-fanduel,player_points,Under,Bradley Beal,1.83,20.5
-fanduel,player_points,Over,Grayson Allen,1.87,12.5
-fanduel,player_points,Under,Grayson Allen,1.9,12.5
-fanduel,player_points,Over,Jusuf Nurkic,1.96,12.5
-fanduel,player_points,Under,Jusuf Nurkic,1.82,12.5
-fanduel,player_points_alternate,Over,De'Aaron Fox,1.51,24.5
-fanduel,player_points_alternate,Over,Kevin Durant,1.54,24.5
-fanduel,player_points_alternate,Over,Devin Booker,1.59,24.5
-fanduel,player_points_alternate,Over,Domantas Sabonis,3.0,24.5
-fanduel,player_points_alternate,Over,Bradley Beal,3.1,24.5
-fanduel,player_points_alternate,Over,Keegan Murray,9.0,24.5
-fanduel,player_points_alternate,Over,Bradley Beal,1.0,9.5
-fanduel,player_points_alternate,Over,Domantas Sabonis,1.01,9.5
-fanduel,player_points_alternate,Over,Keegan Murray,1.14,9.5
-fanduel,player_points_alternate,Over,Grayson Allen,1.34,9.5
-fanduel,player_points_alternate,Over,Jusuf Nurkic,1.37,9.5
-fanduel,player_points_alternate,Over,Harrison Barnes,1.83,9.5
-fanduel,player_points_alternate,Over,De'Aaron Fox,10.0,39.5
-fanduel,player_points_alternate,Over,Kevin Durant,1.0,14.5
-fanduel,player_points_alternate,Over,Devin Booker,1.0,14.5
-fanduel,player_points_alternate,Over,Domantas Sabonis,1.2,14.5
-fanduel,player_points_alternate,Over,Bradley Beal,1.22,14.5
-fanduel,player_points_alternate,Over,Keegan Murray,1.74,14.5
-fanduel,player_points_alternate,Over,Grayson Allen,2.5,14.5
-fanduel,player_points_alternate,Over,Jusuf Nurkic,2.65,14.5
-fanduel,player_points_alternate,Over,Harrison Barnes,5.2,14.5
-fanduel,player_points_alternate,Over,Kevin Durant,1.14,19.5
-fanduel,player_points_alternate,Over,De'Aaron Fox,1.14,19.5
-fanduel,player_points_alternate,Over,Devin Booker,1.15,19.5
-fanduel,player_points_alternate,Over,Domantas Sabonis,1.74,19.5
-fanduel,player_points_alternate,Over,Bradley Beal,1.77,19.5
-fanduel,player_points_alternate,Over,Keegan Murray,3.4,19.5
-fanduel,player_points_alternate,Over,Grayson Allen,7.0,19.5
-fanduel,player_points_alternate,Over,Jusuf Nurkic,8.0,19.5
-fanduel,player_points_alternate,Over,De'Aaron Fox,4.5,34.5
-fanduel,player_points_alternate,Over,Kevin Durant,4.8,34.5
-fanduel,player_points_alternate,Over,Devin Booker,5.2,34.5
-fanduel,player_points_alternate,Over,De'Aaron Fox,2.35,29.5
-fanduel,player_points_alternate,Over,Kevin Durant,2.4,29.5
-fanduel,player_points_alternate,Over,Devin Booker,2.55,29.5
-fanduel,player_points_alternate,Over,Domantas Sabonis,6.5,29.5
-fanduel,player_points_alternate,Over,Bradley Beal,7.0,29.5
-fanduel,player_points_assists,Over,De'Aaron Fox,1.87,32.5
-fanduel,player_points_assists,Under,De'Aaron Fox,1.9,32.5
-fanduel,player_points_assists,Over,Devin Booker,1.96,34.5
-fanduel,player_points_assists,Under,Devin Booker,1.82,34.5
-fanduel,player_points_assists,Over,Domantas Sabonis,1.94,28.5
-fanduel,player_points_assists,Under,Domantas Sabonis,1.83,28.5
-fanduel,player_points_assists,Over,Grayson Allen,1.9,15.5
-fanduel,player_points_assists,Under,Grayson Allen,1.87,15.5
-fanduel,player_points_assists,Over,Kevin Durant,1.88,32.5
-fanduel,player_points_assists,Under,Kevin Durant,1.88,32.5
-fanduel,player_points_assists,Over,Jusuf Nurkic,1.98,15.5
-fanduel,player_points_assists,Under,Jusuf Nurkic,1.8,15.5
-fanduel,player_points_assists,Over,Bradley Beal,1.96,25.5
-fanduel,player_points_assists,Under,Bradley Beal,1.82,25.5
-fanduel,player_points_rebounds,Over,Grayson Allen,1.85,16.5
-fanduel,player_points_rebounds,Under,Grayson Allen,1.93,16.5
-fanduel,player_points_rebounds,Over,Harrison Barnes,1.88,12.5
-fanduel,player_points_rebounds,Under,Harrison Barnes,1.88,12.5
-fanduel,player_points_rebounds,Over,Keegan Murray,1.93,20.5
-fanduel,player_points_rebounds,Under,Keegan Murray,1.85,20.5
-fanduel,player_points_rebounds,Over,De'Aaron Fox,1.93,31.5
-fanduel,player_points_rebounds,Under,De'Aaron Fox,1.85,31.5
-fanduel,player_points_rebounds,Over,Jusuf Nurkic,1.93,23.5
-fanduel,player_points_rebounds,Under,Jusuf Nurkic,1.85,23.5
-fanduel,player_points_rebounds,Over,Kevin Durant,1.8,33.5
-fanduel,player_points_rebounds,Under,Kevin Durant,1.98,33.5
-fanduel,player_points_rebounds,Over,Devin Booker,1.88,31.5
-fanduel,player_points_rebounds,Under,Devin Booker,1.88,31.5
-fanduel,player_points_rebounds,Over,Bradley Beal,1.82,24.5
-fanduel,player_points_rebounds,Under,Bradley Beal,1.96,24.5
-fanduel,player_points_rebounds,Over,Domantas Sabonis,1.9,33.5
-fanduel,player_points_rebounds,Under,Domantas Sabonis,1.87,33.5
-fanduel,player_points_rebounds_assists,Over,Devin Booker,1.82,38.5
-fanduel,player_points_rebounds_assists,Under,Devin Booker,1.96,38.5
-fanduel,player_points_rebounds_assists,Over,Bradley Beal,1.87,29.5
-fanduel,player_points_rebounds_assists,Under,Bradley Beal,1.9,29.5
-fanduel,player_points_rebounds_assists,Over,De'Aaron Fox,1.88,36.5
-fanduel,player_points_rebounds_assists,Under,De'Aaron Fox,1.88,36.5
-fanduel,player_points_rebounds_assists,Over,Domantas Sabonis,1.94,41.5
-fanduel,player_points_rebounds_assists,Under,Domantas Sabonis,1.83,41.5
-fanduel,player_points_rebounds_assists,Over,Jusuf Nurkic,1.94,26.5
-fanduel,player_points_rebounds_assists,Under,Jusuf Nurkic,1.83,26.5
-fanduel,player_points_rebounds_assists,Over,Kevin Durant,1.88,39.5
-fanduel,player_points_rebounds_assists,Under,Kevin Durant,1.87,39.5
-fanduel,player_points_rebounds_assists,Over,Grayson Allen,1.88,19.5
-fanduel,player_points_rebounds_assists,Under,Grayson Allen,1.88,19.5
-fanduel,player_rebounds,Over,Jusuf Nurkic,1.83,10.5
-fanduel,player_rebounds,Under,Jusuf Nurkic,1.94,10.5
-fanduel,player_rebounds,Over,De'Aaron Fox,1.83,3.5
-fanduel,player_rebounds,Under,De'Aaron Fox,1.94,3.5
-fanduel,player_rebounds,Over,Devin Booker,1.88,4.5
-fanduel,player_rebounds,Under,Devin Booker,1.88,4.5
-fanduel,player_rebounds,Over,Domantas Sabonis,1.88,12.5
-fanduel,player_rebounds,Under,Domantas Sabonis,1.88,12.5
-fanduel,player_rebounds,Over,Keegan Murray,1.74,4.5
-fanduel,player_rebounds,Under,Keegan Murray,2.06,4.5
-fanduel,player_rebounds,Over,Kevin Durant,1.87,6.5
-fanduel,player_rebounds,Under,Kevin Durant,1.88,6.5
-fanduel,player_rebounds,Over,Grayson Allen,1.77,3.5
-fanduel,player_rebounds,Under,Grayson Allen,2.02,3.5
-fanduel,player_rebounds,Over,Bradley Beal,2.0,4.5
-fanduel,player_rebounds,Under,Bradley Beal,1.78,4.5
-fanduel,player_rebounds_alternate,Over,Domantas Sabonis,1.21,9.5
-fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,1.48,9.5
-fanduel,player_rebounds_alternate,Over,Kevin Durant,4.5,9.5
-fanduel,player_rebounds_alternate,Over,Keegan Murray,11.0,9.5
-fanduel,player_rebounds_alternate,Over,Devin Booker,13.0,9.5
-fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,1.03,5.5
-fanduel,player_rebounds_alternate,Over,Kevin Durant,1.53,5.5
-fanduel,player_rebounds_alternate,Over,Keegan Murray,2.35,5.5
-fanduel,player_rebounds_alternate,Over,Devin Booker,2.6,5.5
-fanduel,player_rebounds_alternate,Over,Bradley Beal,2.8,5.5
-fanduel,player_rebounds_alternate,Over,Grayson Allen,3.7,5.5
-fanduel,player_rebounds_alternate,Over,De'Aaron Fox,4.0,5.5
-fanduel,player_rebounds_alternate,Over,Harrison Barnes,8.5,5.5
-fanduel,player_rebounds_alternate,Over,Kevin Durant,1.13,3.5
-fanduel,player_rebounds_alternate,Over,Keegan Murray,1.38,3.5
-fanduel,player_rebounds_alternate,Over,Devin Booker,1.45,3.5
-fanduel,player_rebounds_alternate,Over,Bradley Beal,1.53,3.5
-fanduel,player_rebounds_alternate,Over,Grayson Allen,1.77,3.5
-fanduel,player_rebounds_alternate,Over,De'Aaron Fox,1.83,3.5
-fanduel,player_rebounds_alternate,Over,Harrison Barnes,3.0,3.5
-fanduel,player_rebounds_alternate,Over,Domantas Sabonis,1.59,11.5
-fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,2.25,11.5
-fanduel,player_rebounds_alternate,Over,Kevin Durant,9.0,11.5
-fanduel,player_rebounds_alternate,Over,Domantas Sabonis,2.35,13.5
-fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,3.8,13.5
-fanduel,player_rebounds_alternate,Over,Domantas Sabonis,1.07,7.5
-fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,1.17,7.5
-fanduel,player_rebounds_alternate,Over,Kevin Durant,2.4,7.5
-fanduel,player_rebounds_alternate,Over,Keegan Murray,5.0,7.5
-fanduel,player_rebounds_alternate,Over,Devin Booker,5.9,7.5
-fanduel,player_rebounds_alternate,Over,Bradley Beal,6.5,7.5
-fanduel,player_rebounds_alternate,Over,Grayson Allen,9.5,7.5
-fanduel,player_rebounds_alternate,Over,De'Aaron Fox,10.5,7.5
-fanduel,player_rebounds_alternate,Over,Domantas Sabonis,4.0,15.5
-fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,7.5,15.5
-fanduel,player_rebounds_assists,Over,Devin Booker,1.72,11.5
-fanduel,player_rebounds_assists,Under,Devin Booker,2.08,11.5
-fanduel,player_rebounds_assists,Over,Domantas Sabonis,1.96,20.5
-fanduel,player_rebounds_assists,Under,Domantas Sabonis,1.82,20.5
-fanduel,player_rebounds_assists,Over,De'Aaron Fox,1.78,8.5
-fanduel,player_rebounds_assists,Under,De'Aaron Fox,2.0,8.5
-fanduel,player_rebounds_assists,Over,Kevin Durant,1.77,11.5
-fanduel,player_rebounds_assists,Under,Kevin Durant,2.02,11.5
-fanduel,player_rebounds_assists,Over,Grayson Allen,1.88,6.5
-fanduel,player_rebounds_assists,Under,Grayson Allen,1.88,6.5
-fanduel,player_rebounds_assists,Over,Bradley Beal,2.02,9.5
-fanduel,player_rebounds_assists,Under,Bradley Beal,1.77,9.5
-fanduel,player_rebounds_assists,Over,Jusuf Nurkic,1.85,13.5
-fanduel,player_rebounds_assists,Under,Jusuf Nurkic,1.93,13.5
-fanduel,player_threes,Over,Grayson Allen,1.87,2.5
-fanduel,player_threes,Under,Grayson Allen,1.9,2.5
-fanduel,player_threes,Over,De'Aaron Fox,1.74,2.5
-fanduel,player_threes,Under,De'Aaron Fox,2.06,2.5
-fanduel,player_threes,Over,Bradley Beal,1.6,1.5
-fanduel,player_threes,Under,Bradley Beal,2.3,1.5
-fanduel,player_threes,Over,Devin Booker,2.24,2.5
-fanduel,player_threes,Under,Devin Booker,1.62,2.5
-fanduel,player_threes,Over,Kevin Durant,2.62,2.5
-fanduel,player_threes,Under,Kevin Durant,1.48,2.5
-fanduel,player_threes,Over,Keegan Murray,2.06,2.5
-fanduel,player_threes,Under,Keegan Murray,1.74,2.5
-fanduel,player_threes,Over,Harrison Barnes,2.1,1.5
-fanduel,player_threes,Under,Harrison Barnes,1.71,1.5
-fanduel,player_threes_alternate,Over,De'Aaron Fox,1.22,1.5
-fanduel,player_threes_alternate,Over,Grayson Allen,1.24,1.5
-fanduel,player_threes_alternate,Over,Keegan Murray,1.32,1.5
-fanduel,player_threes_alternate,Over,Devin Booker,1.38,1.5
-fanduel,player_threes_alternate,Over,Kevin Durant,1.48,1.5
-fanduel,player_threes_alternate,Over,Bradley Beal,1.62,1.5
-fanduel,player_threes_alternate,Over,Harrison Barnes,2.1,1.5
-fanduel,player_threes_alternate,Over,Grayson Allen,1.02,0.5
-fanduel,player_threes_alternate,Over,De'Aaron Fox,1.02,0.5
-fanduel,player_threes_alternate,Over,Keegan Murray,1.05,0.5
-fanduel,player_threes_alternate,Over,Devin Booker,1.07,0.5
-fanduel,player_threes_alternate,Over,Kevin Durant,1.08,0.5
-fanduel,player_threes_alternate,Over,Bradley Beal,1.11,0.5
-fanduel,player_threes_alternate,Over,Harrison Barnes,1.18,0.5
-fanduel,player_threes_alternate,Over,De'Aaron Fox,1.77,2.5
-fanduel,player_threes_alternate,Over,Grayson Allen,1.87,2.5
-fanduel,player_threes_alternate,Over,Keegan Murray,2.05,2.5
-fanduel,player_threes_alternate,Over,Devin Booker,2.25,2.5
-fanduel,player_threes_alternate,Over,Kevin Durant,2.6,2.5
-fanduel,player_threes_alternate,Over,Bradley Beal,3.0,2.5
-fanduel,player_threes_alternate,Over,Harrison Barnes,4.9,2.5
-fanduel,player_threes_alternate,Over,De'Aaron Fox,6.0,4.5
-fanduel,player_threes_alternate,Over,Grayson Allen,7.0,4.5
-fanduel,player_threes_alternate,Over,Keegan Murray,8.0,4.5
-fanduel,player_threes_alternate,Over,De'Aaron Fox,3.0,3.5
-fanduel,player_threes_alternate,Over,Grayson Allen,3.3,3.5
-fanduel,player_threes_alternate,Over,Keegan Murray,3.9,3.5
-fanduel,player_threes_alternate,Over,Devin Booker,4.3,3.5
-fanduel,player_threes_alternate,Over,Kevin Durant,5.2,3.5
-fanduel,player_threes_alternate,Over,Bradley Beal,6.5,3.5
-fanduel,player_assists,Over,Kawhi Leonard,2.12,3.5
-fanduel,player_assists,Under,Kawhi Leonard,1.71,3.5
-fanduel,player_assists,Over,Paul George,1.62,2.5
-fanduel,player_assists,Under,Paul George,2.26,2.5
-fanduel,player_assists,Over,Shai Gilgeous Alexander,1.87,5.5
-fanduel,player_assists,Under,Shai Gilgeous Alexander,1.9,5.5
-fanduel,player_assists,Over,James Harden,1.68,8.5
-fanduel,player_assists,Under,James Harden,2.16,8.5
-fanduel,player_assists,Over,Russell Westbrook,1.68,3.5
-fanduel,player_assists,Under,Russell Westbrook,2.14,3.5
-fanduel,player_assists_alternate,Over,James Harden,1.08,5.5
-fanduel,player_assists_alternate,Over,Shai Gilgeous Alexander,1.87,5.5
-fanduel,player_assists_alternate,Over,Russell Westbrook,4.2,5.5
-fanduel,player_assists_alternate,Over,Kawhi Leonard,6.0,5.5
-fanduel,player_assists_alternate,Over,Paul George,8.0,5.5
-fanduel,player_assists_alternate,Over,Shai Gilgeous Alexander,1.17,3.5
-fanduel,player_assists_alternate,Over,Russell Westbrook,1.71,3.5
-fanduel,player_assists_alternate,Over,Kawhi Leonard,2.1,3.5
-fanduel,player_assists_alternate,Over,Paul George,2.55,3.5
-fanduel,player_assists_alternate,Over,James Harden,1.37,7.5
-fanduel,player_assists_alternate,Over,Shai Gilgeous Alexander,4.1,7.5
-fanduel,player_points,Over,Norman Powell,1.98,13.5
-fanduel,player_points,Under,Norman Powell,1.8,13.5
-fanduel,player_points,Over,Shai Gilgeous Alexander,1.82,30.5
-fanduel,player_points,Under,Shai Gilgeous Alexander,1.96,30.5
-fanduel,player_points,Over,Kawhi Leonard,1.87,26.5
-fanduel,player_points,Under,Kawhi Leonard,1.9,26.5
-fanduel,player_points,Over,Paul George,1.87,24.5
-fanduel,player_points,Under,Paul George,1.9,24.5
-fanduel,player_points,Over,James Harden,1.87,16.5
-fanduel,player_points,Under,James Harden,1.9,16.5
-fanduel,player_points,Over,Russell Westbrook,1.85,8.5
-fanduel,player_points,Under,Russell Westbrook,1.93,8.5
-fanduel,player_points_alternate,Over,Kawhi Leonard,1.0,14.5
-fanduel,player_points_alternate,Over,Paul George,1.06,14.5
-fanduel,player_points_alternate,Over,James Harden,1.53,14.5
-fanduel,player_points_alternate,Over,Norman Powell,2.3,14.5
-fanduel,player_points_alternate,Over,Russell Westbrook,8.0,14.5
-fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,1.23,24.5
-fanduel,player_points_alternate,Over,Kawhi Leonard,1.61,24.5
-fanduel,player_points_alternate,Over,Paul George,1.87,24.5
-fanduel,player_points_alternate,Over,James Harden,7.0,24.5
-fanduel,player_points_alternate,Over,James Harden,1.09,9.5
-fanduel,player_points_alternate,Over,Norman Powell,1.29,9.5
-fanduel,player_points_alternate,Over,Russell Westbrook,2.2,9.5
-fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,5.6,39.5
-fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,2.75,34.5
-fanduel,player_points_alternate,Over,Kawhi Leonard,5.4,34.5
-fanduel,player_points_alternate,Over,Paul George,8.0,34.5
-fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,1.69,29.5
-fanduel,player_points_alternate,Over,Kawhi Leonard,2.6,29.5
-fanduel,player_points_alternate,Over,Paul George,3.3,29.5
-fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,1.03,19.5
-fanduel,player_points_alternate,Over,Kawhi Leonard,1.17,19.5
-fanduel,player_points_alternate,Over,Paul George,1.29,19.5
-fanduel,player_points_alternate,Over,James Harden,2.7,19.5
-fanduel,player_points_alternate,Over,Norman Powell,5.7,19.5
-fanduel,player_points_assists,Over,Russell Westbrook,1.83,12.5
-fanduel,player_points_assists,Under,Russell Westbrook,1.94,12.5
-fanduel,player_points_assists,Over,James Harden,1.82,25.5
-fanduel,player_points_assists,Under,James Harden,1.96,25.5
-fanduel,player_points_assists,Over,Kawhi Leonard,1.8,29.5
-fanduel,player_points_assists,Under,Kawhi Leonard,1.98,29.5
-fanduel,player_points_assists,Over,Shai Gilgeous Alexander,1.87,36.5
-fanduel,player_points_assists,Under,Shai Gilgeous Alexander,1.9,36.5
-fanduel,player_points_assists,Over,Paul George,1.87,27.5
-fanduel,player_points_assists,Under,Paul George,1.9,27.5
-fanduel,player_points_rebounds,Over,Russell Westbrook,1.78,12.5
-fanduel,player_points_rebounds,Under,Russell Westbrook,2.0,12.5
-fanduel,player_points_rebounds,Over,Shai Gilgeous Alexander,1.96,37.5
-fanduel,player_points_rebounds,Under,Shai Gilgeous Alexander,1.82,37.5
-fanduel,player_points_rebounds,Over,Paul George,1.83,30.5
-fanduel,player_points_rebounds,Under,Paul George,1.94,30.5
-fanduel,player_points_rebounds,Over,James Harden,1.96,22.5
-fanduel,player_points_rebounds,Under,James Harden,1.82,22.5
-fanduel,player_points_rebounds,Over,Kawhi Leonard,1.98,34.5
-fanduel,player_points_rebounds,Under,Kawhi Leonard,1.8,34.5
-fanduel,player_points_rebounds_assists,Over,Russell Westbrook,1.8,16.5
-fanduel,player_points_rebounds_assists,Under,Russell Westbrook,1.98,16.5
-fanduel,player_points_rebounds_assists,Over,Paul George,1.82,33.5
-fanduel,player_points_rebounds_assists,Under,Paul George,1.96,33.5
-fanduel,player_points_rebounds_assists,Over,S Gilgeous Alexander,1.85,42.5
-fanduel,player_points_rebounds_assists,Under,S Gilgeous Alexander,1.93,42.5
-fanduel,player_points_rebounds_assists,Over,James Harden,1.94,31.5
-fanduel,player_points_rebounds_assists,Under,James Harden,1.83,31.5
-fanduel,player_points_rebounds_assists,Over,Kawhi Leonard,1.9,37.5
-fanduel,player_points_rebounds_assists,Under,Kawhi Leonard,1.87,37.5
-fanduel,player_rebounds,Over,James Harden,2.12,5.5
-fanduel,player_rebounds,Under,James Harden,1.7,5.5
-fanduel,player_rebounds,Over,Shai Gilgeous Alexander,1.77,5.5
-fanduel,player_rebounds,Under,Shai Gilgeous Alexander,2.02,5.5
-fanduel,player_rebounds,Over,Paul George,1.68,5.5
-fanduel,player_rebounds,Under,Paul George,2.14,5.5
-fanduel,player_rebounds,Over,Kawhi Leonard,2.0,7.5
-fanduel,player_rebounds,Under,Kawhi Leonard,1.78,7.5
-fanduel,player_rebounds,Over,Russell Westbrook,1.63,3.5
-fanduel,player_rebounds,Under,Russell Westbrook,2.24,3.5
-fanduel,player_rebounds_alternate,Over,Kawhi Leonard,1.37,5.5
-fanduel,player_rebounds_alternate,Over,Paul George,1.71,5.5
-fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,1.8,5.5
-fanduel,player_rebounds_alternate,Over,James Harden,2.1,5.5
-fanduel,player_rebounds_alternate,Over,Russell Westbrook,3.3,5.5
-fanduel,player_rebounds_alternate,Over,Kawhi Leonard,7.0,11.5
-fanduel,player_rebounds_alternate,Over,Paul George,13.0,11.5
-fanduel,player_rebounds_alternate,Over,Kawhi Leonard,2.0,7.5
-fanduel,player_rebounds_alternate,Over,Paul George,3.0,7.5
-fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,3.2,7.5
-fanduel,player_rebounds_alternate,Over,James Harden,4.1,7.5
-fanduel,player_rebounds_alternate,Over,Russell Westbrook,8.0,7.5
-fanduel,player_rebounds_alternate,Over,Kawhi Leonard,1.08,3.5
-fanduel,player_rebounds_alternate,Over,Paul George,1.18,3.5
-fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,1.21,3.5
-fanduel,player_rebounds_alternate,Over,James Harden,1.32,3.5
-fanduel,player_rebounds_alternate,Over,Russell Westbrook,1.67,3.5
-fanduel,player_rebounds_alternate,Over,Kawhi Leonard,3.4,9.5
-fanduel,player_rebounds_alternate,Over,Paul George,5.9,9.5
-fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,6.5,9.5
-fanduel,player_rebounds_alternate,Over,James Harden,8.5,9.5
-fanduel,player_rebounds_assists,Over,Russell Westbrook,1.71,7.5
-fanduel,player_rebounds_assists,Under,Russell Westbrook,2.1,7.5
-fanduel,player_rebounds_assists,Over,James Harden,1.96,14.5
-fanduel,player_rebounds_assists,Under,James Harden,1.82,14.5
-fanduel,player_rebounds_assists,Over,Kawhi Leonard,1.82,10.5
-fanduel,player_rebounds_assists,Under,Kawhi Leonard,1.96,10.5
-fanduel,player_rebounds_assists,Over,Paul George,2.12,9.5
-fanduel,player_rebounds_assists,Under,Paul George,1.7,9.5
-fanduel,player_rebounds_assists,Over,Shai Gilgeous Alexander,1.88,11.5
-fanduel,player_rebounds_assists,Under,Shai Gilgeous Alexander,1.88,11.5
-fanduel,player_threes,Over,Norman Powell,1.65,1.5
-fanduel,player_threes,Under,Norman Powell,2.2,1.5
-fanduel,player_threes,Over,Shai Gilgeous Alexander,2.18,1.5
-fanduel,player_threes,Under,Shai Gilgeous Alexander,1.67,1.5
-fanduel,player_threes,Over,James Harden,2.0,2.5
-fanduel,player_threes,Under,James Harden,1.78,2.5
-fanduel,player_threes,Over,Kawhi Leonard,1.52,1.5
-fanduel,player_threes,Under,Kawhi Leonard,2.48,1.5
-fanduel,player_threes,Over,Paul George,1.72,3.5
-fanduel,player_threes,Under,Paul George,2.08,3.5
-fanduel,player_threes_alternate,Over,Paul George,1.07,1.5
-fanduel,player_threes_alternate,Over,James Harden,1.3,1.5
-fanduel,player_threes_alternate,Over,Kawhi Leonard,1.54,1.5
-fanduel,player_threes_alternate,Over,Norman Powell,1.67,1.5
-fanduel,player_threes_alternate,Over,Shai Gilgeous Alexander,2.15,1.5
-fanduel,player_threes_alternate,Over,James Harden,1.04,0.5
-fanduel,player_threes_alternate,Over,Kawhi Leonard,1.1,0.5
-fanduel,player_threes_alternate,Over,Norman Powell,1.12,0.5
-fanduel,player_threes_alternate,Over,Shai Gilgeous Alexander,1.24,0.5
-fanduel,player_threes_alternate,Over,Paul George,5.1,5.5
-fanduel,player_threes_alternate,Over,Paul George,1.26,2.5
-fanduel,player_threes_alternate,Over,James Harden,2.0,2.5
-fanduel,player_threes_alternate,Over,Kawhi Leonard,2.7,2.5
-fanduel,player_threes_alternate,Over,Norman Powell,3.2,2.5
-fanduel,player_threes_alternate,Over,Shai Gilgeous Alexander,5.2,2.5
-fanduel,player_threes_alternate,Over,Paul George,1.74,3.5
-fanduel,player_threes_alternate,Over,James Harden,3.7,3.5
-fanduel,player_threes_alternate,Over,Kawhi Leonard,5.9,3.5
-fanduel,player_threes_alternate,Over,Norman Powell,7.5,3.5
-fanduel,player_threes_alternate,Over,Paul George,2.75,4.5
-fanduel,player_threes_alternate,Over,James Harden,8.0,4.5
+sports_book,bet_type,over/under,player_names,odds,stat_threshold,us_odds
+fanduel,player_assists,Over,Aaron Gordon,1.96,2.5,-104
+fanduel,player_assists,Under,Aaron Gordon,1.82,2.5,-121
+fanduel,player_assists,Over,Jamal Murray,1.83,6.5,-120
+fanduel,player_assists,Under,Jamal Murray,1.94,6.5,-106
+fanduel,player_assists,Over,Tyrese Maxey,1.87,6.5,-114
+fanduel,player_assists,Under,Tyrese Maxey,1.9,6.5,-111
+fanduel,player_assists,Over,Joel Embiid,2.22,5.5,122
+fanduel,player_assists,Under,Joel Embiid,1.64,5.5,-156
+fanduel,player_assists,Over,Nikola Jokic,2.12,9.5,112
+fanduel,player_assists,Under,Nikola Jokic,1.7,9.5,-142
+fanduel,player_assists,Over,Tobias Harris,2.22,3.5,122
+fanduel,player_assists,Under,Tobias Harris,1.64,3.5,-156
+fanduel,player_assists_alternate,Over,Jamal Murray,1.07,3.5,-1428
+fanduel,player_assists_alternate,Over,Tyrese Maxey,1.08,3.5,-1249
+fanduel,player_assists_alternate,Over,Joel Embiid,1.26,3.5,-384
+fanduel,player_assists_alternate,Over,Tobias Harris,2.2,3.5,120
+fanduel,player_assists_alternate,Over,Aaron Gordon,3.5,3.5,250
+fanduel,player_assists_alternate,Over,Nikola Jokic,1.36,7.5,-277
+fanduel,player_assists_alternate,Over,Tyrese Maxey,2.65,7.5,165
+fanduel,player_assists_alternate,Over,Jamal Murray,2.6,7.5,160
+fanduel,player_assists_alternate,Over,Joel Embiid,5.2,7.5,420
+fanduel,player_assists_alternate,Over,Nikola Jokic,1.07,5.5,-1428
+fanduel,player_assists_alternate,Over,Jamal Murray,1.43,5.5,-232
+fanduel,player_assists_alternate,Over,Tyrese Maxey,1.45,5.5,-222
+fanduel,player_assists_alternate,Over,Joel Embiid,2.2,5.5,120
+fanduel,player_assists_alternate,Over,Tobias Harris,6.5,5.5,550
+fanduel,player_blocks,Over,Joel Embiid,1.68,1.5,-147
+fanduel,player_blocks,Under,Joel Embiid,2.14,1.5,114
+fanduel,player_blocks,Over,Nikola Jokic,1.44,0.5,-227
+fanduel,player_blocks,Under,Nikola Jokic,2.72,0.5,172
+fanduel,player_blocks_alternate,Over,Nikola Jokic,3.0,1.5,200
+fanduel,player_blocks_alternate,Over,Joel Embiid,1.71,1.5,-140
+fanduel,player_blocks_alternate,Over,Joel Embiid,5.9,3.5,490
+fanduel,player_blocks_alternate,Over,Nikola Jokic,1.45,0.5,-222
+fanduel,player_blocks_alternate,Over,Joel Embiid,1.15,0.5,-666
+fanduel,player_blocks_alternate,Over,Nikola Jokic,7.0,2.5,600
+fanduel,player_blocks_alternate,Over,Joel Embiid,2.95,2.5,195
+fanduel,player_points,Over,Kentavious Caldwell Pope,1.98,9.5,-102
+fanduel,player_points,Under,Kentavious Caldwell Pope,1.8,9.5,-125
+fanduel,player_points,Over,Kelly Oubre Jr,2.02,12.5,102
+fanduel,player_points,Under,Kelly Oubre Jr,1.77,12.5,-129
+fanduel,player_points,Over,Tyrese Maxey,1.9,25.5,-111
+fanduel,player_points,Under,Tyrese Maxey,1.87,25.5,-114
+fanduel,player_points,Over,Michael Porter Jr,1.9,15.5,-111
+fanduel,player_points,Under,Michael Porter Jr,1.87,15.5,-114
+fanduel,player_points,Over,Aaron Gordon,1.98,13.5,-102
+fanduel,player_points,Under,Aaron Gordon,1.8,13.5,-125
+fanduel,player_points,Over,Nikola Jokic,1.96,25.5,-104
+fanduel,player_points,Under,Nikola Jokic,1.82,25.5,-121
+fanduel,player_points,Over,Jamal Murray,1.85,23.5,-117
+fanduel,player_points,Under,Jamal Murray,1.93,23.5,-107
+fanduel,player_points,Over,Joel Embiid,1.88,33.5,-113
+fanduel,player_points,Under,Joel Embiid,1.88,33.5,-113
+fanduel,player_points,Over,Tobias Harris,1.8,16.5,-125
+fanduel,player_points,Under,Tobias Harris,1.98,16.5,-102
+fanduel,player_points_alternate,Over,Tobias Harris,1.08,9.5,-1249
+fanduel,player_points_alternate,Over,Michael Porter Jr,1.13,9.5,-769
+fanduel,player_points_alternate,Over,Aaron Gordon,1.3,9.5,-333
+fanduel,player_points_alternate,Over,Kelly Oubre Jr,1.42,9.5,-238
+fanduel,player_points_alternate,Over,Kentavious Caldwell Pope,2.0,9.5,100
+fanduel,player_points_alternate,Over,Joel Embiid,1.4,29.5,-250
+fanduel,player_points_alternate,Over,Tyrese Maxey,3.0,29.5,200
+fanduel,player_points_alternate,Over,Nikola Jokic,3.1,29.5,210
+fanduel,player_points_alternate,Over,Jamal Murray,3.9,29.5,290
+fanduel,player_points_alternate,Over,Joel Embiid,2.1,34.5,110
+fanduel,player_points_alternate,Over,Tyrese Maxey,6.5,34.5,550
+fanduel,player_points_alternate,Over,Nikola Jokic,7.0,34.5,600
+fanduel,player_points_alternate,Over,Jamal Murray,9.0,34.5,800
+fanduel,player_points_alternate,Over,Joel Embiid,3.9,39.5,290
+fanduel,player_points_alternate,Over,Tyrese Maxey,1.24,19.5,-416
+fanduel,player_points_alternate,Over,Nikola Jokic,1.26,19.5,-384
+fanduel,player_points_alternate,Over,Jamal Murray,1.34,19.5,-294
+fanduel,player_points_alternate,Over,Tobias Harris,2.6,19.5,160
+fanduel,player_points_alternate,Over,Michael Porter Jr,3.3,19.5,229
+fanduel,player_points_alternate,Over,Aaron Gordon,6.0,19.5,500
+fanduel,player_points_alternate,Over,Kelly Oubre Jr,8.0,19.5,700
+fanduel,player_points_alternate,Over,Joel Embiid,1.1,24.5,-999
+fanduel,player_points_alternate,Over,Tyrese Maxey,1.77,24.5,-129
+fanduel,player_points_alternate,Over,Nikola Jokic,1.8,24.5,-125
+fanduel,player_points_alternate,Over,Jamal Murray,2.05,24.5,104
+fanduel,player_points_alternate,Over,Tobias Harris,6.0,24.5,500
+fanduel,player_points_alternate,Over,Michael Porter Jr,8.5,24.5,750
+fanduel,player_points_alternate,Over,Tyrese Maxey,1.02,14.5,-4999
+fanduel,player_points_alternate,Over,Nikola Jokic,1.03,14.5,-3333
+fanduel,player_points_alternate,Over,Jamal Murray,1.07,14.5,-1428
+fanduel,player_points_alternate,Over,Tobias Harris,1.51,14.5,-196
+fanduel,player_points_alternate,Over,Michael Porter Jr,1.71,14.5,-140
+fanduel,player_points_alternate,Over,Aaron Gordon,2.3,14.5,129
+fanduel,player_points_alternate,Over,Kelly Oubre Jr,2.8,14.5,179
+fanduel,player_points_alternate,Over,Kentavious Caldwell Pope,6.0,14.5,500
+fanduel,player_rebounds,Over,Tobias Harris,2.0,5.5,100
+fanduel,player_rebounds,Under,Tobias Harris,1.78,5.5,-128
+fanduel,player_rebounds,Over,Michael Porter Jr,2.16,6.5,116
+fanduel,player_rebounds,Under,Michael Porter Jr,1.68,6.5,-147
+fanduel,player_rebounds,Over,Jamal Murray,1.9,3.5,-111
+fanduel,player_rebounds,Under,Jamal Murray,1.87,3.5,-114
+fanduel,player_rebounds,Over,Aaron Gordon,2.06,6.5,106
+fanduel,player_rebounds,Under,Aaron Gordon,1.74,6.5,-135
+fanduel,player_rebounds,Over,Tyrese Maxey,2.28,3.5,127
+fanduel,player_rebounds,Under,Tyrese Maxey,1.62,3.5,-161
+fanduel,player_rebounds,Over,Nikola Jokic,2.04,11.5,104
+fanduel,player_rebounds,Under,Nikola Jokic,1.76,11.5,-131
+fanduel,player_rebounds,Over,Joel Embiid,2.04,11.5,104
+fanduel,player_rebounds,Under,Joel Embiid,1.76,11.5,-131
+fanduel,player_rebounds,Over,Kelly Oubre Jr,1.68,3.5,-147
+fanduel,player_rebounds,Under,Kelly Oubre Jr,2.16,3.5,116
+fanduel,player_rebounds_alternate,Over,Aaron Gordon,1.15,3.5,-666
+fanduel,player_rebounds_alternate,Over,Michael Porter Jr,1.17,3.5,-588
+fanduel,player_rebounds_alternate,Over,Tobias Harris,1.28,3.5,-357
+fanduel,player_rebounds_alternate,Over,Kelly Oubre Jr,1.69,3.5,-144
+fanduel,player_rebounds_alternate,Over,Jamal Murray,1.91,3.5,-109
+fanduel,player_rebounds_alternate,Over,Tyrese Maxey,2.25,3.5,125
+fanduel,player_rebounds_alternate,Over,Kentavious Caldwell Pope,3.5,3.5,250
+fanduel,player_rebounds_alternate,Over,Joel Embiid,2.05,11.5,104
+fanduel,player_rebounds_alternate,Over,Nikola Jokic,2.05,11.5,104
+fanduel,player_rebounds_alternate,Over,Aaron Gordon,11.0,11.5,1000
+fanduel,player_rebounds_alternate,Over,Michael Porter Jr,12.0,11.5,1100
+fanduel,player_rebounds_alternate,Over,Joel Embiid,1.14,7.5,-714
+fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.15,7.5,-666
+fanduel,player_rebounds_alternate,Over,Aaron Gordon,2.7,7.5,170
+fanduel,player_rebounds_alternate,Over,Michael Porter Jr,2.9,7.5,190
+fanduel,player_rebounds_alternate,Over,Tobias Harris,3.8,7.5,280
+fanduel,player_rebounds_alternate,Over,Kelly Oubre Jr,8.0,7.5,700
+fanduel,player_rebounds_alternate,Over,Jamal Murray,12.0,7.5,1100
+fanduel,player_rebounds_alternate,Over,Joel Embiid,1.02,5.5,-4999
+fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.02,5.5,-4999
+fanduel,player_rebounds_alternate,Over,Aaron Gordon,1.62,5.5,-161
+fanduel,player_rebounds_alternate,Over,Michael Porter Jr,1.69,5.5,-144
+fanduel,player_rebounds_alternate,Over,Tobias Harris,2.0,5.5,100
+fanduel,player_rebounds_alternate,Over,Kelly Oubre Jr,3.5,5.5,250
+fanduel,player_rebounds_alternate,Over,Jamal Murray,4.5,5.5,350
+fanduel,player_rebounds_alternate,Over,Tyrese Maxey,5.9,5.5,490
+fanduel,player_rebounds_alternate,Over,Kentavious Caldwell Pope,11.0,5.5,1000
+fanduel,player_rebounds_alternate,Over,Joel Embiid,3.3,13.5,229
+fanduel,player_rebounds_alternate,Over,Nikola Jokic,3.3,13.5,229
+fanduel,player_rebounds_alternate,Over,Joel Embiid,1.4,9.5,-250
+fanduel,player_rebounds_alternate,Over,Nikola Jokic,1.42,9.5,-238
+fanduel,player_rebounds_alternate,Over,Aaron Gordon,5.2,9.5,420
+fanduel,player_rebounds_alternate,Over,Michael Porter Jr,5.9,9.5,490
+fanduel,player_rebounds_alternate,Over,Tobias Harris,8.0,9.5,700
+fanduel,player_rebounds_alternate,Over,Joel Embiid,6.0,15.5,500
+fanduel,player_rebounds_alternate,Over,Nikola Jokic,6.0,15.5,500
+fanduel,player_steals,Over,Nikola Jokic,2.76,1.5,175
+fanduel,player_steals,Under,Nikola Jokic,1.43,1.5,-232
+fanduel,player_steals,Over,Kentavious Caldwell Pope,2.32,1.5,131
+fanduel,player_steals,Under,Kentavious Caldwell Pope,1.59,1.5,-169
+fanduel,player_steals,Over,Jamal Murray,2.76,1.5,175
+fanduel,player_steals,Under,Jamal Murray,1.43,1.5,-232
+fanduel,player_steals,Over,Tyrese Maxey,2.9,1.5,190
+fanduel,player_steals,Under,Tyrese Maxey,1.4,1.5,-250
+fanduel,player_steals,Over,Joel Embiid,2.76,1.5,175
+fanduel,player_steals,Under,Joel Embiid,1.43,1.5,-232
+fanduel,player_steals_alternate,Over,Kentavious Caldwell Pope,2.3,1.5,129
+fanduel,player_steals_alternate,Over,Nikola Jokic,2.75,1.5,175
+fanduel,player_steals_alternate,Over,Jamal Murray,2.75,1.5,175
+fanduel,player_steals_alternate,Over,Joel Embiid,2.75,1.5,175
+fanduel,player_steals_alternate,Over,Tyrese Maxey,2.85,1.5,185
+fanduel,player_steals_alternate,Over,Kentavious Caldwell Pope,5.7,2.5,470
+fanduel,player_steals_alternate,Over,Nikola Jokic,7.5,2.5,650
+fanduel,player_steals_alternate,Over,Jamal Murray,7.0,2.5,600
+fanduel,player_steals_alternate,Over,Joel Embiid,7.0,2.5,600
+fanduel,player_steals_alternate,Over,Tyrese Maxey,7.5,2.5,650
+fanduel,player_steals_alternate,Over,Kentavious Caldwell Pope,1.26,0.5,-384
+fanduel,player_steals_alternate,Over,Nikola Jokic,1.34,0.5,-294
+fanduel,player_steals_alternate,Over,Jamal Murray,1.34,0.5,-294
+fanduel,player_steals_alternate,Over,Joel Embiid,1.37,0.5,-270
+fanduel,player_steals_alternate,Over,Tyrese Maxey,1.37,0.5,-270
+fanduel,player_threes,Over,Michael Porter Jr,1.96,2.5,-104
+fanduel,player_threes,Under,Michael Porter Jr,1.82,2.5,-121
+fanduel,player_threes,Over,Tobias Harris,2.04,1.5,104
+fanduel,player_threes,Under,Tobias Harris,1.76,1.5,-131
+fanduel,player_threes,Over,Kelly Oubre Jr,2.06,1.5,106
+fanduel,player_threes,Under,Kelly Oubre Jr,1.74,1.5,-135
+fanduel,player_threes,Over,Kentavious Caldwell Pope,1.77,1.5,-129
+fanduel,player_threes,Under,Kentavious Caldwell Pope,2.02,1.5,102
+fanduel,player_threes,Over,Jamal Murray,2.04,2.5,104
+fanduel,player_threes,Under,Jamal Murray,1.76,2.5,-131
+fanduel,player_threes,Over,Joel Embiid,2.72,1.5,172
+fanduel,player_threes,Under,Joel Embiid,1.44,1.5,-227
+fanduel,player_threes,Over,Tyrese Maxey,1.64,2.5,-156
+fanduel,player_threes,Under,Tyrese Maxey,2.22,2.5,122
+fanduel,player_threes_alternate,Over,Tyrese Maxey,1.67,2.5,-149
+fanduel,player_threes_alternate,Over,Michael Porter Jr,1.95,2.5,-105
+fanduel,player_threes_alternate,Over,Jamal Murray,2.05,2.5,104
+fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,3.8,2.5,280
+fanduel,player_threes_alternate,Over,Tobias Harris,4.6,2.5,359
+fanduel,player_threes_alternate,Over,Kelly Oubre Jr,4.8,2.5,380
+fanduel,player_threes_alternate,Over,Joel Embiid,7.0,2.5,600
+fanduel,player_threes_alternate,Over,Tyrese Maxey,2.6,3.5,160
+fanduel,player_threes_alternate,Over,Michael Porter Jr,3.6,3.5,260
+fanduel,player_threes_alternate,Over,Jamal Murray,3.9,3.5,290
+fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,8.5,3.5,750
+fanduel,player_threes_alternate,Over,Tyrese Maxey,1.18,1.5,-555
+fanduel,player_threes_alternate,Over,Michael Porter Jr,1.28,1.5,-357
+fanduel,player_threes_alternate,Over,Jamal Murray,1.32,1.5,-312
+fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,1.77,1.5,-129
+fanduel,player_threes_alternate,Over,Tobias Harris,2.05,1.5,104
+fanduel,player_threes_alternate,Over,Kelly Oubre Jr,2.05,1.5,104
+fanduel,player_threes_alternate,Over,Joel Embiid,2.7,1.5,170
+fanduel,player_threes_alternate,Over,Tyrese Maxey,1.01,0.5,-9999
+fanduel,player_threes_alternate,Over,Michael Porter Jr,1.03,0.5,-3333
+fanduel,player_threes_alternate,Over,Jamal Murray,1.05,0.5,-1999
+fanduel,player_threes_alternate,Over,Kentavious Caldwell Pope,1.12,0.5,-833
+fanduel,player_threes_alternate,Over,Kelly Oubre Jr,1.18,0.5,-555
+fanduel,player_threes_alternate,Over,Tobias Harris,1.2,0.5,-500
+fanduel,player_threes_alternate,Over,Joel Embiid,1.33,0.5,-303
+fanduel,player_threes_alternate,Over,Tyrese Maxey,5.5,4.5,450
+fanduel,player_threes_alternate,Over,Michael Porter Jr,7.5,4.5,650
+fanduel,player_threes_alternate,Over,Jamal Murray,8.0,4.5,700
+fanduel,player_assists,Over,Grayson Allen,1.82,2.5,-121
+fanduel,player_assists,Under,Grayson Allen,1.96,2.5,-104
+fanduel,player_assists,Over,Devin Booker,2.2,7.5,120
+fanduel,player_assists,Under,Devin Booker,1.65,7.5,-153
+fanduel,player_assists,Over,Jusuf Nurkic,1.76,2.5,-131
+fanduel,player_assists,Under,Jusuf Nurkic,2.04,2.5,104
+fanduel,player_assists,Over,Kevin Durant,2.16,5.5,116
+fanduel,player_assists,Under,Kevin Durant,1.68,5.5,-147
+fanduel,player_assists,Over,Bradley Beal,1.72,4.5,-138
+fanduel,player_assists,Under,Bradley Beal,2.08,4.5,108
+fanduel,player_assists,Over,De'Aaron Fox,2.18,5.5,118
+fanduel,player_assists,Under,De'Aaron Fox,1.67,5.5,-149
+fanduel,player_assists,Over,Domantas Sabonis,1.8,7.5,-125
+fanduel,player_assists,Under,Domantas Sabonis,1.98,7.5,-102
+fanduel,player_assists_alternate,Over,Domantas Sabonis,1.21,5.5,-476
+fanduel,player_assists_alternate,Over,Devin Booker,1.31,5.5,-322
+fanduel,player_assists_alternate,Over,De'Aaron Fox,2.15,5.5,114
+fanduel,player_assists_alternate,Over,Kevin Durant,2.15,5.5,114
+fanduel,player_assists_alternate,Over,Bradley Beal,2.45,5.5,145
+fanduel,player_assists_alternate,Over,Domantas Sabonis,1.02,3.5,-4999
+fanduel,player_assists_alternate,Over,Devin Booker,1.05,3.5,-1999
+fanduel,player_assists_alternate,Over,Kevin Durant,1.25,3.5,-400
+fanduel,player_assists_alternate,Over,De'Aaron Fox,1.25,3.5,-400
+fanduel,player_assists_alternate,Over,Bradley Beal,1.33,3.5,-303
+fanduel,player_assists_alternate,Over,Jusuf Nurkic,2.9,3.5,190
+fanduel,player_assists_alternate,Over,Grayson Allen,3.0,3.5,200
+fanduel,player_assists_alternate,Over,Domantas Sabonis,1.8,7.5,-125
+fanduel,player_assists_alternate,Over,Devin Booker,2.2,7.5,120
+fanduel,player_assists_alternate,Over,De'Aaron Fox,5.2,7.5,420
+fanduel,player_assists_alternate,Over,Kevin Durant,5.2,7.5,420
+fanduel,player_assists_alternate,Over,Bradley Beal,6.5,7.5,550
+fanduel,player_blocks,Over,Kevin Durant,1.48,0.5,-208
+fanduel,player_blocks,Under,Kevin Durant,2.62,0.5,162
+fanduel,player_blocks,Over,Jusuf Nurkic,1.53,0.5,-188
+fanduel,player_blocks,Under,Jusuf Nurkic,2.46,0.5,146
+fanduel,player_blocks_alternate,Over,Kevin Durant,1.5,0.5,-200
+fanduel,player_blocks_alternate,Over,Jusuf Nurkic,1.56,0.5,-178
+fanduel,player_blocks_alternate,Over,Kevin Durant,7.5,2.5,650
+fanduel,player_blocks_alternate,Over,Jusuf Nurkic,8.0,2.5,700
+fanduel,player_blocks_alternate,Over,Kevin Durant,3.1,1.5,210
+fanduel,player_blocks_alternate,Over,Jusuf Nurkic,3.3,1.5,229
+fanduel,player_points,Over,Grayson Allen,1.88,12.5,-113
+fanduel,player_points,Under,Grayson Allen,1.88,12.5,-113
+fanduel,player_points,Over,Jusuf Nurkic,1.96,12.5,-104
+fanduel,player_points,Under,Jusuf Nurkic,1.82,12.5,-121
+fanduel,player_points,Over,De'Aaron Fox,1.85,27.5,-117
+fanduel,player_points,Under,De'Aaron Fox,1.93,27.5,-107
+fanduel,player_points,Over,Kevin Durant,1.88,27.5,-113
+fanduel,player_points,Under,Kevin Durant,1.88,27.5,-113
+fanduel,player_points,Over,Harrison Barnes,2.02,10.5,102
+fanduel,player_points,Under,Harrison Barnes,1.77,10.5,-129
+fanduel,player_points,Over,Keegan Murray,1.78,14.5,-128
+fanduel,player_points,Under,Keegan Murray,2.0,14.5,100
+fanduel,player_points,Over,Devin Booker,1.9,26.5,-111
+fanduel,player_points,Under,Devin Booker,1.87,26.5,-114
+fanduel,player_points,Over,Domantas Sabonis,1.82,20.5,-121
+fanduel,player_points,Under,Domantas Sabonis,1.96,20.5,-104
+fanduel,player_points,Over,Bradley Beal,1.87,20.5,-114
+fanduel,player_points,Under,Bradley Beal,1.9,20.5,-111
+fanduel,player_points_alternate,Over,De'Aaron Fox,2.2,29.5,120
+fanduel,player_points_alternate,Over,Kevin Durant,2.35,29.5,135
+fanduel,player_points_alternate,Over,Devin Booker,2.6,29.5,160
+fanduel,player_points_alternate,Over,Domantas Sabonis,6.0,29.5,500
+fanduel,player_points_alternate,Over,Bradley Beal,7.0,29.5,600
+fanduel,player_points_alternate,Over,De'Aaron Fox,1.48,24.5,-208
+fanduel,player_points_alternate,Over,Kevin Durant,1.51,24.5,-196
+fanduel,player_points_alternate,Over,Devin Booker,1.62,24.5,-161
+fanduel,player_points_alternate,Over,Domantas Sabonis,2.85,24.5,185
+fanduel,player_points_alternate,Over,Bradley Beal,2.95,24.5,195
+fanduel,player_points_alternate,Over,Keegan Murray,10.0,24.5,900
+fanduel,player_points_alternate,Over,Keegan Murray,1.17,9.5,-588
+fanduel,player_points_alternate,Over,Grayson Allen,1.33,9.5,-303
+fanduel,player_points_alternate,Over,Jusuf Nurkic,1.38,9.5,-263
+fanduel,player_points_alternate,Over,Harrison Barnes,1.77,9.5,-129
+fanduel,player_points_alternate,Over,De'Aaron Fox,9.0,39.5,800
+fanduel,player_points_alternate,Over,Kevin Durant,11.0,39.5,1000
+fanduel,player_points_alternate,Over,Devin Booker,1.01,14.5,-9999
+fanduel,player_points_alternate,Over,Domantas Sabonis,1.18,14.5,-555
+fanduel,player_points_alternate,Over,Bradley Beal,1.18,14.5,-555
+fanduel,player_points_alternate,Over,Keegan Murray,1.8,14.5,-125
+fanduel,player_points_alternate,Over,Grayson Allen,2.45,14.5,145
+fanduel,player_points_alternate,Over,Jusuf Nurkic,2.65,14.5,165
+fanduel,player_points_alternate,Over,Harrison Barnes,4.4,14.5,340
+fanduel,player_points_alternate,Over,De'Aaron Fox,4.0,34.5,300
+fanduel,player_points_alternate,Over,Kevin Durant,4.6,34.5,359
+fanduel,player_points_alternate,Over,Devin Booker,5.2,34.5,420
+fanduel,player_points_alternate,Over,Kevin Durant,1.12,19.5,-833
+fanduel,player_points_alternate,Over,De'Aaron Fox,1.13,19.5,-769
+fanduel,player_points_alternate,Over,Devin Booker,1.18,19.5,-555
+fanduel,player_points_alternate,Over,Domantas Sabonis,1.69,19.5,-144
+fanduel,player_points_alternate,Over,Bradley Beal,1.71,19.5,-140
+fanduel,player_points_alternate,Over,Keegan Murray,3.7,19.5,270
+fanduel,player_points_alternate,Over,Grayson Allen,6.5,19.5,550
+fanduel,player_points_alternate,Over,Jusuf Nurkic,8.0,19.5,700
+fanduel,player_rebounds,Over,Jusuf Nurkic,1.77,10.5,-129
+fanduel,player_rebounds,Under,Jusuf Nurkic,2.02,10.5,102
+fanduel,player_rebounds,Over,De'Aaron Fox,1.77,3.5,-129
+fanduel,player_rebounds,Under,De'Aaron Fox,2.02,3.5,102
+fanduel,player_rebounds,Over,Devin Booker,1.88,4.5,-113
+fanduel,player_rebounds,Under,Devin Booker,1.88,4.5,-113
+fanduel,player_rebounds,Over,Domantas Sabonis,1.93,12.5,-107
+fanduel,player_rebounds,Under,Domantas Sabonis,1.83,12.5,-120
+fanduel,player_rebounds,Over,Keegan Murray,1.68,4.5,-147
+fanduel,player_rebounds,Under,Keegan Murray,2.16,4.5,116
+fanduel,player_rebounds,Over,Kevin Durant,1.98,6.5,-102
+fanduel,player_rebounds,Under,Kevin Durant,1.8,6.5,-125
+fanduel,player_rebounds,Over,Grayson Allen,1.72,3.5,-138
+fanduel,player_rebounds,Under,Grayson Allen,2.08,3.5,108
+fanduel,player_rebounds,Over,Bradley Beal,2.0,4.5,100
+fanduel,player_rebounds,Under,Bradley Beal,1.78,4.5,-128
+fanduel,player_rebounds_alternate,Over,Domantas Sabonis,1.07,7.5,-1428
+fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,1.17,7.5,-588
+fanduel,player_rebounds_alternate,Over,Kevin Durant,2.6,7.5,160
+fanduel,player_rebounds_alternate,Over,Keegan Murray,4.4,7.5,340
+fanduel,player_rebounds_alternate,Over,Devin Booker,5.8,7.5,480
+fanduel,player_rebounds_alternate,Over,Bradley Beal,6.5,7.5,550
+fanduel,player_rebounds_alternate,Over,Grayson Allen,9.0,7.5,800
+fanduel,player_rebounds_alternate,Over,De'Aaron Fox,9.5,7.5,850
+fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,1.02,5.5,-4999
+fanduel,player_rebounds_alternate,Over,Kevin Durant,1.59,5.5,-169
+fanduel,player_rebounds_alternate,Over,Keegan Murray,2.2,5.5,120
+fanduel,player_rebounds_alternate,Over,Devin Booker,2.6,5.5,160
+fanduel,player_rebounds_alternate,Over,Bradley Beal,2.9,5.5,190
+fanduel,player_rebounds_alternate,Over,Grayson Allen,3.7,5.5,270
+fanduel,player_rebounds_alternate,Over,De'Aaron Fox,3.7,5.5,270
+fanduel,player_rebounds_alternate,Over,Harrison Barnes,8.5,5.5,750
+fanduel,player_rebounds_alternate,Over,Domantas Sabonis,1.23,9.5,-434
+fanduel,player_rebounds_alternate,Over,Jusuf Nurkic,1.45,9.5,-222
+fanduel,player_rebounds_alternate,Over,Kevin Durant,5.0,9.5,400
+fanduel,player_rebounds_alternate,Over,Keegan Murray,10.0,9.5,900
+fanduel,player_steals,Over,Devin Booker,1.44,0.5,-227
+fanduel,player_steals,Under,Devin Booker,2.72,0.5,172
+fanduel,player_steals,Over,Keegan Murray,1.47,0.5,-212
+fanduel,player_steals,Under,Keegan Murray,2.64,0.5,164
+fanduel,player_steals,Over,Bradley Beal,2.8,1.5,179
+fanduel,player_steals,Under,Bradley Beal,1.43,1.5,-232
+fanduel,player_steals_alternate,Over,Keegan Murray,3.3,1.5,229
+fanduel,player_steals_alternate,Over,Bradley Beal,2.8,1.5,179
+fanduel,player_steals_alternate,Over,Devin Booker,3.3,1.5,229
+fanduel,player_steals_alternate,Over,Keegan Murray,1.48,0.5,-208
+fanduel,player_steals_alternate,Over,Bradley Beal,1.36,0.5,-277
+fanduel,player_steals_alternate,Over,Devin Booker,1.45,0.5,-222
+fanduel,player_steals_alternate,Over,Keegan Murray,8.5,2.5,750
+fanduel,player_steals_alternate,Over,Bradley Beal,7.0,2.5,600
+fanduel,player_threes,Over,Grayson Allen,1.85,2.5,-117
+fanduel,player_threes,Under,Grayson Allen,1.93,2.5,-107
+fanduel,player_threes,Over,De'Aaron Fox,1.77,2.5,-129
+fanduel,player_threes,Under,De'Aaron Fox,2.02,2.5,102
+fanduel,player_threes,Over,Bradley Beal,1.7,1.5,-142
+fanduel,player_threes,Under,Bradley Beal,2.12,1.5,112
+fanduel,player_threes,Over,Devin Booker,2.2,2.5,120
+fanduel,player_threes,Under,Devin Booker,1.65,2.5,-153
+fanduel,player_threes,Over,Kevin Durant,2.32,2.5,131
+fanduel,player_threes,Under,Kevin Durant,1.59,2.5,-169
+fanduel,player_threes,Over,Keegan Murray,2.08,2.5,108
+fanduel,player_threes,Under,Keegan Murray,1.72,2.5,-138
+fanduel,player_threes,Over,Harrison Barnes,2.14,1.5,114
+fanduel,player_threes,Under,Harrison Barnes,1.68,1.5,-147
+fanduel,player_threes_alternate,Over,De'Aaron Fox,1.23,1.5,-434
+fanduel,player_threes_alternate,Over,Grayson Allen,1.24,1.5,-416
+fanduel,player_threes_alternate,Over,Keegan Murray,1.32,1.5,-312
+fanduel,player_threes_alternate,Over,Devin Booker,1.37,1.5,-270
+fanduel,player_threes_alternate,Over,Kevin Durant,1.42,1.5,-238
+fanduel,player_threes_alternate,Over,Bradley Beal,1.71,1.5,-140
+fanduel,player_threes_alternate,Over,Harrison Barnes,2.15,1.5,114
+fanduel,player_threes_alternate,Over,Grayson Allen,1.02,0.5,-4999
+fanduel,player_threes_alternate,Over,De'Aaron Fox,1.02,0.5,-4999
+fanduel,player_threes_alternate,Over,Keegan Murray,1.04,0.5,-2499
+fanduel,player_threes_alternate,Over,Devin Booker,1.07,0.5,-1428
+fanduel,player_threes_alternate,Over,Kevin Durant,1.08,0.5,-1249
+fanduel,player_threes_alternate,Over,Bradley Beal,1.12,0.5,-833
+fanduel,player_threes_alternate,Over,Harrison Barnes,1.21,0.5,-476
+fanduel,player_threes_alternate,Over,De'Aaron Fox,1.77,2.5,-129
+fanduel,player_threes_alternate,Over,Grayson Allen,1.87,2.5,-114
+fanduel,player_threes_alternate,Over,Keegan Murray,2.05,2.5,104
+fanduel,player_threes_alternate,Over,Devin Booker,2.2,2.5,120
+fanduel,player_threes_alternate,Over,Kevin Durant,2.3,2.5,129
+fanduel,player_threes_alternate,Over,Bradley Beal,3.3,2.5,229
+fanduel,player_threes_alternate,Over,Harrison Barnes,4.9,2.5,390
+fanduel,player_threes_alternate,Over,De'Aaron Fox,6.0,4.5,500
+fanduel,player_threes_alternate,Over,Grayson Allen,7.0,4.5,600
+fanduel,player_threes_alternate,Over,Keegan Murray,8.0,4.5,700
+fanduel,player_threes_alternate,Over,De'Aaron Fox,3.0,3.5,200
+fanduel,player_threes_alternate,Over,Grayson Allen,3.3,3.5,229
+fanduel,player_threes_alternate,Over,Keegan Murray,3.9,3.5,290
+fanduel,player_threes_alternate,Over,Devin Booker,4.3,3.5,330
+fanduel,player_threes_alternate,Over,Kevin Durant,4.6,3.5,359
+fanduel,player_threes_alternate,Over,Bradley Beal,7.0,3.5,600
+fanduel,player_assists,Over,Kawhi Leonard,2.08,3.5,108
+fanduel,player_assists,Under,Kawhi Leonard,1.72,3.5,-138
+fanduel,player_assists,Over,Josh Giddey,2.18,4.5,118
+fanduel,player_assists,Under,Josh Giddey,1.67,4.5,-149
+fanduel,player_assists,Over,Chet Holmgren,2.0,2.5,100
+fanduel,player_assists,Under,Chet Holmgren,1.78,2.5,-128
+fanduel,player_assists,Over,Paul George,1.63,2.5,-158
+fanduel,player_assists,Under,Paul George,2.24,2.5,124
+fanduel,player_assists,Over,Shai Gilgeous Alexander,1.77,5.5,-129
+fanduel,player_assists,Under,Shai Gilgeous Alexander,2.02,5.5,102
+fanduel,player_assists,Over,James Harden,1.7,8.5,-142
+fanduel,player_assists,Under,James Harden,2.12,8.5,112
+fanduel,player_assists,Over,Jalen Williams,2.14,4.5,114
+fanduel,player_assists,Under,Jalen Williams,1.68,4.5,-147
+fanduel,player_assists,Over,Russell Westbrook,2.02,4.5,102
+fanduel,player_assists,Under,Russell Westbrook,1.77,4.5,-129
+fanduel,player_assists_alternate,Over,James Harden,1.08,5.5,-1249
+fanduel,player_assists_alternate,Over,Shai Gilgeous Alexander,1.8,5.5,-125
+fanduel,player_assists_alternate,Over,Russell Westbrook,3.0,5.5,200
+fanduel,player_assists_alternate,Over,Jalen Williams,3.3,5.5,229
+fanduel,player_assists_alternate,Over,Josh Giddey,3.4,5.5,240
+fanduel,player_assists_alternate,Over,Kawhi Leonard,6.0,5.5,500
+fanduel,player_assists_alternate,Over,Paul George,8.0,5.5,700
+fanduel,player_assists_alternate,Over,James Harden,1.38,7.5,-263
+fanduel,player_assists_alternate,Over,Shai Gilgeous Alexander,3.7,7.5,270
+fanduel,player_assists_alternate,Over,Russell Westbrook,8.0,7.5,700
+fanduel,player_assists_alternate,Over,Jalen Williams,9.0,7.5,800
+fanduel,player_assists_alternate,Over,Josh Giddey,9.5,7.5,850
+fanduel,player_assists_alternate,Over,Shai Gilgeous Alexander,1.15,3.5,-666
+fanduel,player_assists_alternate,Over,Russell Westbrook,1.48,3.5,-208
+fanduel,player_assists_alternate,Over,Josh Giddey,1.54,3.5,-185
+fanduel,player_assists_alternate,Over,Jalen Williams,1.56,3.5,-178
+fanduel,player_assists_alternate,Over,Kawhi Leonard,2.05,3.5,104
+fanduel,player_assists_alternate,Over,Paul George,2.55,3.5,154
+fanduel,player_assists_alternate,Over,Chet Holmgren,3.5,3.5,250
+fanduel,player_blocks,Over,Chet Holmgren,2.3,2.5,129
+fanduel,player_blocks,Under,Chet Holmgren,1.6,2.5,-166
+fanduel,player_blocks_alternate,Over,Chet Holmgren,1.42,1.5,-238
+fanduel,player_blocks_alternate,Over,Chet Holmgren,4.2,3.5,320
+fanduel,player_blocks_alternate,Over,Chet Holmgren,2.3,2.5,129
+fanduel,player_blocks_alternate,Over,Chet Holmgren,1.09,0.5,-1111
+fanduel,player_points,Over,Shai Gilgeous Alexander,1.83,30.5,-120
+fanduel,player_points,Under,Shai Gilgeous Alexander,1.94,30.5,-106
+fanduel,player_points,Over,Luguentz Dort,1.96,10.5,-104
+fanduel,player_points,Under,Luguentz Dort,1.82,10.5,-121
+fanduel,player_points,Over,James Harden,1.82,16.5,-121
+fanduel,player_points,Under,James Harden,1.96,16.5,-104
+fanduel,player_points,Over,Chet Holmgren,1.88,17.5,-113
+fanduel,player_points,Under,Chet Holmgren,1.88,17.5,-113
+fanduel,player_points,Over,Jalen Williams,1.9,17.5,-111
+fanduel,player_points,Under,Jalen Williams,1.87,17.5,-114
+fanduel,player_points,Over,Josh Giddey,1.9,10.5,-111
+fanduel,player_points,Under,Josh Giddey,1.87,10.5,-114
+fanduel,player_points,Over,Norman Powell,1.94,14.5,-106
+fanduel,player_points,Under,Norman Powell,1.83,14.5,-120
+fanduel,player_points,Over,Kawhi Leonard,1.9,25.5,-111
+fanduel,player_points,Under,Kawhi Leonard,1.87,25.5,-114
+fanduel,player_points,Over,Paul George,1.87,24.5,-114
+fanduel,player_points,Under,Paul George,1.9,24.5,-111
+fanduel,player_points,Over,Terance Mann,1.88,7.5,-113
+fanduel,player_points,Under,Terance Mann,1.88,7.5,-113
+fanduel,player_points,Over,Russell Westbrook,1.83,10.5,-120
+fanduel,player_points,Under,Russell Westbrook,1.94,10.5,-106
+fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,2.9,34.5,190
+fanduel,player_points_alternate,Over,Kawhi Leonard,6.5,34.5,550
+fanduel,player_points_alternate,Over,Paul George,8.0,34.5,700
+fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,6.0,39.5,500
+fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,1.69,29.5,-144
+fanduel,player_points_alternate,Over,Kawhi Leonard,3.0,29.5,200
+fanduel,player_points_alternate,Over,Paul George,3.4,29.5,240
+fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,1.02,19.5,-4999
+fanduel,player_points_alternate,Over,Kawhi Leonard,1.23,19.5,-434
+fanduel,player_points_alternate,Over,Paul George,1.29,19.5,-344
+fanduel,player_points_alternate,Over,Chet Holmgren,2.45,19.5,145
+fanduel,player_points_alternate,Over,Jalen Williams,2.45,19.5,145
+fanduel,player_points_alternate,Over,James Harden,2.7,19.5,170
+fanduel,player_points_alternate,Over,Norman Powell,4.5,19.5,350
+fanduel,player_points_alternate,Over,Kawhi Leonard,1.02,14.5,-4999
+fanduel,player_points_alternate,Over,Paul George,1.03,14.5,-3333
+fanduel,player_points_alternate,Over,Jalen Williams,1.43,14.5,-232
+fanduel,player_points_alternate,Over,Chet Holmgren,1.43,14.5,-232
+fanduel,player_points_alternate,Over,James Harden,1.51,14.5,-196
+fanduel,player_points_alternate,Over,Norman Powell,1.95,14.5,-105
+fanduel,player_points_alternate,Over,Russell Westbrook,3.8,14.5,280
+fanduel,player_points_alternate,Over,Josh Giddey,4.1,14.5,309
+fanduel,player_points_alternate,Over,Luguentz Dort,4.2,14.5,320
+fanduel,player_points_alternate,Over,Shai Gilgeous Alexander,1.22,24.5,-454
+fanduel,player_points_alternate,Over,Kawhi Leonard,1.74,24.5,-135
+fanduel,player_points_alternate,Over,Paul George,1.87,24.5,-114
+fanduel,player_points_alternate,Over,Jalen Williams,5.5,24.5,450
+fanduel,player_points_alternate,Over,Chet Holmgren,5.7,24.5,470
+fanduel,player_points_alternate,Over,James Harden,6.5,24.5,550
+fanduel,player_points_alternate,Over,Jalen Williams,1.07,9.5,-1428
+fanduel,player_points_alternate,Over,Chet Holmgren,1.07,9.5,-1428
+fanduel,player_points_alternate,Over,James Harden,1.08,9.5,-1249
+fanduel,player_points_alternate,Over,Norman Powell,1.2,9.5,-500
+fanduel,player_points_alternate,Over,Russell Westbrook,1.62,9.5,-161
+fanduel,player_points_alternate,Over,Josh Giddey,1.67,9.5,-149
+fanduel,player_points_alternate,Over,Luguentz Dort,1.69,9.5,-144
+fanduel,player_points_alternate,Over,Terance Mann,2.9,9.5,190
+fanduel,player_rebounds,Over,James Harden,1.68,4.5,-147
+fanduel,player_rebounds,Under,James Harden,2.14,4.5,114
+fanduel,player_rebounds,Over,Chet Holmgren,1.93,7.5,-107
+fanduel,player_rebounds,Under,Chet Holmgren,1.85,7.5,-117
+fanduel,player_rebounds,Over,Luguentz Dort,1.8,3.5,-125
+fanduel,player_rebounds,Under,Luguentz Dort,1.98,3.5,-102
+fanduel,player_rebounds,Over,Josh Giddey,2.12,6.5,112
+fanduel,player_rebounds,Under,Josh Giddey,1.7,6.5,-142
+fanduel,player_rebounds,Over,Shai Gilgeous Alexander,1.74,5.5,-135
+fanduel,player_rebounds,Under,Shai Gilgeous Alexander,2.06,5.5,106
+fanduel,player_rebounds,Over,Terance Mann,1.94,3.5,-106
+fanduel,player_rebounds,Under,Terance Mann,1.83,3.5,-120
+fanduel,player_rebounds,Over,Paul George,1.68,5.5,-147
+fanduel,player_rebounds,Under,Paul George,2.16,5.5,116
+fanduel,player_rebounds,Over,Kawhi Leonard,1.7,6.5,-142
+fanduel,player_rebounds,Under,Kawhi Leonard,2.12,6.5,112
+fanduel,player_rebounds,Over,Jalen Williams,2.14,4.5,114
+fanduel,player_rebounds,Under,Jalen Williams,1.68,4.5,-147
+fanduel,player_rebounds,Over,Russell Westbrook,1.96,5.5,-104
+fanduel,player_rebounds,Under,Russell Westbrook,1.82,5.5,-121
+fanduel,player_rebounds_alternate,Over,Chet Holmgren,1.32,5.5,-312
+fanduel,player_rebounds_alternate,Over,Kawhi Leonard,1.42,5.5,-238
+fanduel,player_rebounds_alternate,Over,Josh Giddey,1.67,5.5,-149
+fanduel,player_rebounds_alternate,Over,Paul George,1.69,5.5,-144
+fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,1.77,5.5,-129
+fanduel,player_rebounds_alternate,Over,Russell Westbrook,1.95,5.5,-105
+fanduel,player_rebounds_alternate,Over,James Harden,2.25,5.5,125
+fanduel,player_rebounds_alternate,Over,Jalen Williams,3.0,5.5,200
+fanduel,player_rebounds_alternate,Over,Luguentz Dort,4.0,5.5,300
+fanduel,player_rebounds_alternate,Over,Terance Mann,4.4,5.5,340
+fanduel,player_rebounds_alternate,Over,Chet Holmgren,6.5,11.5,550
+fanduel,player_rebounds_alternate,Over,Kawhi Leonard,8.0,11.5,700
+fanduel,player_rebounds_alternate,Over,Josh Giddey,11.0,11.5,1000
+fanduel,player_rebounds_alternate,Over,Paul George,13.0,11.5,1200
+fanduel,player_rebounds_alternate,Over,Chet Holmgren,1.95,7.5,-105
+fanduel,player_rebounds_alternate,Over,Kawhi Leonard,2.2,7.5,120
+fanduel,player_rebounds_alternate,Over,Josh Giddey,2.85,7.5,185
+fanduel,player_rebounds_alternate,Over,Paul George,3.0,7.5,200
+fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,3.1,7.5,210
+fanduel,player_rebounds_alternate,Over,Russell Westbrook,3.8,7.5,280
+fanduel,player_rebounds_alternate,Over,James Harden,4.7,7.5,370
+fanduel,player_rebounds_alternate,Over,Jalen Williams,7.5,7.5,650
+fanduel,player_rebounds_alternate,Over,Luguentz Dort,9.5,7.5,850
+fanduel,player_rebounds_alternate,Over,Terance Mann,11.0,7.5,1000
+fanduel,player_rebounds_alternate,Over,Chet Holmgren,1.07,3.5,-1428
+fanduel,player_rebounds_alternate,Over,Kawhi Leonard,1.1,3.5,-999
+fanduel,player_rebounds_alternate,Over,Josh Giddey,1.17,3.5,-588
+fanduel,player_rebounds_alternate,Over,Paul George,1.18,3.5,-555
+fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,1.22,3.5,-454
+fanduel,player_rebounds_alternate,Over,Russell Westbrook,1.27,3.5,-370
+fanduel,player_rebounds_alternate,Over,James Harden,1.37,3.5,-270
+fanduel,player_rebounds_alternate,Over,Jalen Williams,1.61,3.5,-163
+fanduel,player_rebounds_alternate,Over,Luguentz Dort,1.83,3.5,-120
+fanduel,player_rebounds_alternate,Over,Terance Mann,1.95,3.5,-105
+fanduel,player_rebounds_alternate,Over,Chet Holmgren,3.2,9.5,220
+fanduel,player_rebounds_alternate,Over,Kawhi Leonard,3.8,9.5,280
+fanduel,player_rebounds_alternate,Over,Josh Giddey,5.7,9.5,470
+fanduel,player_rebounds_alternate,Over,Paul George,6.0,9.5,500
+fanduel,player_rebounds_alternate,Over,Shai Gilgeous Alexander,6.5,9.5,550
+fanduel,player_rebounds_alternate,Over,Russell Westbrook,8.0,9.5,700
+fanduel,player_rebounds_alternate,Over,James Harden,10.5,9.5,950
+fanduel,player_steals,Over,Paul George,2.38,1.5,138
+fanduel,player_steals,Under,Paul George,1.56,1.5,-178
+fanduel,player_steals,Over,James Harden,1.44,0.5,-227
+fanduel,player_steals,Under,James Harden,2.72,0.5,172
+fanduel,player_steals,Over,Kawhi Leonard,2.06,1.5,106
+fanduel,player_steals,Under,Kawhi Leonard,1.74,1.5,-135
+fanduel,player_steals,Over,Shai Gilgeous Alexander,1.76,1.5,-131
+fanduel,player_steals,Under,Shai Gilgeous Alexander,2.04,1.5,104
+fanduel,player_steals,Over,Jalen Williams,2.62,1.5,162
+fanduel,player_steals,Under,Jalen Williams,1.48,1.5,-208
+fanduel,player_steals_alternate,Over,Jalen Williams,1.33,0.5,-303
+fanduel,player_steals_alternate,Over,Shai Gilgeous Alexander,1.15,0.5,-666
+fanduel,player_steals_alternate,Over,Paul George,1.29,0.5,-344
+fanduel,player_steals_alternate,Over,Kawhi Leonard,1.21,0.5,-476
+fanduel,player_steals_alternate,Over,James Harden,1.48,0.5,-208
+fanduel,player_steals_alternate,Over,Jalen Williams,2.6,1.5,160
+fanduel,player_steals_alternate,Over,Shai Gilgeous Alexander,1.77,1.5,-129
+fanduel,player_steals_alternate,Over,Paul George,2.35,1.5,135
+fanduel,player_steals_alternate,Over,Kawhi Leonard,2.05,1.5,104
+fanduel,player_steals_alternate,Over,James Harden,3.3,1.5,229
+fanduel,player_steals_alternate,Over,Jalen Williams,6.0,2.5,500
+fanduel,player_steals_alternate,Over,Shai Gilgeous Alexander,3.5,2.5,250
+fanduel,player_steals_alternate,Over,Paul George,5.8,2.5,480
+fanduel,player_steals_alternate,Over,Kawhi Leonard,4.7,2.5,370
+fanduel,player_threes,Over,Norman Powell,2.28,2.5,127
+fanduel,player_threes,Under,Norman Powell,1.6,2.5,-166
+fanduel,player_threes,Over,Chet Holmgren,1.83,1.5,-120
+fanduel,player_threes,Under,Chet Holmgren,1.94,1.5,-106
+fanduel,player_threes,Over,Shai Gilgeous Alexander,2.2,1.5,120
+fanduel,player_threes,Under,Shai Gilgeous Alexander,1.65,1.5,-153
+fanduel,player_threes,Over,Terance Mann,2.76,1.5,175
+fanduel,player_threes,Under,Terance Mann,1.43,1.5,-232
+fanduel,player_threes,Over,Jalen Williams,2.42,1.5,142
+fanduel,player_threes,Under,Jalen Williams,1.54,1.5,-185
+fanduel,player_threes,Over,James Harden,1.98,2.5,-102
+fanduel,player_threes,Under,James Harden,1.8,2.5,-125
+fanduel,player_threes,Over,Luguentz Dort,1.63,1.5,-158
+fanduel,player_threes,Under,Luguentz Dort,2.24,1.5,124
+fanduel,player_threes,Over,Kawhi Leonard,1.5,1.5,-200
+fanduel,player_threes,Under,Kawhi Leonard,2.54,1.5,154
+fanduel,player_threes,Over,Paul George,1.72,3.5,-138
+fanduel,player_threes,Under,Paul George,2.08,3.5,108
+fanduel,player_threes_alternate,Over,Paul George,1.07,1.5,-1428
+fanduel,player_threes_alternate,Over,James Harden,1.29,1.5,-344
+fanduel,player_threes_alternate,Over,Norman Powell,1.38,1.5,-263
+fanduel,player_threes_alternate,Over,Kawhi Leonard,1.53,1.5,-188
+fanduel,player_threes_alternate,Over,Luguentz Dort,1.67,1.5,-149
+fanduel,player_threes_alternate,Over,Chet Holmgren,1.87,1.5,-114
+fanduel,player_threes_alternate,Over,Shai Gilgeous Alexander,2.2,1.5,120
+fanduel,player_threes_alternate,Over,Jalen Williams,2.4,1.5,140
+fanduel,player_threes_alternate,Over,Terance Mann,2.75,1.5,175
+fanduel,player_threes_alternate,Over,James Harden,1.04,0.5,-2499
+fanduel,player_threes_alternate,Over,Norman Powell,1.06,0.5,-1666
+fanduel,player_threes_alternate,Over,Kawhi Leonard,1.09,0.5,-1111
+fanduel,player_threes_alternate,Over,Luguentz Dort,1.1,0.5,-999
+fanduel,player_threes_alternate,Over,Chet Holmgren,1.15,0.5,-666
+fanduel,player_threes_alternate,Over,Shai Gilgeous Alexander,1.24,0.5,-416
+fanduel,player_threes_alternate,Over,Jalen Williams,1.28,0.5,-357
+fanduel,player_threes_alternate,Over,Terance Mann,1.31,0.5,-322
+fanduel,player_threes_alternate,Over,Paul George,5.0,5.5,400
+fanduel,player_threes_alternate,Over,Paul George,1.27,2.5,-370
+fanduel,player_threes_alternate,Over,James Harden,1.95,2.5,-105
+fanduel,player_threes_alternate,Over,Norman Powell,2.3,2.5,129
+fanduel,player_threes_alternate,Over,Kawhi Leonard,2.7,2.5,170
+fanduel,player_threes_alternate,Over,Luguentz Dort,3.2,2.5,220
+fanduel,player_threes_alternate,Over,Chet Holmgren,3.9,2.5,290
+fanduel,player_threes_alternate,Over,Shai Gilgeous Alexander,5.1,2.5,409
+fanduel,player_threes_alternate,Over,Jalen Williams,6.0,2.5,500
+fanduel,player_threes_alternate,Over,Terance Mann,7.5,2.5,650
+fanduel,player_threes_alternate,Over,Paul George,1.74,3.5,-135
+fanduel,player_threes_alternate,Over,James Harden,3.8,3.5,280
+fanduel,player_threes_alternate,Over,Norman Powell,4.6,3.5,359
+fanduel,player_threes_alternate,Over,Kawhi Leonard,6.0,3.5,500
+fanduel,player_threes_alternate,Over,Luguentz Dort,7.5,3.5,650
+fanduel,player_threes_alternate,Over,Chet Holmgren,8.5,3.5,750
+fanduel,player_threes_alternate,Over,Paul George,2.8,4.5,179
+fanduel,player_threes_alternate,Over,James Harden,8.0,4.5,700

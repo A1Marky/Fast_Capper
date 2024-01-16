@@ -4,6 +4,7 @@ import logging
 from dotenv import load_dotenv
 import os
 
+
 # Initialize logging for debugging and error tracking
 logging.basicConfig(level=logging.INFO)
 
@@ -41,16 +42,28 @@ def fetch_nba_game_ids():
     response = make_api_request(url)
     return [game['id'] for game in response] if response else []
 
+# Converts Decimal Odds into US Odds
+def convert_decimal_to_us_odds(decimal_odds):
+    # Handling the edge case where decimal odds are exactly 1
+    if decimal_odds == 1:
+        return 0
+
+    if decimal_odds >= 2.00:
+        us_odds = (decimal_odds - 1) * 100
+    else:
+        us_odds = -100 / (decimal_odds - 1)
+    
+    return int(us_odds)
+
 # Function to fetch player prop odds for given game IDs and convert to DataFrame
 def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'):
     dfs = []  # List to store individual DataFrames
     for game_id in game_ids:
         url = construct_url(f"sports/basketball_nba/events/{game_id}/odds", 
                             {"regions": "us", "markets": ",".join([
-                             "player_points", "player_points_alternate", "player_rebounds","player_rebounds_alternate", "player_assists",
-                             "player_assists_alternate","player_threes", "player_threes_alternate", "player_double_double", "player_blocks",
-                             "player_blocks_alternate", "player_steals", "player_steals_alternate", "player_turnovers", "player_points_rebounds_assists", 
-                             "player_points_rebounds", "player_points_assists", "player_rebounds_assists"]),
+                             "player_points", "player_points_alternate", "player_rebounds", "player_rebounds_alternate", "player_assists",
+                             "player_assists_alternate", "player_threes", "player_threes_alternate", "player_blocks",
+                             "player_blocks_alternate", "player_steals", "player_steals_alternate", "player_turnovers"]),
                              "dateFormat": "iso", "oddsFormat": "decimal", "bookmakers": "fanduel"})
         response = make_api_request(url)
         if response and 'bookmakers' in response:
@@ -65,6 +78,9 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
     final_df.rename(columns={'description': 'player_names', 'price': 'odds', 'point': 'stat_threshold',
                              'bookmaker': 'sports_book', 'market': 'bet_type', 'outcome': 'over/under'}, inplace=True)
     final_df['player_names'] = final_df['player_names'].str.replace('.', '').str.replace('-', ' ')
+    
+    # Add 'us_odds' column
+    final_df['us_odds'] = final_df['odds'].apply(convert_decimal_to_us_odds)
     if save_to_csv:
         final_df.to_csv(csv_path, index=False)
     return final_df

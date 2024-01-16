@@ -58,12 +58,14 @@ if st.sidebar.button("Fetch Projections and Update Odds"):
         # Identify Best Bets
         betting_df = merged_df.dropna(subset=['bet_type', 'over/under', 'odds', 'stat_threshold'])
         best_bets_points = identify_best_bets(betting_df, 'points', 'player_points')
+        best_bets_alt_points = identify_best_bets(betting_df, 'points', 'player_points_alternate')
         best_bets_assists = identify_best_bets(betting_df, 'assists', 'player_assists')
+        best_bets_alt_assists = identify_best_bets(betting_df, 'assists', 'player_assists_alternate')
         best_bets_rebounds = identify_best_bets(betting_df, 'rebounds', 'player_rebounds')
-
+        best_bets_alt_rebounds = identify_best_bets(betting_df, 'rebounds', 'player_rebounds_alternate')
+        
         # Combine best bets into one dataframe
-        best_bets_combined = pd.concat([best_bets_points, best_bets_assists, best_bets_rebounds])
-
+        best_bets_combined = pd.concat([best_bets_points, best_bets_alt_points, best_bets_assists, best_bets_alt_assists, best_bets_rebounds, best_bets_alt_rebounds])
         # Display the best bets dataframe
         if not best_bets_combined.empty:
             st.write("Best bets identified:")
