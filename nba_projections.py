@@ -99,6 +99,9 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
     all_players_df['effective_fg_percentage'] = ((all_players_df['two_pt_fg'] + all_players_df['three_pt_fg']) + 0.5 * all_players_df['three_pt_fg']) / (all_players_df['two_pt_attempts'] + all_players_df['three_pt_attempts']) * 100
     all_players_df.rename(columns={'name': 'player_names'}, inplace=True)
     all_players_df = all_players_df.drop_duplicates(subset='player_names')
-    csv_file_path = 'all_players_df.csv'
-    #all_players_df.to_csv(csv_file_path, index=False)
+    csv_file_path = 'player_projections.csv'
+    all_players_df.to_csv(csv_file_path, index=False)
     return all_players_df
+
+
+    
