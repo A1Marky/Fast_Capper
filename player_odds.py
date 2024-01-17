@@ -100,4 +100,4 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
 # Example usage
 game_ids = fetch_nba_game_ids()
 odds_df = fetch_nba_player_odds(game_ids)
-print(odds_df.head())
+#print(odds_df.head())

@@ -133,5 +133,42 @@ def get_player_projections(auth_token: str, date: str, slate_ids: list, sport: s
     
     return all_players_df
 
-    
-    
+
+# Gets all the Schedule and Game Data
+def get_games_data(auth_token: str, date: str, slates_list: list) -> pd.DataFrame:
+    """
+    Retrieve game data for each slate in the slates_list and return as a DataFrame with unique 'gid' rows.
+    """
+    all_games_data = []
+    base_url = "https://basketball-sim.appspot.com/_ah/api/nba/v1/games"
+
+    # Common headers for the requests
+    headers = {
+        'Authorization': f'Bearer {auth_token}',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json, text/plain, */*',
+    }
+
+    for slate_id in slates_list:
+        url = f"{base_url}?date={date}&site=fd&slate={slate_id}&sport=nba"
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:
+            games_data = response.json().get('games', [])
+            all_games_data.extend(games_data)
+        else:
+            print(f"Failed to get games data for slate {slate_id}: {response.text}")
+
+    # Create a DataFrame from the aggregated games data
+    games_df = pd.DataFrame(all_games_data)
+
+    # Remove duplicate rows based on the 'gid' column
+    games_df = games_df.drop_duplicates(subset=['gid'])
+
+    return games_df
+
+# Example usage
+# auth_token = get_auth_token('email@example.com', 'password')
+# slates_list = get_slates(auth_token, '2024-01-17')
+# games_df = get_games_data(auth_token, '2024-01-17', slates_list)
