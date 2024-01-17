@@ -1,77 +1,57 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
-from datetime import datetime
-import nba_projections
-import nba_odds
 import pandas as pd
+from player_odds import fetch_nba_game_ids, fetch_nba_player_odds  # Replace with your actual script name and function names
+from player_projections import get_auth_token, get_slates, get_player_projections  # Replace with actual script name and function names
 
-# Streamlit UI Components
-st.title("NBA Player Projections App")
+# Load environment variables
+load_dotenv()
 
-# User inputs
-email = st.sidebar.text_input("Email", "zaclayne24@dispostable.com")
-password = st.sidebar.text_input("Password", "password123", type="password")
-date = st.sidebar.date_input("Date", datetime.today())
+# Environment variables for email and password
+SABERSIM_EMAIL = os.getenv('SABERSIM_EMAIL')
+SABERSIM_PASSWORD = os.getenv('SABERSIM_PASSWORD')
 
-def identify_best_bets(df, stat_column, bet_type_prefix):
-    best_bets = []
-    for _, row in df.iterrows():
-        if bet_type_prefix in row['bet_type']:
-            stat_projection = row[stat_column]
-            stat_threshold = row['stat_threshold']
+# Define Email and Password Login authentication
+email = SABERSIM_EMAIL
+password = SABERSIM_PASSWORD
+
+# Set Streamlit page configuration to wide mode
+st.set_page_config(layout="wide")
+
+# Initialize Streamlit app
+st.title("NBA Odds and Projections App")
+
+# Button to trigger data fetching and merging
+if st.button("Fetch and Merge Data"):
+    if email and password:
+        try:
+            # Get authentication token
+            auth_token = get_auth_token(email, password)
             
-            # Calculate the edge
-            edge = abs(stat_projection - stat_threshold)
+            # Fetch NBA game IDs and player odds
+            game_ids = fetch_nba_game_ids()
+            odds_df = fetch_nba_player_odds(game_ids)
 
-            if 'Over' in row['over/under'] and stat_projection > stat_threshold:
-                row['edge'] = edge  # Positive edge for favorable over bets
-                best_bets.append(row)
-            elif 'Under' in row['over/under'] and stat_projection < stat_threshold:
-                row['edge'] = edge  # Positive edge for favorable under bets
-                best_bets.append(row)
-    
-    return pd.DataFrame(best_bets)
+            # Fetch slates and player projections
+            date = pd.to_datetime('today').strftime('%Y-%m-%d')  # Assuming fetching for today's date
+            slates = get_slates(auth_token, date)
+            projections_df = get_player_projections(auth_token, date, slates)
 
-if st.sidebar.button("Fetch Projections and Update Odds"):
-    try:
-        # Fetch Projections
-        auth_token = nba_projections.get_auth_token(email, password)
-        slate_ids = nba_projections.get_slates(auth_token, date.strftime("%Y-%m-%d"))
-        if slate_ids:
-            player_projections_df = nba_projections.get_player_projections(auth_token, date.strftime("%Y-%m-%d"), slate_ids)
-            st.write("Player projections fetched successfully.")
-        else:
-            st.warning("No slates available for the given date.")
+            # Merge DataFrames
+            merged_df = pd.merge(odds_df, projections_df, on='player_names', how='left')
+            merged_df.to_csv('merged_dataframes.csv', index=False)
+            # Define columns to keep in the DataFrame
+            columns_to_keep = [
+                'sports_book','team','position','player_names','bet_type','over/under','stat_threshold','odds','us_odds','minutes','possessions','points','assists',
+                'rebounds','blocks','steals','three_pt_fg','three_pt_attempts','gid','matchup'
+    ]
+            # Display the merged DataFrame
+            st.dataframe(merged_df[columns_to_keep])
 
-        # Update Odds
-        game_ids = nba_odds.fetch_nba_game_ids()
-        if game_ids:
-            odds_df = nba_odds.fetch_nba_player_odds(game_ids)
-            st.write("Odds updated successfully.")
-        else:
-            st.warning("No NBA game IDs found.")
+        except Exception as e:
+            st.error(f"An error occurred: {e}")
+    else:
+        st.error("Please enter email and password.")
 
-        # Merge DataFrames
-        merged_df = pd.merge(player_projections_df, odds_df, on='player_names', how='left')
-        merged_df.to_csv('merged_dataframes.csv', index=False)
-        st.dataframe(merged_df)  # Displaying the merged DataFrame
-
-        # Identify Best Bets
-        betting_df = merged_df.dropna(subset=['bet_type', 'over/under', 'odds', 'stat_threshold'])
-        best_bets_points = identify_best_bets(betting_df, 'points', 'player_points')
-        best_bets_alt_points = identify_best_bets(betting_df, 'points', 'player_points_alternate')
-        best_bets_assists = identify_best_bets(betting_df, 'assists', 'player_assists')
-        best_bets_alt_assists = identify_best_bets(betting_df, 'assists', 'player_assists_alternate')
-        best_bets_rebounds = identify_best_bets(betting_df, 'rebounds', 'player_rebounds')
-        best_bets_alt_rebounds = identify_best_bets(betting_df, 'rebounds', 'player_rebounds_alternate')
-        
-        # Combine best bets into one dataframe
-        best_bets_combined = pd.concat([best_bets_points, best_bets_alt_points, best_bets_assists, best_bets_alt_assists, best_bets_rebounds, best_bets_alt_rebounds])
-        # Display the best bets dataframe
-        if not best_bets_combined.empty:
-            st.write("Best bets identified:")
-            st.dataframe(best_bets_combined)
-        else:
-            st.write("No best bets identified based on current data.")
-
-    except Exception as e:
-        st.error(f"Error in processing: {e}")
+# Streamlit app end
