@@ -198,7 +198,7 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
         return filtered_odds_df
     return pd.DataFrame()
 
-# Where the functions will be called
+# Where all the functions will be called
 game_ids = fetch_nba_game_ids()
 odds_df = fetch_nba_player_odds(game_ids)
 current_date = datetime.now().strftime('%Y-%m-%d')
