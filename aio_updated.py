@@ -79,7 +79,11 @@ def get_games_data(auth_token: str, date: str) -> pd.DataFrame:
     eastern_zone = pytz.timezone('US/Eastern')
     games_df['start_time_et'] = games_df['start_time_js'].dt.tz_convert(eastern_zone)
     games_df['start_time_readable'] = games_df['start_time_et'].dt.strftime('%Y-%m-%d %I:%M %p ET')
+    # Save the player_projections_df to CSV
+    csv_file_path = 'games_data.csv'
+    games_df.to_csv(csv_file_path, index=False)
     return games_df
+    
 
 def get_slates(auth_token: str, date: str, sport: str = 'nba') -> list:
     url = f"https://basketball-sim.appspot.com/_ah/api/nba/v1/slates?date={date}&sport={sport}"
