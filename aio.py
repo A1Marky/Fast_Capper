@@ -175,7 +175,7 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
                    "player_blocks", "player_blocks_alternate", "player_steals", "player_steals_alternate",
                    "player_turnovers"]
         params = {"regions": "us", "markets": ",".join(markets), "dateFormat": "iso", "oddsFormat": "decimal",
-                  "bookmakers": "fanduel"}
+                  "bookmakers": "draftkings"}
         url = construct_url(endpoint, params)
         response = make_api_request(url)
         if response and 'bookmakers' in response:
@@ -224,6 +224,8 @@ def calculate_edge(row):
         return (stat_value - row['stat_threshold']) if over_under == 'Over' else (row['stat_threshold'] - stat_value)
     else:
         return None
+    
+
 
 # Where all the functions will be called
 game_ids = fetch_nba_game_ids()
@@ -238,7 +240,10 @@ master_df = pd.merge(player_projections_df, odds_df, on='player_names', how='rig
 master_df = master_df.dropna(subset=['team'])
 # Apply the calculate_edge function to each row to create the 'edge' column
 master_df['edge'] = master_df.apply(calculate_edge, axis=1)
-# Sort the master_df by the 'edge' column in descending order and remove rows with edge < 1
-master_df = master_df[master_df['edge'] >= 1].sort_values(by='edge', ascending=False)
+# Remove rows with edge < 1
+master_df = master_df[master_df['edge'] >= 1]
+# Sort the master_df by the 'edge' column in descending order
+master_df = master_df.sort_values(by='edge', ascending=False)
 # Save the updated master_df to CSV
 master_df.to_csv('master_df.csv', index=False)
+
