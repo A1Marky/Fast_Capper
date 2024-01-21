@@ -195,7 +195,7 @@ def fetch_nba_player_odds(game_ids, odds_api_key, save_to_csv=True, csv_path='pl
                                  'bookmaker': 'sports_book', 'market': 'bet_type', 'outcome': 'over/under'}, inplace=True)
         final_df['player_names'] = final_df['player_names'].str.replace(r'[.-]', ' ', regex=True)
         final_df['us_odds'] = final_df['odds'].apply(convert_decimal_to_us_odds)
-        filtered_odds_df = final_df[final_df['us_odds'] > -400]
+        filtered_odds_df = final_df[final_df['us_odds'] > -300]
         if save_to_csv:
             filtered_odds_df.to_csv(csv_path, index=False)
         return filtered_odds_df
@@ -262,6 +262,8 @@ def main():
                 master_df['edge'] = master_df.apply(calculate_edge, axis=1)
                 master_df = master_df[master_df['edge'] >= 1]
                 master_df = master_df.sort_values(by='edge', ascending=False)
+                # Save the master dataframe to a CSV file
+                master_df.to_csv('master_df.csv', index=False)
                 
                 st.write("Games Data:", games_df)
                 st.write("Master Dataframe:", master_df)
