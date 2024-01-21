@@ -198,6 +198,30 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
         return filtered_odds_df
     return pd.DataFrame()
 
+# Define the calculate_edge function for calculating the edge value
+def calculate_edge(row):
+    bet_type = row['bet_type']
+    over_under = row['over/under']
+    stat_value = None
+
+    if bet_type in ['player_assists', 'player_assists_alternate']:
+        stat_value = row['assists']
+    elif bet_type in ['player_points', 'player_points_alternate']:
+        stat_value = row['points']
+    elif bet_type in ['player_rebounds', 'player_rebounds_alternate']:
+        stat_value = row['rebounds']
+    elif bet_type in ['player_threes', 'player_threes_alternate']:
+        stat_value = row['three_pt_fg']
+    elif bet_type in ['player_blocks', 'player_blocks_alternate']:
+        stat_value = row['blocks']
+    elif bet_type in ['player_steals', 'player_steals_alternate']:
+        stat_value = row['steals']
+
+    if stat_value is not None:
+        return (stat_value - row['stat_threshold']) if over_under == 'Over' else (row['stat_threshold'] - stat_value)
+    else:
+        return None
+
 # Where all the functions will be called
 game_ids = fetch_nba_game_ids()
 odds_df = fetch_nba_player_odds(game_ids)
@@ -206,7 +230,12 @@ auth_token = get_auth_token(DEFAULT_EMAIL, DEFAULT_PASSWORD)
 games_df = get_games_data(auth_token, current_date)
 slates = get_slates(auth_token, current_date)
 player_projections_df = get_player_projections(auth_token, current_date, slates)
-
+# Create master_df by merging player_projections_df and odds_df
 master_df = pd.merge(player_projections_df, odds_df, on='player_names', how='right')
 master_df = master_df.dropna(subset=['team'])
+# Apply the calculate_edge function to each row to create the 'edge' column
+master_df['edge'] = master_df.apply(calculate_edge, axis=1)
+# Sort the master_df by the 'edge' column in descending order and remove rows with edge < 1
+master_df = master_df[master_df['edge'] >= 1].sort_values(by='edge', ascending=False)
+# Save the updated master_df to CSV
 master_df.to_csv('master_df.csv', index=False)
