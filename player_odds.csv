@@ -1,874 +1,462 @@
 sports_book,bet_type,over/under,player_names,odds,stat_threshold,us_odds
-draftkings,player_assists,Over,Cameron Johnson,2.24,2.5,124
-draftkings,player_assists,Under,Cameron Johnson,1.62,2.5,-161
+draftkings,player_assists,Over,Cameron Johnson,1.71,4.5,-140
+draftkings,player_assists,Under,Cameron Johnson,2.05,4.5,104
+draftkings,player_assists,Over,Cameron Thomas,1.62,1.5,-161
+draftkings,player_assists,Under,Cameron Thomas,2.2,1.5,120
 draftkings,player_assists,Over,Dennis Smith Jr ,2.2,4.5,120
-draftkings,player_assists,Under,Dennis Smith Jr ,1.67,4.5,-149
-draftkings,player_assists,Over,James Harden,1.8,8.5,-125
-draftkings,player_assists,Under,James Harden,1.95,8.5,-105
-draftkings,player_assists,Over,Kawhi Leonard,2.0,3.5,100
-draftkings,player_assists,Under,Kawhi Leonard,1.77,3.5,-129
-draftkings,player_assists,Over,Mikal Bridges,2.0,3.5,100
-draftkings,player_assists,Under,Mikal Bridges,1.77,3.5,-129
-draftkings,player_assists,Over,Paul George,1.6,2.5,-166
-draftkings,player_assists,Under,Paul George,2.3,2.5,129
-draftkings,player_assists,Over,Royce O'Neale,2.3,2.5,129
-draftkings,player_assists,Under,Royce O'Neale,1.6,2.5,-166
-draftkings,player_assists,Over,Russell Westbrook,2.0,4.5,100
-draftkings,player_assists,Under,Russell Westbrook,1.77,4.5,-129
-draftkings,player_assists,Over,Spencer Dinwiddie,1.8,5.5,-125
-draftkings,player_assists,Under,Spencer Dinwiddie,1.95,5.5,-105
-draftkings,player_assists_alternate,Over,Cameron Johnson,1.42,1.5,-238
-draftkings,player_assists_alternate,Under,Cameron Johnson,2.7,1.5,170
-draftkings,player_assists_alternate,Over,Cameron Johnson,4.1,3.5,309
-draftkings,player_assists_alternate,Under,Dennis Smith Jr ,4.2,2.5,320
-draftkings,player_assists_alternate,Over,Dennis Smith Jr ,1.53,3.5,-188
-draftkings,player_assists_alternate,Under,Dennis Smith Jr ,2.35,3.5,135
-draftkings,player_assists_alternate,Over,Dennis Smith Jr ,3.3,5.5,229
-draftkings,player_assists_alternate,Over,Dennis Smith Jr ,5.5,6.5,450
-draftkings,player_assists_alternate,Under,James Harden,3.8,6.5,280
-draftkings,player_assists_alternate,Over,James Harden,3.0,10.5,200
-draftkings,player_assists_alternate,Under,James Harden,1.35,10.5,-285
-draftkings,player_assists_alternate,Under,Kawhi Leonard,6.0,1.5,500
-draftkings,player_assists_alternate,Over,Kawhi Leonard,1.39,2.5,-256
-draftkings,player_assists_alternate,Under,Kawhi Leonard,2.8,2.5,179
-draftkings,player_assists_alternate,Over,Kawhi Leonard,5.5,5.5,450
-draftkings,player_assists_alternate,Under,Mikal Bridges,5.75,1.5,475
-draftkings,player_assists_alternate,Over,Mikal Bridges,1.41,2.5,-243
-draftkings,player_assists_alternate,Under,Mikal Bridges,2.75,2.5,175
-draftkings,player_assists_alternate,Over,Mikal Bridges,5.5,5.5,450
-draftkings,player_assists_alternate,Under,Paul George,4.5,1.5,350
-draftkings,player_assists_alternate,Over,Paul George,2.4,3.5,140
-draftkings,player_assists_alternate,Under,Paul George,1.51,3.5,-196
-draftkings,player_assists_alternate,Over,Paul George,8.0,5.5,700
-draftkings,player_assists_alternate,Over,Royce O'Neale,1.42,1.5,-238
-draftkings,player_assists_alternate,Under,Royce O'Neale,2.7,1.5,170
-draftkings,player_assists_alternate,Over,Royce O'Neale,4.1,3.5,309
-draftkings,player_assists_alternate,Under,Russell Westbrook,4.7,2.5,370
-draftkings,player_assists_alternate,Over,Russell Westbrook,1.45,3.5,-222
-draftkings,player_assists_alternate,Under,Russell Westbrook,2.6,3.5,160
-draftkings,player_assists_alternate,Over,Russell Westbrook,2.95,5.5,195
-draftkings,player_assists_alternate,Under,Russell Westbrook,1.36,5.5,-277
-draftkings,player_assists_alternate,Over,Russell Westbrook,4.7,6.5,370
-draftkings,player_assists_alternate,Under,Spencer Dinwiddie,4.8,3.5,380
-draftkings,player_assists_alternate,Over,Spencer Dinwiddie,2.4,6.5,140
-draftkings,player_assists_alternate,Under,Spencer Dinwiddie,1.5,6.5,-200
-draftkings,player_assists_alternate,Over,Cameron Johnson,8.5,4.5,750
-draftkings,player_assists_alternate,Over,Dennis Smith Jr ,10.0,7.5,900
-draftkings,player_assists_alternate,Over,James Harden,1.38,7.5,-263
-draftkings,player_assists_alternate,Over,James Harden,2.15,9.5,114
-draftkings,player_assists_alternate,Over,James Harden,3.9,11.5,290
-draftkings,player_assists_alternate,Over,Kawhi Leonard,3.1,4.5,210
-draftkings,player_assists_alternate,Over,Mikal Bridges,3.15,4.5,215
-draftkings,player_assists_alternate,Over,Paul George,4.4,4.5,340
-draftkings,player_assists_alternate,Over,Royce O'Neale,8.5,4.5,750
-draftkings,player_assists_alternate,Over,Russell Westbrook,8.5,7.5,750
-draftkings,player_assists_alternate,Over,Spencer Dinwiddie,1.38,4.5,-263
-draftkings,player_assists_alternate,Over,Spencer Dinwiddie,3.6,7.5,260
-draftkings,player_assists_alternate,Over,Spencer Dinwiddie,10.0,9.5,900
-draftkings,player_blocks,Over,Cameron Johnson,4.5,0.5,350
-draftkings,player_blocks,Over,Cameron Thomas,4.7,0.5,370
-draftkings,player_blocks,Over,Daniel Theis,1.62,0.5,-161
-draftkings,player_blocks,Under,Daniel Theis,2.24,0.5,124
-draftkings,player_blocks,Over,Dennis Smith Jr ,3.7,0.5,270
-draftkings,player_blocks,Over,Dorian Finney Smith,2.35,0.5,135
-draftkings,player_blocks,Under,Dorian Finney Smith,1.57,0.5,-175
-draftkings,player_blocks,Over,James Harden,1.77,0.5,-129
-draftkings,player_blocks,Under,James Harden,2.0,0.5,100
-draftkings,player_blocks,Over,Kawhi Leonard,1.6,0.5,-166
-draftkings,player_blocks,Under,Kawhi Leonard,2.3,0.5,129
-draftkings,player_blocks,Over,Lonnie Walker IV,4.5,0.5,350
-draftkings,player_blocks,Over,Mason Plumlee,1.74,0.5,-135
-draftkings,player_blocks,Under,Mason Plumlee,2.05,0.5,104
-draftkings,player_blocks,Over,Mikal Bridges,2.45,0.5,145
-draftkings,player_blocks,Under,Mikal Bridges,1.53,0.5,-188
-draftkings,player_blocks,Over,Nicolas Claxton,1.6,1.5,-166
-draftkings,player_blocks,Under,Nicolas Claxton,2.3,1.5,129
-draftkings,player_blocks,Over,Norman Powell,3.7,0.5,270
-draftkings,player_blocks,Over,Paul George,2.54,0.5,154
-draftkings,player_blocks,Under,Paul George,1.5,0.5,-200
-draftkings,player_blocks,Over,Royce O'Neale,2.85,0.5,185
-draftkings,player_blocks,Under,Royce O'Neale,1.41,0.5,-243
-draftkings,player_blocks,Over,Russell Westbrook,2.85,0.5,185
-draftkings,player_blocks,Under,Russell Westbrook,1.41,0.5,-243
-draftkings,player_blocks,Over,Spencer Dinwiddie,4.8,0.5,380
-draftkings,player_blocks,Over,Terance Mann,4.1,0.5,309
-draftkings,player_blocks_alternate,Over,Daniel Theis,1.65,0.5,-153
-draftkings,player_blocks_alternate,Over,Daniel Theis,4.0,1.5,300
-draftkings,player_blocks_alternate,Over,Dennis Smith Jr ,3.8,0.5,280
-draftkings,player_blocks_alternate,Over,Dorian Finney Smith,2.35,0.5,135
-draftkings,player_blocks_alternate,Over,James Harden,1.77,0.5,-129
-draftkings,player_blocks_alternate,Over,Kawhi Leonard,1.61,0.5,-163
-draftkings,player_blocks_alternate,Over,Kawhi Leonard,3.85,1.5,285
-draftkings,player_blocks_alternate,Over,Mason Plumlee,1.74,0.5,-135
-draftkings,player_blocks_alternate,Over,Mikal Bridges,2.5,0.5,150
-draftkings,player_blocks_alternate,Over,Nicolas Claxton,1.62,1.5,-161
-draftkings,player_blocks_alternate,Over,Nicolas Claxton,2.85,2.5,185
-draftkings,player_blocks_alternate,Over,Norman Powell,3.7,0.5,270
-draftkings,player_blocks_alternate,Over,Paul George,2.55,0.5,154
-draftkings,player_blocks_alternate,Over,Royce O'Neale,2.85,0.5,185
-draftkings,player_blocks_alternate,Over,Russell Westbrook,2.85,0.5,185
-draftkings,player_blocks_alternate,Over,Terance Mann,4.2,0.5,320
-draftkings,player_points,Over,Cameron Johnson,1.95,13.5,-105
-draftkings,player_points,Under,Cameron Johnson,1.8,13.5,-125
-draftkings,player_points,Over,Cameron Thomas,1.83,16.5,-120
-draftkings,player_points,Under,Cameron Thomas,1.91,16.5,-109
-draftkings,player_points,Over,Dorian Finney Smith,1.8,7.5,-125
-draftkings,player_points,Under,Dorian Finney Smith,1.95,7.5,-105
-draftkings,player_points,Over,James Harden,1.77,16.5,-129
-draftkings,player_points,Under,James Harden,2.0,16.5,100
-draftkings,player_points,Over,Kawhi Leonard,1.74,24.5,-135
-draftkings,player_points,Under,Kawhi Leonard,2.05,24.5,104
-draftkings,player_points,Over,Lonnie Walker IV,1.83,8.5,-120
-draftkings,player_points,Under,Lonnie Walker IV,1.91,8.5,-109
-draftkings,player_points,Over,Mason Plumlee,1.8,8.5,-125
-draftkings,player_points,Under,Mason Plumlee,1.95,8.5,-105
-draftkings,player_points,Over,Mikal Bridges,1.91,21.5,-109
-draftkings,player_points,Under,Mikal Bridges,1.83,21.5,-120
-draftkings,player_points,Over,Nicolas Claxton,1.8,12.5,-125
-draftkings,player_points,Under,Nicolas Claxton,1.95,12.5,-105
-draftkings,player_points,Over,Norman Powell,1.8,11.5,-125
-draftkings,player_points,Under,Norman Powell,1.95,11.5,-105
-draftkings,player_points,Over,Paul George,1.87,24.5,-114
-draftkings,player_points,Under,Paul George,1.87,24.5,-114
-draftkings,player_points,Over,Russell Westbrook,1.77,10.5,-129
-draftkings,player_points,Under,Russell Westbrook,2.0,10.5,100
-draftkings,player_points,Over,Spencer Dinwiddie,1.77,11.5,-129
-draftkings,player_points,Under,Spencer Dinwiddie,2.0,11.5,100
-draftkings,player_points,Over,Terance Mann,1.95,7.5,-105
-draftkings,player_points,Under,Terance Mann,1.8,7.5,-125
-draftkings,player_points_alternate,Over,Cameron Johnson,1.71,12.5,-140
-draftkings,player_points_alternate,Under,Cameron Johnson,2.0,12.5,100
-draftkings,player_points_alternate,Over,Cameron Johnson,2.5,15.5,150
-draftkings,player_points_alternate,Under,Cameron Johnson,1.48,15.5,-208
-draftkings,player_points_alternate,Over,Cameron Thomas,1.65,15.5,-153
-draftkings,player_points_alternate,Under,Cameron Thomas,2.15,15.5,114
-draftkings,player_points_alternate,Over,Cameron Thomas,2.3,18.5,129
-draftkings,player_points_alternate,Under,Cameron Thomas,1.56,18.5,-178
-draftkings,player_points_alternate,Over,Dorian Finney Smith,1.61,6.5,-163
-draftkings,player_points_alternate,Under,Dorian Finney Smith,2.2,6.5,120
-draftkings,player_points_alternate,Over,Dorian Finney Smith,2.2,8.5,120
-draftkings,player_points_alternate,Under,Dorian Finney Smith,1.61,8.5,-163
-draftkings,player_points_alternate,Over,Dorian Finney Smith,3.1,10.5,210
-draftkings,player_points_alternate,Over,James Harden,1.57,15.5,-175
-draftkings,player_points_alternate,Under,James Harden,2.25,15.5,125
-draftkings,player_points_alternate,Over,James Harden,2.15,18.5,114
-draftkings,player_points_alternate,Under,James Harden,1.62,18.5,-161
-draftkings,player_points_alternate,Over,Kawhi Leonard,1.53,22.5,-188
-draftkings,player_points_alternate,Under,Kawhi Leonard,2.4,22.5,140
-draftkings,player_points_alternate,Over,Kawhi Leonard,1.65,23.5,-153
-draftkings,player_points_alternate,Under,Kawhi Leonard,2.15,23.5,114
-draftkings,player_points_alternate,Over,Kawhi Leonard,1.95,25.5,-105
-draftkings,player_points_alternate,Under,Kawhi Leonard,1.77,25.5,-129
-draftkings,player_points_alternate,Over,Kawhi Leonard,2.15,26.5,114
-draftkings,player_points_alternate,Under,Kawhi Leonard,1.62,26.5,-161
-draftkings,player_points_alternate,Over,Lonnie Walker IV,1.41,6.5,-243
-draftkings,player_points_alternate,Under,Lonnie Walker IV,2.75,6.5,175
-draftkings,player_points_alternate,Over,Lonnie Walker IV,2.5,10.5,150
-draftkings,player_points_alternate,Under,Lonnie Walker IV,1.48,10.5,-208
-draftkings,player_points_alternate,Over,Mason Plumlee,1.38,6.5,-263
-draftkings,player_points_alternate,Under,Mason Plumlee,2.85,6.5,185
-draftkings,player_points_alternate,Over,Mason Plumlee,2.5,10.5,150
-draftkings,player_points_alternate,Under,Mason Plumlee,1.49,10.5,-204
-draftkings,player_points_alternate,Over,Mikal Bridges,1.71,20.5,-140
-draftkings,player_points_alternate,Under,Mikal Bridges,2.05,20.5,104
-draftkings,player_points_alternate,Over,Mikal Bridges,2.1,22.5,110
-draftkings,player_points_alternate,Under,Mikal Bridges,1.67,22.5,-149
-draftkings,player_points_alternate,Over,Mikal Bridges,2.3,23.5,129
-draftkings,player_points_alternate,Under,Mikal Bridges,1.54,23.5,-185
-draftkings,player_points_alternate,Over,Nicolas Claxton,1.43,10.5,-232
-draftkings,player_points_alternate,Under,Nicolas Claxton,2.65,10.5,165
-draftkings,player_points_alternate,Over,Nicolas Claxton,2.0,13.5,100
-draftkings,player_points_alternate,Under,Nicolas Claxton,1.74,13.5,-135
-draftkings,player_points_alternate,Over,Norman Powell,1.57,10.5,-175
-draftkings,player_points_alternate,Under,Norman Powell,2.25,10.5,125
-draftkings,player_points_alternate,Over,Norman Powell,2.05,12.5,104
-draftkings,player_points_alternate,Under,Norman Powell,1.69,12.5,-144
-draftkings,player_points_alternate,Over,Norman Powell,2.35,13.5,135
-draftkings,player_points_alternate,Under,Norman Powell,1.53,13.5,-188
-draftkings,player_points_alternate,Over,Paul George,1.61,22.5,-163
-draftkings,player_points_alternate,Under,Paul George,2.2,22.5,120
-draftkings,player_points_alternate,Over,Paul George,1.71,23.5,-140
-draftkings,player_points_alternate,Under,Paul George,2.0,23.5,100
-draftkings,player_points_alternate,Over,Paul George,2.05,25.5,104
-draftkings,player_points_alternate,Under,Paul George,1.69,25.5,-144
-draftkings,player_points_alternate,Over,Paul George,2.25,26.5,125
-draftkings,player_points_alternate,Under,Paul George,1.57,26.5,-175
-draftkings,player_points_alternate,Over,Russell Westbrook,1.39,8.5,-256
-draftkings,player_points_alternate,Under,Russell Westbrook,2.8,8.5,179
-draftkings,player_points_alternate,Over,Russell Westbrook,2.4,12.5,140
-draftkings,player_points_alternate,Under,Russell Westbrook,1.53,12.5,-188
-draftkings,player_points_alternate,Over,Spencer Dinwiddie,1.54,10.5,-185
-draftkings,player_points_alternate,Under,Spencer Dinwiddie,2.35,10.5,135
-draftkings,player_points_alternate,Over,Spencer Dinwiddie,1.91,12.5,-109
-draftkings,player_points_alternate,Under,Spencer Dinwiddie,1.8,12.5,-125
-draftkings,player_points_alternate,Over,Spencer Dinwiddie,2.2,13.5,120
-draftkings,player_points_alternate,Under,Spencer Dinwiddie,1.59,13.5,-169
-draftkings,player_points_alternate,Over,Terance Mann,1.67,6.5,-149
-draftkings,player_points_alternate,Under,Terance Mann,2.1,6.5,110
-draftkings,player_points_alternate,Over,Terance Mann,2.35,8.5,135
-draftkings,player_points_alternate,Under,Terance Mann,1.53,8.5,-188
-draftkings,player_points_alternate,Over,Terance Mann,3.6,10.5,260
-draftkings,player_points_alternate,Over,Cameron Johnson,1.54,11.5,-185
-draftkings,player_points_alternate,Over,Cameron Johnson,2.2,14.5,120
-draftkings,player_points_alternate,Over,Cameron Johnson,3.45,17.5,245
-draftkings,player_points_alternate,Over,Cameron Johnson,4.9,19.5,390
-draftkings,player_points_alternate,Over,Cameron Thomas,1.5,14.5,-200
-draftkings,player_points_alternate,Over,Cameron Thomas,2.05,17.5,104
-draftkings,player_points_alternate,Over,Cameron Thomas,2.6,19.5,160
-draftkings,player_points_alternate,Over,Cameron Thomas,6.0,24.5,500
-draftkings,player_points_alternate,Over,Dorian Finney Smith,2.6,9.5,160
-draftkings,player_points_alternate,Over,Dorian Finney Smith,4.0,11.5,300
-draftkings,player_points_alternate,Over,James Harden,1.45,14.5,-222
-draftkings,player_points_alternate,Over,James Harden,1.91,17.5,-109
-draftkings,player_points_alternate,Over,James Harden,2.5,19.5,150
-draftkings,player_points_alternate,Over,James Harden,5.25,24.5,425
-draftkings,player_points_alternate,Over,Kawhi Leonard,3.0,29.5,200
-draftkings,player_points_alternate,Over,Kawhi Leonard,6.0,34.5,500
-draftkings,player_points_alternate,Over,Lonnie Walker IV,1.57,7.5,-175
-draftkings,player_points_alternate,Over,Lonnie Walker IV,2.1,9.5,110
-draftkings,player_points_alternate,Over,Lonnie Walker IV,3.0,11.5,200
-draftkings,player_points_alternate,Over,Mason Plumlee,1.54,7.5,-185
-draftkings,player_points_alternate,Over,Mason Plumlee,2.1,9.5,110
-draftkings,player_points_alternate,Over,Mason Plumlee,3.0,11.5,200
-draftkings,player_points_alternate,Over,Mikal Bridges,1.36,17.5,-277
-draftkings,player_points_alternate,Over,Mikal Bridges,1.57,19.5,-175
-draftkings,player_points_alternate,Over,Mikal Bridges,2.6,24.5,160
-draftkings,player_points_alternate,Over,Mikal Bridges,5.25,29.5,425
-draftkings,player_points_alternate,Over,Nicolas Claxton,1.57,11.5,-175
-draftkings,player_points_alternate,Over,Nicolas Claxton,2.3,14.5,129
-draftkings,player_points_alternate,Over,Nicolas Claxton,3.7,17.5,270
-draftkings,player_points_alternate,Over,Norman Powell,1.43,9.5,-232
-draftkings,player_points_alternate,Over,Norman Powell,2.75,14.5,175
-draftkings,player_points_alternate,Over,Norman Powell,4.6,17.5,359
-draftkings,player_points_alternate,Over,Paul George,3.2,29.5,220
-draftkings,player_points_alternate,Over,Paul George,6.5,34.5,550
-draftkings,player_points_alternate,Over,Russell Westbrook,1.54,9.5,-185
-draftkings,player_points_alternate,Over,Russell Westbrook,2.0,11.5,100
-draftkings,player_points_alternate,Over,Russell Westbrook,3.4,14.5,240
-draftkings,player_points_alternate,Over,Spencer Dinwiddie,1.39,9.5,-256
-draftkings,player_points_alternate,Over,Spencer Dinwiddie,2.55,14.5,154
-draftkings,player_points_alternate,Over,Spencer Dinwiddie,4.4,17.5,340
-draftkings,player_points_alternate,Over,Terance Mann,2.9,9.5,190
-draftkings,player_points_alternate,Over,Terance Mann,4.6,11.5,359
-draftkings,player_rebounds,Over,Cameron Johnson,1.74,3.5,-135
-draftkings,player_rebounds,Under,Cameron Johnson,2.05,3.5,104
-draftkings,player_rebounds,Over,Cameron Thomas,1.87,2.5,-114
-draftkings,player_rebounds,Under,Cameron Thomas,1.87,2.5,-114
-draftkings,player_rebounds,Over,Daniel Theis,1.8,4.5,-125
-draftkings,player_rebounds,Under,Daniel Theis,1.95,4.5,-105
-draftkings,player_rebounds,Over,Dennis Smith Jr ,1.67,2.5,-149
-draftkings,player_rebounds,Under,Dennis Smith Jr ,2.2,2.5,120
-draftkings,player_rebounds,Over,Dorian Finney Smith,2.05,4.5,104
-draftkings,player_rebounds,Under,Dorian Finney Smith,1.74,4.5,-135
-draftkings,player_rebounds,Over,James Harden,1.62,4.5,-161
-draftkings,player_rebounds,Under,James Harden,2.24,4.5,124
-draftkings,player_rebounds,Over,Kawhi Leonard,1.87,6.5,-114
-draftkings,player_rebounds,Under,Kawhi Leonard,1.87,6.5,-114
-draftkings,player_rebounds,Over,Mason Plumlee,2.05,8.5,104
-draftkings,player_rebounds,Under,Mason Plumlee,1.74,8.5,-135
-draftkings,player_rebounds,Over,Mikal Bridges,1.95,4.5,-105
-draftkings,player_rebounds,Under,Mikal Bridges,1.8,4.5,-125
-draftkings,player_rebounds,Over,Nicolas Claxton,1.87,11.5,-114
-draftkings,player_rebounds,Under,Nicolas Claxton,1.87,11.5,-114
-draftkings,player_rebounds,Over,Norman Powell,1.83,2.5,-120
-draftkings,player_rebounds,Under,Norman Powell,1.91,2.5,-109
-draftkings,player_rebounds,Over,Paul George,1.69,5.5,-144
-draftkings,player_rebounds,Under,Paul George,2.14,5.5,114
-draftkings,player_rebounds,Over,Royce O'Neale,1.8,3.5,-125
-draftkings,player_rebounds,Under,Royce O'Neale,1.95,3.5,-105
-draftkings,player_rebounds,Over,Russell Westbrook,2.0,5.5,100
-draftkings,player_rebounds,Under,Russell Westbrook,1.77,5.5,-129
-draftkings,player_rebounds,Over,Spencer Dinwiddie,1.69,2.5,-144
-draftkings,player_rebounds,Under,Spencer Dinwiddie,2.14,2.5,114
-draftkings,player_rebounds,Over,Terance Mann,2.24,3.5,124
-draftkings,player_rebounds,Under,Terance Mann,1.62,3.5,-161
-draftkings,player_rebounds_alternate,Under,Cameron Johnson,7.5,1.5,650
-draftkings,player_rebounds_alternate,Under,Cameron Johnson,3.35,2.5,235
-draftkings,player_rebounds_alternate,Over,Cameron Johnson,4.1,5.5,309
-draftkings,player_rebounds_alternate,Under,Cameron Thomas,3.4,1.5,240
-draftkings,player_rebounds_alternate,Over,Cameron Thomas,3.05,3.5,204
-draftkings,player_rebounds_alternate,Under,Cameron Thomas,1.34,3.5,-294
-draftkings,player_rebounds_alternate,Over,Cameron Thomas,12.0,5.5,1100
-draftkings,player_rebounds_alternate,Under,Daniel Theis,5.25,2.5,425
-draftkings,player_rebounds_alternate,Over,Daniel Theis,1.37,3.5,-270
-draftkings,player_rebounds_alternate,Under,Daniel Theis,2.9,3.5,190
-draftkings,player_rebounds_alternate,Over,Daniel Theis,2.55,5.5,154
-draftkings,player_rebounds_alternate,Under,Daniel Theis,1.45,5.5,-222
-draftkings,player_rebounds_alternate,Over,Daniel Theis,4.0,6.5,300
-draftkings,player_rebounds_alternate,Under,Dennis Smith Jr ,4.2,1.5,320
-draftkings,player_rebounds_alternate,Over,Dennis Smith Jr ,2.55,3.5,154
-draftkings,player_rebounds_alternate,Under,Dennis Smith Jr ,1.47,3.5,-212
-draftkings,player_rebounds_alternate,Over,Dennis Smith Jr ,8.0,5.5,700
-draftkings,player_rebounds_alternate,Under,Dorian Finney Smith,4.4,2.5,340
-draftkings,player_rebounds_alternate,Over,Dorian Finney Smith,1.48,3.5,-208
-draftkings,player_rebounds_alternate,Under,Dorian Finney Smith,2.5,3.5,150
-draftkings,player_rebounds_alternate,Over,Dorian Finney Smith,3.0,5.5,200
-draftkings,player_rebounds_alternate,Under,Dorian Finney Smith,1.35,5.5,-285
-draftkings,player_rebounds_alternate,Over,Dorian Finney Smith,4.9,6.5,390
-draftkings,player_rebounds_alternate,Under,James Harden,7.0,2.5,600
-draftkings,player_rebounds_alternate,Under,James Harden,3.45,3.5,245
-draftkings,player_rebounds_alternate,Over,James Harden,2.15,5.5,114
-draftkings,player_rebounds_alternate,Under,James Harden,1.62,5.5,-161
-draftkings,player_rebounds_alternate,Over,James Harden,3.2,6.5,220
-draftkings,player_rebounds_alternate,Over,Kawhi Leonard,1.47,5.5,-212
-draftkings,player_rebounds_alternate,Under,Kawhi Leonard,2.55,5.5,154
-draftkings,player_rebounds_alternate,Over,Kawhi Leonard,3.65,8.5,265
-draftkings,player_rebounds_alternate,Over,Mason Plumlee,1.34,6.5,-294
-draftkings,player_rebounds_alternate,Under,Mason Plumlee,3.05,6.5,204
-draftkings,player_rebounds_alternate,Over,Mason Plumlee,3.65,10.5,265
-draftkings,player_rebounds_alternate,Under,Mikal Bridges,4.6,2.5,359
-draftkings,player_rebounds_alternate,Over,Mikal Bridges,1.44,3.5,-227
-draftkings,player_rebounds_alternate,Under,Mikal Bridges,2.6,3.5,160
-draftkings,player_rebounds_alternate,Over,Mikal Bridges,2.9,5.5,190
-draftkings,player_rebounds_alternate,Under,Mikal Bridges,1.38,5.5,-263
-draftkings,player_rebounds_alternate,Over,Mikal Bridges,4.8,6.5,380
-draftkings,player_rebounds_alternate,Over,Nicolas Claxton,1.56,10.5,-178
-draftkings,player_rebounds_alternate,Under,Nicolas Claxton,2.3,10.5,129
-draftkings,player_rebounds_alternate,Over,Nicolas Claxton,2.3,12.5,129
-draftkings,player_rebounds_alternate,Under,Nicolas Claxton,1.56,12.5,-178
-draftkings,player_rebounds_alternate,Over,Nicolas Claxton,2.9,13.5,190
-draftkings,player_rebounds_alternate,Under,Nicolas Claxton,1.37,13.5,-270
-draftkings,player_rebounds_alternate,Under,Norman Powell,3.5,1.5,250
-draftkings,player_rebounds_alternate,Over,Norman Powell,3.05,3.5,204
-draftkings,player_rebounds_alternate,Under,Norman Powell,1.34,3.5,-294
-draftkings,player_rebounds_alternate,Over,Norman Powell,11.0,5.5,1000
-draftkings,player_rebounds_alternate,Under,Paul George,5.25,3.5,425
-draftkings,player_rebounds_alternate,Over,Paul George,2.25,6.5,125
-draftkings,player_rebounds_alternate,Under,Paul George,1.59,6.5,-169
-draftkings,player_rebounds_alternate,Under,Royce O'Neale,7.0,1.5,600
-draftkings,player_rebounds_alternate,Under,Royce O'Neale,3.15,2.5,215
-draftkings,player_rebounds_alternate,Over,Royce O'Neale,4.5,5.5,350
-draftkings,player_rebounds_alternate,Under,Russell Westbrook,3.95,3.5,295
-draftkings,player_rebounds_alternate,Over,Russell Westbrook,2.8,6.5,179
-draftkings,player_rebounds_alternate,Under,Russell Westbrook,1.39,6.5,-256
-draftkings,player_rebounds_alternate,Under,Spencer Dinwiddie,4.0,1.5,300
-draftkings,player_rebounds_alternate,Over,Spencer Dinwiddie,2.6,3.5,160
-draftkings,player_rebounds_alternate,Under,Spencer Dinwiddie,1.44,3.5,-227
-draftkings,player_rebounds_alternate,Over,Spencer Dinwiddie,9.0,5.5,800
-draftkings,player_rebounds_alternate,Under,Terance Mann,4.9,1.5,390
-draftkings,player_rebounds_alternate,Over,Terance Mann,1.5,2.5,-200
-draftkings,player_rebounds_alternate,Under,Terance Mann,2.45,2.5,145
-draftkings,player_rebounds_alternate,Over,Terance Mann,6.5,5.5,550
-draftkings,player_rebounds_alternate,Over,Cameron Johnson,2.5,4.5,150
-draftkings,player_rebounds_alternate,Over,Cameron Johnson,14.0,7.5,1300
-draftkings,player_rebounds_alternate,Over,Cameron Thomas,6.0,4.5,500
-draftkings,player_rebounds_alternate,Over,Daniel Theis,6.5,7.5,550
-draftkings,player_rebounds_alternate,Over,Dennis Smith Jr ,4.4,4.5,340
-draftkings,player_rebounds_alternate,Over,Dorian Finney Smith,9.0,7.5,800
-draftkings,player_rebounds_alternate,Over,James Harden,5.0,7.5,400
-draftkings,player_rebounds_alternate,Over,Kawhi Leonard,2.55,7.5,154
-draftkings,player_rebounds_alternate,Over,Kawhi Leonard,5.5,9.5,450
-draftkings,player_rebounds_alternate,Over,Mason Plumlee,1.59,7.5,-169
-draftkings,player_rebounds_alternate,Over,Mason Plumlee,2.65,9.5,165
-draftkings,player_rebounds_alternate,Over,Mason Plumlee,5.25,11.5,425
-draftkings,player_rebounds_alternate,Over,Mikal Bridges,8.0,7.5,700
-draftkings,player_rebounds_alternate,Over,Nicolas Claxton,3.85,14.5,285
-draftkings,player_rebounds_alternate,Over,Norman Powell,5.5,4.5,450
-draftkings,player_rebounds_alternate,Over,Paul George,3.05,7.5,204
-draftkings,player_rebounds_alternate,Over,Paul George,7.5,9.5,650
-draftkings,player_rebounds_alternate,Over,Royce O'Neale,2.7,4.5,170
-draftkings,player_rebounds_alternate,Over,Russell Westbrook,1.5,4.5,-200
-draftkings,player_rebounds_alternate,Over,Russell Westbrook,4.3,7.5,330
-draftkings,player_rebounds_alternate,Over,Russell Westbrook,12.0,9.5,1100
-draftkings,player_rebounds_alternate,Over,Spencer Dinwiddie,4.6,4.5,359
-draftkings,player_rebounds_alternate,Over,Terance Mann,3.6,4.5,260
-draftkings,player_steals,Over,Cameron Johnson,1.6,0.5,-166
-draftkings,player_steals,Under,Cameron Johnson,2.3,0.5,129
-draftkings,player_steals,Over,Cameron Thomas,2.1,0.5,110
-draftkings,player_steals,Under,Cameron Thomas,1.71,0.5,-140
-draftkings,player_steals,Over,Daniel Theis,2.24,0.5,124
-draftkings,player_steals,Under,Daniel Theis,1.62,0.5,-161
-draftkings,player_steals,Over,Dennis Smith Jr ,2.5,1.5,150
-draftkings,player_steals,Under,Dennis Smith Jr ,1.51,1.5,-196
-draftkings,player_steals,Over,Dorian Finney Smith,1.56,0.5,-178
-draftkings,player_steals,Under,Dorian Finney Smith,2.4,0.5,140
-draftkings,player_steals,Over,James Harden,1.48,0.5,-208
-draftkings,player_steals,Under,James Harden,2.6,0.5,160
-draftkings,player_steals,Over,Kawhi Leonard,1.87,1.5,-114
-draftkings,player_steals,Under,Kawhi Leonard,1.87,1.5,-114
-draftkings,player_steals,Over,Lonnie Walker IV,2.5,0.5,150
-draftkings,player_steals,Under,Lonnie Walker IV,1.51,0.5,-196
-draftkings,player_steals,Over,Mason Plumlee,2.24,0.5,124
-draftkings,player_steals,Under,Mason Plumlee,1.62,0.5,-161
-draftkings,player_steals,Over,Mikal Bridges,1.57,0.5,-175
-draftkings,player_steals,Under,Mikal Bridges,2.35,0.5,135
-draftkings,player_steals,Over,Nicolas Claxton,1.62,0.5,-161
-draftkings,player_steals,Under,Nicolas Claxton,2.24,0.5,124
-draftkings,player_steals,Over,Norman Powell,2.2,0.5,120
-draftkings,player_steals,Under,Norman Powell,1.67,0.5,-149
-draftkings,player_steals,Over,Paul George,2.35,1.5,135
-draftkings,player_steals,Under,Paul George,1.57,1.5,-175
-draftkings,player_steals,Over,Royce O'Neale,2.0,0.5,100
-draftkings,player_steals,Under,Royce O'Neale,1.77,0.5,-129
-draftkings,player_steals,Over,Russell Westbrook,1.48,0.5,-208
-draftkings,player_steals,Under,Russell Westbrook,2.6,0.5,160
-draftkings,player_steals,Over,Spencer Dinwiddie,1.69,0.5,-144
-draftkings,player_steals,Under,Spencer Dinwiddie,2.14,0.5,114
-draftkings,player_steals,Over,Terance Mann,2.3,0.5,129
-draftkings,player_steals,Under,Terance Mann,1.6,0.5,-166
-draftkings,player_steals_alternate,Over,Cameron Johnson,1.59,0.5,-169
-draftkings,player_steals_alternate,Over,Cameron Johnson,3.75,1.5,275
-draftkings,player_steals_alternate,Over,Cameron Thomas,2.1,0.5,110
-draftkings,player_steals_alternate,Over,Daniel Theis,2.25,0.5,125
-draftkings,player_steals_alternate,Over,Dennis Smith Jr ,1.34,0.5,-294
-draftkings,player_steals_alternate,Over,Dennis Smith Jr ,2.55,1.5,154
-draftkings,player_steals_alternate,Over,Dorian Finney Smith,1.54,0.5,-185
-draftkings,player_steals_alternate,Over,Dorian Finney Smith,3.55,1.5,254
-draftkings,player_steals_alternate,Over,James Harden,1.51,0.5,-196
-draftkings,player_steals_alternate,Over,James Harden,3.35,1.5,235
-draftkings,player_steals_alternate,Over,Kawhi Leonard,1.91,1.5,-109
-draftkings,player_steals_alternate,Over,Kawhi Leonard,3.8,2.5,280
-draftkings,player_steals_alternate,Over,Lonnie Walker IV,2.45,0.5,145
-draftkings,player_steals_alternate,Over,Mason Plumlee,2.3,0.5,129
-draftkings,player_steals_alternate,Over,Mikal Bridges,1.57,0.5,-175
-draftkings,player_steals_alternate,Over,Mikal Bridges,3.7,1.5,270
-draftkings,player_steals_alternate,Over,Nicolas Claxton,1.65,0.5,-153
-draftkings,player_steals_alternate,Over,Nicolas Claxton,4.1,1.5,309
-draftkings,player_steals_alternate,Over,Norman Powell,2.2,0.5,120
-draftkings,player_steals_alternate,Over,Paul George,2.35,1.5,135
-draftkings,player_steals_alternate,Over,Royce O'Neale,2.0,0.5,100
-draftkings,player_steals_alternate,Over,Russell Westbrook,1.49,0.5,-204
-draftkings,player_steals_alternate,Over,Russell Westbrook,3.2,1.5,220
-draftkings,player_steals_alternate,Over,Spencer Dinwiddie,1.69,0.5,-144
-draftkings,player_steals_alternate,Over,Spencer Dinwiddie,4.3,1.5,330
-draftkings,player_steals_alternate,Over,Terance Mann,2.3,0.5,129
-draftkings,player_threes,Over,Cameron Johnson,2.1,2.5,110
-draftkings,player_threes,Under,Cameron Johnson,1.71,2.5,-140
-draftkings,player_threes,Over,Cameron Thomas,1.74,1.5,-135
-draftkings,player_threes,Under,Cameron Thomas,2.05,1.5,104
-draftkings,player_threes,Over,Daniel Theis,2.5,0.5,150
-draftkings,player_threes,Under,Daniel Theis,1.51,0.5,-196
-draftkings,player_threes,Over,Dennis Smith Jr ,2.35,0.5,135
+draftkings,player_assists,Under,Dennis Smith Jr ,1.65,4.5,-153
+draftkings,player_assists,Over,James Harden,1.74,7.5,-135
+draftkings,player_assists,Under,James Harden,2.05,7.5,104
+draftkings,player_assists,Over,Kawhi Leonard,1.83,3.5,-120
+draftkings,player_assists,Under,Kawhi Leonard,1.91,3.5,-109
+draftkings,player_assists,Over,Mason Plumlee,2.45,1.5,145
+draftkings,player_assists,Under,Mason Plumlee,1.51,1.5,-196
+draftkings,player_assists,Over,Mikal Bridges,1.87,2.5,-114
+draftkings,player_assists,Under,Mikal Bridges,1.87,2.5,-114
+draftkings,player_assists,Over,Nicolas Claxton,1.95,1.5,-105
+draftkings,player_assists,Under,Nicolas Claxton,1.77,1.5,-129
+draftkings,player_assists,Over,Paul George,2.15,3.5,114
+draftkings,player_assists,Under,Paul George,1.67,3.5,-149
+draftkings,player_assists,Over,Royce O'Neale,2.4,2.5,140
+draftkings,player_assists,Under,Royce O'Neale,1.53,2.5,-188
+draftkings,player_assists,Over,Spencer Dinwiddie,1.61,5.5,-163
+draftkings,player_assists,Under,Spencer Dinwiddie,2.25,5.5,125
+draftkings,player_blocks,Over,Daniel Theis,1.69,0.5,-144
+draftkings,player_blocks,Under,Daniel Theis,2.1,0.5,110
+draftkings,player_blocks,Over,James Harden,2.0,0.5,100
+draftkings,player_blocks,Under,James Harden,1.74,0.5,-135
+draftkings,player_blocks,Over,Kawhi Leonard,1.8,0.5,-125
+draftkings,player_blocks,Under,Kawhi Leonard,1.95,0.5,-105
+draftkings,player_blocks,Over,Mason Plumlee,2.15,0.5,114
+draftkings,player_blocks,Under,Mason Plumlee,1.65,0.5,-153
+draftkings,player_blocks,Over,Nicolas Claxton,1.87,2.5,-114
+draftkings,player_blocks,Under,Nicolas Claxton,1.87,2.5,-114
+draftkings,player_blocks,Over,Paul George,3.0,0.5,200
+draftkings,player_blocks,Under,Paul George,1.36,0.5,-277
+draftkings,player_points,Over,Cameron Johnson,1.87,10.5,-114
+draftkings,player_points,Under,Cameron Johnson,1.87,10.5,-114
+draftkings,player_points,Over,Daniel Theis,1.8,5.5,-125
+draftkings,player_points,Under,Daniel Theis,1.95,5.5,-105
+draftkings,player_points,Over,James Harden,1.77,13.5,-129
+draftkings,player_points,Under,James Harden,2.0,13.5,100
+draftkings,player_points,Over,Kawhi Leonard,1.83,21.5,-120
+draftkings,player_points,Under,Kawhi Leonard,1.91,21.5,-109
+draftkings,player_points,Over,Mason Plumlee,2.0,8.5,100
+draftkings,player_points,Under,Mason Plumlee,1.77,8.5,-129
+draftkings,player_points,Over,Nicolas Claxton,2.0,14.5,100
+draftkings,player_points,Under,Nicolas Claxton,1.74,14.5,-135
+draftkings,player_points,Over,Paul George,1.95,20.5,-105
+draftkings,player_points,Under,Paul George,1.8,20.5,-125
+draftkings,player_points,Over,Spencer Dinwiddie,1.87,13.5,-114
+draftkings,player_points,Under,Spencer Dinwiddie,1.87,13.5,-114
+draftkings,player_rebounds,Over,Cameron Johnson,2.35,5.5,135
+draftkings,player_rebounds,Under,Cameron Johnson,1.56,5.5,-178
+draftkings,player_rebounds,Over,Cameron Thomas,2.05,3.5,104
+draftkings,player_rebounds,Under,Cameron Thomas,1.71,3.5,-140
+draftkings,player_rebounds,Over,Daniel Theis,1.95,4.5,-105
+draftkings,player_rebounds,Under,Daniel Theis,1.8,4.5,-125
+draftkings,player_rebounds,Over,Dennis Smith Jr ,1.71,2.5,-140
+draftkings,player_rebounds,Under,Dennis Smith Jr ,2.05,2.5,104
+draftkings,player_rebounds,Over,Dorian Finney Smith,2.05,5.5,104
+draftkings,player_rebounds,Under,Dorian Finney Smith,1.74,5.5,-135
+draftkings,player_rebounds,Over,James Harden,1.65,4.5,-153
+draftkings,player_rebounds,Under,James Harden,2.2,4.5,120
+draftkings,player_rebounds,Over,Kawhi Leonard,2.15,5.5,114
+draftkings,player_rebounds,Under,Kawhi Leonard,1.67,5.5,-149
+draftkings,player_rebounds,Over,Mason Plumlee,2.15,11.5,114
+draftkings,player_rebounds,Under,Mason Plumlee,1.67,11.5,-149
+draftkings,player_rebounds,Over,Mikal Bridges,1.83,6.5,-120
+draftkings,player_rebounds,Under,Mikal Bridges,1.91,6.5,-109
+draftkings,player_rebounds,Over,Nicolas Claxton,2.0,10.5,100
+draftkings,player_rebounds,Under,Nicolas Claxton,1.74,10.5,-135
+draftkings,player_rebounds,Over,Paul George,1.71,5.5,-140
+draftkings,player_rebounds,Under,Paul George,2.05,5.5,104
+draftkings,player_rebounds,Over,Royce O'Neale,1.91,3.5,-109
+draftkings,player_rebounds,Under,Royce O'Neale,1.83,3.5,-120
+draftkings,player_rebounds,Over,Spencer Dinwiddie,2.4,3.5,140
+draftkings,player_rebounds,Under,Spencer Dinwiddie,1.53,3.5,-188
+draftkings,player_steals,Over,Cameron Johnson,1.8,0.5,-125
+draftkings,player_steals,Under,Cameron Johnson,1.95,0.5,-105
+draftkings,player_steals,Over,Dennis Smith Jr ,2.65,1.5,165
+draftkings,player_steals,Under,Dennis Smith Jr ,1.44,1.5,-227
+draftkings,player_steals,Over,Dorian Finney Smith,1.77,0.5,-129
+draftkings,player_steals,Under,Dorian Finney Smith,2.0,0.5,100
+draftkings,player_steals,Over,James Harden,1.65,0.5,-153
+draftkings,player_steals,Under,James Harden,2.15,0.5,114
+draftkings,player_steals,Over,Mason Plumlee,2.7,0.5,170
+draftkings,player_steals,Under,Mason Plumlee,1.43,0.5,-232
+draftkings,player_steals,Over,Mikal Bridges,1.8,0.5,-125
+draftkings,player_steals,Under,Mikal Bridges,1.95,0.5,-105
+draftkings,player_steals,Over,Nicolas Claxton,1.83,0.5,-120
+draftkings,player_steals,Under,Nicolas Claxton,1.91,0.5,-109
+draftkings,player_steals,Over,Paul George,1.39,1.5,-256
+draftkings,player_steals,Under,Paul George,2.85,1.5,185
+draftkings,player_steals,Over,Royce O'Neale,2.05,0.5,104
+draftkings,player_steals,Under,Royce O'Neale,1.71,0.5,-140
+draftkings,player_steals,Over,Spencer Dinwiddie,2.05,0.5,104
+draftkings,player_steals,Under,Spencer Dinwiddie,1.71,0.5,-140
+draftkings,player_threes,Over,Cameron Johnson,1.62,1.5,-161
+draftkings,player_threes,Under,Cameron Johnson,2.2,1.5,120
+draftkings,player_threes,Over,Cameron Thomas,1.8,1.5,-125
+draftkings,player_threes,Under,Cameron Thomas,1.95,1.5,-105
+draftkings,player_threes,Over,Dennis Smith Jr ,2.3,0.5,129
 draftkings,player_threes,Under,Dennis Smith Jr ,1.57,0.5,-175
-draftkings,player_threes,Over,Dorian Finney Smith,1.87,1.5,-114
-draftkings,player_threes,Under,Dorian Finney Smith,1.87,1.5,-114
-draftkings,player_threes,Over,James Harden,1.91,2.5,-109
-draftkings,player_threes,Under,James Harden,1.83,2.5,-120
-draftkings,player_threes,Over,Kawhi Leonard,2.4,2.5,140
-draftkings,player_threes,Under,Kawhi Leonard,1.56,2.5,-178
-draftkings,player_threes,Over,Lonnie Walker IV,1.95,1.5,-105
-draftkings,player_threes,Under,Lonnie Walker IV,1.8,1.5,-125
-draftkings,player_threes,Over,Mikal Bridges,1.95,2.5,-105
-draftkings,player_threes,Under,Mikal Bridges,1.8,2.5,-125
-draftkings,player_threes,Over,Norman Powell,1.57,1.5,-175
-draftkings,player_threes,Under,Norman Powell,2.35,1.5,135
-draftkings,player_threes,Over,Paul George,1.74,3.5,-135
-draftkings,player_threes,Under,Paul George,2.05,3.5,104
-draftkings,player_threes,Over,Royce O'Neale,2.3,1.5,129
-draftkings,player_threes,Under,Royce O'Neale,1.6,1.5,-166
-draftkings,player_threes,Over,Russell Westbrook,1.83,0.5,-120
-draftkings,player_threes,Under,Russell Westbrook,1.91,0.5,-109
-draftkings,player_threes,Over,Spencer Dinwiddie,1.69,1.5,-144
-draftkings,player_threes,Under,Spencer Dinwiddie,2.14,1.5,114
-draftkings,player_threes,Over,Terance Mann,1.45,0.5,-222
-draftkings,player_threes,Under,Terance Mann,2.7,0.5,170
-draftkings,player_threes_alternate,Over,Cameron Johnson,3.55,3.5,254
-draftkings,player_threes_alternate,Over,Cameron Thomas,3.0,2.5,200
-draftkings,player_threes_alternate,Over,Dorian Finney Smith,3.5,2.5,250
-draftkings,player_threes_alternate,Over,James Harden,3.1,3.5,210
-draftkings,player_threes_alternate,Over,Kawhi Leonard,1.43,1.5,-232
-draftkings,player_threes_alternate,Over,Kawhi Leonard,4.3,3.5,330
-draftkings,player_threes_alternate,Over,Lonnie Walker IV,3.7,2.5,270
-draftkings,player_threes_alternate,Over,Mikal Bridges,3.25,3.5,225
-draftkings,player_threes_alternate,Over,Norman Powell,2.55,2.5,154
-draftkings,player_threes_alternate,Over,Norman Powell,5.0,3.5,400
-draftkings,player_threes_alternate,Over,Paul George,2.5,4.5,150
-draftkings,player_threes_alternate,Over,Paul George,4.0,5.5,300
-draftkings,player_threes_alternate,Over,Russell Westbrook,5.0,1.5,400
-draftkings,player_threes_alternate,Over,Spencer Dinwiddie,2.65,2.5,165
-draftkings,player_threes_alternate,Over,Terance Mann,2.95,1.5,195
-draftkings,player_turnovers,Over,Cameron Johnson,1.5,0.5,-200
-draftkings,player_turnovers,Under,Cameron Johnson,2.54,0.5,154
-draftkings,player_turnovers,Over,Cameron Thomas,2.1,1.5,110
-draftkings,player_turnovers,Under,Cameron Thomas,1.71,1.5,-140
-draftkings,player_turnovers,Over,Daniel Theis,2.05,0.5,104
-draftkings,player_turnovers,Under,Daniel Theis,1.74,0.5,-135
-draftkings,player_turnovers,Over,Dennis Smith Jr ,2.6,1.5,160
-draftkings,player_turnovers,Under,Dennis Smith Jr ,1.48,1.5,-208
-draftkings,player_turnovers,Over,Dorian Finney Smith,1.74,0.5,-135
-draftkings,player_turnovers,Under,Dorian Finney Smith,2.05,0.5,104
-draftkings,player_turnovers,Over,James Harden,1.62,2.5,-161
-draftkings,player_turnovers,Under,James Harden,2.24,2.5,124
-draftkings,player_turnovers,Over,Kawhi Leonard,2.0,1.5,100
-draftkings,player_turnovers,Under,Kawhi Leonard,1.77,1.5,-129
-draftkings,player_turnovers,Over,Lonnie Walker IV,1.57,0.5,-175
-draftkings,player_turnovers,Under,Lonnie Walker IV,2.35,0.5,135
-draftkings,player_turnovers,Over,Mason Plumlee,1.62,0.5,-161
-draftkings,player_turnovers,Under,Mason Plumlee,2.24,0.5,124
-draftkings,player_turnovers,Over,Mikal Bridges,2.1,2.5,110
-draftkings,player_turnovers,Under,Mikal Bridges,1.71,2.5,-140
-draftkings,player_turnovers,Over,Nicolas Claxton,2.4,1.5,140
-draftkings,player_turnovers,Under,Nicolas Claxton,1.56,1.5,-178
-draftkings,player_turnovers,Over,Norman Powell,1.77,0.5,-129
-draftkings,player_turnovers,Under,Norman Powell,2.0,0.5,100
-draftkings,player_turnovers,Over,Paul George,1.74,1.5,-135
-draftkings,player_turnovers,Under,Paul George,2.05,1.5,104
-draftkings,player_turnovers,Over,Royce O'Neale,1.48,0.5,-208
-draftkings,player_turnovers,Under,Royce O'Neale,2.6,0.5,160
-draftkings,player_turnovers,Over,Russell Westbrook,1.71,1.5,-140
-draftkings,player_turnovers,Under,Russell Westbrook,2.1,1.5,110
-draftkings,player_turnovers,Over,Spencer Dinwiddie,2.45,1.5,145
-draftkings,player_turnovers,Under,Spencer Dinwiddie,1.53,1.5,-188
-draftkings,player_turnovers,Over,Terance Mann,1.83,0.5,-120
-draftkings,player_turnovers,Under,Terance Mann,1.91,0.5,-109
-draftkings,player_assists,Over,Aaron Gordon,2.1,3.5,110
-draftkings,player_assists,Under,Aaron Gordon,1.71,3.5,-140
-draftkings,player_assists,Over,Jamal Murray,1.91,7.5,-109
-draftkings,player_assists,Under,Jamal Murray,1.83,7.5,-120
+draftkings,player_threes,Over,Dorian Finney Smith,2.5,1.5,150
+draftkings,player_threes,Under,Dorian Finney Smith,1.5,1.5,-200
+draftkings,player_threes,Over,James Harden,2.5,2.5,150
+draftkings,player_threes,Under,James Harden,1.5,2.5,-200
+draftkings,player_threes,Over,Kawhi Leonard,1.71,1.5,-140
+draftkings,player_threes,Under,Kawhi Leonard,1.95,1.5,-105
+draftkings,player_threes,Over,Mikal Bridges,1.56,4.5,-178
+draftkings,player_threes,Under,Mikal Bridges,2.35,4.5,135
+draftkings,player_threes,Over,Paul George,1.54,2.5,-185
+draftkings,player_threes,Under,Paul George,2.35,2.5,135
+draftkings,player_threes,Over,Royce O'Neale,2.5,1.5,150
+draftkings,player_threes,Under,Royce O'Neale,1.5,1.5,-200
+draftkings,player_threes,Over,Spencer Dinwiddie,2.2,2.5,120
+draftkings,player_threes,Under,Spencer Dinwiddie,1.62,2.5,-161
+draftkings,player_turnovers,Over,Cameron Johnson,1.67,0.5,-149
+draftkings,player_turnovers,Under,Cameron Johnson,2.15,0.5,114
+draftkings,player_turnovers,Over,Daniel Theis,2.1,0.5,110
+draftkings,player_turnovers,Under,Daniel Theis,1.69,0.5,-144
+draftkings,player_turnovers,Over,James Harden,2.0,2.5,100
+draftkings,player_turnovers,Under,James Harden,1.74,2.5,-135
+draftkings,player_turnovers,Over,Kawhi Leonard,2.6,1.5,160
+draftkings,player_turnovers,Under,Kawhi Leonard,1.47,1.5,-212
+draftkings,player_turnovers,Over,Mason Plumlee,1.95,0.5,-105
+draftkings,player_turnovers,Under,Mason Plumlee,1.8,0.5,-125
+draftkings,player_turnovers,Over,Nicolas Claxton,1.47,0.5,-212
+draftkings,player_turnovers,Under,Nicolas Claxton,2.6,0.5,160
+draftkings,player_turnovers,Over,Paul George,2.15,1.5,114
+draftkings,player_turnovers,Under,Paul George,1.65,1.5,-153
+draftkings,player_turnovers,Over,Spencer Dinwiddie,1.57,0.5,-175
+draftkings,player_turnovers,Under,Spencer Dinwiddie,2.3,0.5,129
+draftkings,player_assists,Over,Aaron Gordon,2.2,3.5,120
+draftkings,player_assists,Under,Aaron Gordon,1.67,3.5,-149
+draftkings,player_assists,Over,Deni Avdija,1.71,3.5,-140
+draftkings,player_assists,Under,Deni Avdija,2.1,3.5,110
+draftkings,player_assists,Over,Jamal Murray,1.95,7.5,-105
+draftkings,player_assists,Under,Jamal Murray,1.8,7.5,-125
 draftkings,player_assists,Over,Jordan Poole,2.2,3.5,120
 draftkings,player_assists,Under,Jordan Poole,1.67,3.5,-149
-draftkings,player_assists,Over,Kentavious Caldwell Pope,2.3,2.5,129
-draftkings,player_assists,Under,Kentavious Caldwell Pope,1.6,2.5,-166
-draftkings,player_assists,Over,Kyle Kuzma,2.2,4.5,120
-draftkings,player_assists,Under,Kyle Kuzma,1.67,4.5,-149
-draftkings,player_assists,Over,Nikola Jokic,1.71,8.5,-140
-draftkings,player_assists,Under,Nikola Jokic,2.1,8.5,110
-draftkings,player_assists,Over,Reggie Jackson,1.62,3.5,-161
-draftkings,player_assists,Under,Reggie Jackson,2.24,3.5,124
+draftkings,player_assists,Over,Kentavious Caldwell Pope,2.24,2.5,124
+draftkings,player_assists,Under,Kentavious Caldwell Pope,1.62,2.5,-161
+draftkings,player_assists,Over,Kyle Kuzma,2.4,4.5,140
+draftkings,player_assists,Under,Kyle Kuzma,1.56,4.5,-178
+draftkings,player_assists,Over,Nikola Jokic,1.83,8.5,-120
+draftkings,player_assists,Under,Nikola Jokic,1.91,8.5,-109
 draftkings,player_assists,Over,Tyus Jones,1.71,5.5,-140
 draftkings,player_assists,Under,Tyus Jones,2.1,5.5,110
-draftkings,player_assists_alternate,Under,Aaron Gordon,5.5,1.5,450
-draftkings,player_assists_alternate,Over,Aaron Gordon,1.45,2.5,-222
-draftkings,player_assists_alternate,Under,Aaron Gordon,2.6,2.5,160
-draftkings,player_assists_alternate,Over,Aaron Gordon,6.0,5.5,500
-draftkings,player_assists_alternate,Under,Jamal Murray,3.3,5.5,229
-draftkings,player_assists_alternate,Over,Jamal Murray,1.56,6.5,-178
-draftkings,player_assists_alternate,Under,Jamal Murray,2.3,6.5,129
-draftkings,player_assists_alternate,Over,Jamal Murray,2.65,8.5,165
-draftkings,player_assists_alternate,Under,Jamal Murray,1.43,8.5,-232
+draftkings,player_assists_alternate,Under,Aaron Gordon,5.25,1.5,425
+draftkings,player_assists_alternate,Over,Aaron Gordon,1.48,2.5,-208
+draftkings,player_assists_alternate,Under,Aaron Gordon,2.5,2.5,150
+draftkings,player_assists_alternate,Over,Aaron Gordon,6.5,5.5,550
+draftkings,player_assists_alternate,Under,Deni Avdija,7.5,1.5,650
+draftkings,player_assists_alternate,Under,Deni Avdija,3.35,2.5,235
+draftkings,player_assists_alternate,Over,Deni Avdija,4.1,5.5,309
+draftkings,player_assists_alternate,Under,Jamal Murray,3.2,5.5,220
+draftkings,player_assists_alternate,Over,Jamal Murray,1.59,6.5,-169
+draftkings,player_assists_alternate,Under,Jamal Murray,2.2,6.5,120
+draftkings,player_assists_alternate,Over,Jamal Murray,2.75,8.5,175
+draftkings,player_assists_alternate,Under,Jamal Murray,1.39,8.5,-256
 draftkings,player_assists_alternate,Under,Jordan Poole,4.8,1.5,380
 draftkings,player_assists_alternate,Over,Jordan Poole,1.53,2.5,-188
 draftkings,player_assists_alternate,Under,Jordan Poole,2.4,2.5,140
 draftkings,player_assists_alternate,Over,Jordan Poole,7.0,5.5,600
 draftkings,player_assists_alternate,Over,Kentavious Caldwell Pope,1.43,1.5,-232
-draftkings,player_assists_alternate,Under,Kentavious Caldwell Pope,2.65,1.5,165
-draftkings,player_assists_alternate,Over,Kentavious Caldwell Pope,4.2,3.5,320
-draftkings,player_assists_alternate,Under,Kyle Kuzma,4.2,2.5,320
-draftkings,player_assists_alternate,Over,Kyle Kuzma,1.53,3.5,-188
-draftkings,player_assists_alternate,Under,Kyle Kuzma,2.35,3.5,135
-draftkings,player_assists_alternate,Over,Kyle Kuzma,3.3,5.5,229
-draftkings,player_assists_alternate,Over,Kyle Kuzma,5.5,6.5,450
-draftkings,player_assists_alternate,Under,Nikola Jokic,4.6,6.5,359
-draftkings,player_assists_alternate,Over,Nikola Jokic,2.55,10.5,154
-draftkings,player_assists_alternate,Under,Nikola Jokic,1.48,10.5,-208
-draftkings,player_assists_alternate,Under,Reggie Jackson,9.0,1.5,800
-draftkings,player_assists_alternate,Under,Reggie Jackson,3.8,2.5,280
-draftkings,player_assists_alternate,Over,Reggie Jackson,3.6,5.5,260
+draftkings,player_assists_alternate,Under,Kentavious Caldwell Pope,2.7,1.5,170
+draftkings,player_assists_alternate,Over,Kentavious Caldwell Pope,4.0,3.5,300
+draftkings,player_assists_alternate,Under,Kyle Kuzma,4.0,2.5,300
+draftkings,player_assists_alternate,Over,Kyle Kuzma,1.57,3.5,-175
+draftkings,player_assists_alternate,Under,Kyle Kuzma,2.3,3.5,129
+draftkings,player_assists_alternate,Over,Kyle Kuzma,3.4,5.5,240
+draftkings,player_assists_alternate,Over,Kyle Kuzma,6.0,6.5,500
+draftkings,player_assists_alternate,Under,Nikola Jokic,4.1,6.5,309
+draftkings,player_assists_alternate,Over,Nikola Jokic,2.95,10.5,195
+draftkings,player_assists_alternate,Under,Nikola Jokic,1.36,10.5,-277
 draftkings,player_assists_alternate,Under,Tyus Jones,5.25,3.5,425
 draftkings,player_assists_alternate,Over,Tyus Jones,2.25,6.5,125
 draftkings,player_assists_alternate,Under,Tyus Jones,1.59,6.5,-169
-draftkings,player_assists_alternate,Over,Aaron Gordon,3.35,4.5,235
-draftkings,player_assists_alternate,Over,Jamal Murray,3.55,9.5,254
-draftkings,player_assists_alternate,Over,Jamal Murray,8.0,11.5,700
+draftkings,player_assists_alternate,Over,Aaron Gordon,3.55,4.5,254
+draftkings,player_assists_alternate,Over,Deni Avdija,2.5,4.5,150
+draftkings,player_assists_alternate,Over,Deni Avdija,14.0,7.5,1300
+draftkings,player_assists_alternate,Over,Jamal Murray,3.75,9.5,275
+draftkings,player_assists_alternate,Over,Jamal Murray,8.5,11.5,750
 draftkings,player_assists_alternate,Over,Jordan Poole,3.75,4.5,275
-draftkings,player_assists_alternate,Over,Kentavious Caldwell Pope,9.0,4.5,800
-draftkings,player_assists_alternate,Over,Kyle Kuzma,10.0,7.5,900
-draftkings,player_assists_alternate,Over,Nikola Jokic,1.39,7.5,-256
-draftkings,player_assists_alternate,Over,Nikola Jokic,2.1,9.5,110
-draftkings,player_assists_alternate,Over,Nikola Jokic,3.8,11.5,280
-draftkings,player_assists_alternate,Over,Reggie Jackson,2.3,4.5,129
-draftkings,player_assists_alternate,Over,Reggie Jackson,12.0,7.5,1100
+draftkings,player_assists_alternate,Over,Kentavious Caldwell Pope,8.5,4.5,750
+draftkings,player_assists_alternate,Over,Kyle Kuzma,10.5,7.5,950
+draftkings,player_assists_alternate,Over,Nikola Jokic,1.48,7.5,-208
+draftkings,player_assists_alternate,Over,Nikola Jokic,2.35,9.5,135
+draftkings,player_assists_alternate,Over,Nikola Jokic,4.4,11.5,340
 draftkings,player_assists_alternate,Over,Tyus Jones,1.34,4.5,-294
 draftkings,player_assists_alternate,Over,Tyus Jones,3.25,7.5,225
-draftkings,player_assists_alternate,Over,Tyus Jones,8.5,9.5,750
-draftkings,player_blocks,Over,Aaron Gordon,2.35,0.5,135
-draftkings,player_blocks,Under,Aaron Gordon,1.57,0.5,-175
-draftkings,player_blocks,Over,Christian Braun,2.5,0.5,150
-draftkings,player_blocks,Under,Christian Braun,1.51,0.5,-196
-draftkings,player_blocks,Over,Jamal Murray,2.14,0.5,114
-draftkings,player_blocks,Under,Jamal Murray,1.69,0.5,-144
+draftkings,player_assists_alternate,Over,Tyus Jones,8.0,9.5,700
+draftkings,player_blocks,Over,Aaron Gordon,2.3,0.5,129
+draftkings,player_blocks,Under,Aaron Gordon,1.6,0.5,-166
+draftkings,player_blocks,Over,Deni Avdija,2.54,0.5,154
+draftkings,player_blocks,Under,Deni Avdija,1.5,0.5,-200
+draftkings,player_blocks,Over,Jamal Murray,2.05,0.5,104
+draftkings,player_blocks,Under,Jamal Murray,1.74,0.5,-135
 draftkings,player_blocks,Over,Jordan Poole,4.1,0.5,309
 draftkings,player_blocks,Over,Kentavious Caldwell Pope,2.14,0.5,114
 draftkings,player_blocks,Under,Kentavious Caldwell Pope,1.69,0.5,-144
 draftkings,player_blocks,Over,Kyle Kuzma,2.7,0.5,170
 draftkings,player_blocks,Under,Kyle Kuzma,1.45,0.5,-222
-draftkings,player_blocks,Over,Michael Porter Jr ,1.71,0.5,-140
-draftkings,player_blocks,Under,Michael Porter Jr ,2.1,0.5,110
-draftkings,player_blocks,Over,Nikola Jokic,1.47,0.5,-212
-draftkings,player_blocks,Under,Nikola Jokic,2.65,0.5,165
-draftkings,player_blocks,Over,Peyton Watson,1.74,0.5,-135
-draftkings,player_blocks,Under,Peyton Watson,2.05,0.5,104
-draftkings,player_blocks,Over,Reggie Jackson,7.0,0.5,600
-draftkings,player_blocks,Over,Tyus Jones,3.5,0.5,250
-draftkings,player_blocks_alternate,Over,Aaron Gordon,2.35,0.5,135
-draftkings,player_blocks_alternate,Over,Christian Braun,2.5,0.5,150
-draftkings,player_blocks_alternate,Over,Jamal Murray,2.15,0.5,114
+draftkings,player_blocks,Over,Michael Porter Jr ,1.69,0.5,-144
+draftkings,player_blocks,Under,Michael Porter Jr ,2.14,0.5,114
+draftkings,player_blocks,Over,Nikola Jokic,1.5,0.5,-200
+draftkings,player_blocks,Under,Nikola Jokic,2.54,0.5,154
+draftkings,player_blocks,Over,Tyus Jones,3.4,0.5,240
+draftkings,player_blocks_alternate,Over,Aaron Gordon,2.3,0.5,129
+draftkings,player_blocks_alternate,Over,Deni Avdija,2.55,0.5,154
+draftkings,player_blocks_alternate,Over,Jamal Murray,2.05,0.5,104
 draftkings,player_blocks_alternate,Over,Jordan Poole,4.1,0.5,309
-draftkings,player_blocks_alternate,Over,Kentavious Caldwell Pope,2.15,0.5,114
-draftkings,player_blocks_alternate,Over,Kyle Kuzma,2.75,0.5,175
-draftkings,player_blocks_alternate,Over,Michael Porter Jr ,1.71,0.5,-140
-draftkings,player_blocks_alternate,Over,Nikola Jokic,1.47,0.5,-212
-draftkings,player_blocks_alternate,Over,Nikola Jokic,3.15,1.5,215
-draftkings,player_blocks_alternate,Over,Peyton Watson,1.77,0.5,-129
-draftkings,player_blocks_alternate,Over,Tyus Jones,3.55,0.5,254
-draftkings,player_points,Over,Aaron Gordon,1.87,15.5,-114
-draftkings,player_points,Under,Aaron Gordon,1.87,15.5,-114
-draftkings,player_points,Over,Jamal Murray,1.77,24.5,-129
-draftkings,player_points,Under,Jamal Murray,2.0,24.5,100
+draftkings,player_blocks_alternate,Over,Kentavious Caldwell Pope,2.1,0.5,110
+draftkings,player_blocks_alternate,Over,Kyle Kuzma,2.7,0.5,170
+draftkings,player_blocks_alternate,Over,Michael Porter Jr ,1.69,0.5,-144
+draftkings,player_blocks_alternate,Over,Michael Porter Jr ,4.5,1.5,350
+draftkings,player_blocks_alternate,Over,Nikola Jokic,1.44,0.5,-227
+draftkings,player_blocks_alternate,Over,Nikola Jokic,3.05,1.5,204
+draftkings,player_blocks_alternate,Over,Tyus Jones,3.45,0.5,245
+draftkings,player_points,Over,Aaron Gordon,1.8,15.5,-125
+draftkings,player_points,Under,Aaron Gordon,1.95,15.5,-105
+draftkings,player_points,Over,Deni Avdija,2.0,12.5,100
+draftkings,player_points,Under,Deni Avdija,1.77,12.5,-129
+draftkings,player_points,Over,Jamal Murray,1.95,25.5,-105
+draftkings,player_points,Under,Jamal Murray,1.8,25.5,-125
 draftkings,player_points,Over,Jordan Poole,2.0,17.5,100
 draftkings,player_points,Under,Jordan Poole,1.77,17.5,-129
-draftkings,player_points,Over,Kentavious Caldwell Pope,1.95,10.5,-105
-draftkings,player_points,Under,Kentavious Caldwell Pope,1.8,10.5,-125
+draftkings,player_points,Over,Kentavious Caldwell Pope,1.83,10.5,-120
+draftkings,player_points,Under,Kentavious Caldwell Pope,1.91,10.5,-109
 draftkings,player_points,Over,Kyle Kuzma,1.74,18.5,-135
 draftkings,player_points,Under,Kyle Kuzma,2.05,18.5,104
-draftkings,player_points,Over,Michael Porter Jr ,1.83,16.5,-120
-draftkings,player_points,Under,Michael Porter Jr ,1.91,16.5,-109
-draftkings,player_points,Over,Nikola Jokic,1.91,26.5,-109
-draftkings,player_points,Under,Nikola Jokic,1.83,26.5,-120
-draftkings,player_points,Over,Peyton Watson,2.0,7.5,100
-draftkings,player_points,Under,Peyton Watson,1.77,7.5,-129
-draftkings,player_points,Over,Reggie Jackson,1.83,9.5,-120
-draftkings,player_points,Under,Reggie Jackson,1.91,9.5,-109
+draftkings,player_points,Over,Michael Porter Jr ,1.8,16.5,-125
+draftkings,player_points,Under,Michael Porter Jr ,1.95,16.5,-105
+draftkings,player_points,Over,Nikola Jokic,1.91,27.5,-109
+draftkings,player_points,Under,Nikola Jokic,1.83,27.5,-120
 draftkings,player_points,Over,Tyus Jones,1.95,11.5,-105
 draftkings,player_points,Under,Tyus Jones,1.8,11.5,-125
-draftkings,player_points_alternate,Over,Aaron Gordon,1.51,13.5,-196
-draftkings,player_points_alternate,Under,Aaron Gordon,2.4,13.5,140
-draftkings,player_points_alternate,Over,Aaron Gordon,2.15,16.5,114
-draftkings,player_points_alternate,Under,Aaron Gordon,1.65,16.5,-153
-draftkings,player_points_alternate,Over,Jamal Murray,1.53,22.5,-188
-draftkings,player_points_alternate,Under,Jamal Murray,2.35,22.5,135
-draftkings,player_points_alternate,Over,Jamal Murray,1.65,23.5,-153
-draftkings,player_points_alternate,Under,Jamal Murray,2.1,23.5,110
-draftkings,player_points_alternate,Over,Jamal Murray,1.95,25.5,-105
-draftkings,player_points_alternate,Under,Jamal Murray,1.77,25.5,-129
-draftkings,player_points_alternate,Over,Jamal Murray,2.1,26.5,110
-draftkings,player_points_alternate,Under,Jamal Murray,1.67,26.5,-149
+draftkings,player_points_alternate,Over,Aaron Gordon,1.47,13.5,-212
+draftkings,player_points_alternate,Under,Aaron Gordon,2.55,13.5,154
+draftkings,player_points_alternate,Over,Aaron Gordon,2.0,16.5,100
+draftkings,player_points_alternate,Under,Aaron Gordon,1.71,16.5,-140
+draftkings,player_points_alternate,Over,Deni Avdija,1.54,10.5,-185
+draftkings,player_points_alternate,Under,Deni Avdija,2.35,10.5,135
+draftkings,player_points_alternate,Over,Deni Avdija,2.3,13.5,129
+draftkings,player_points_alternate,Under,Deni Avdija,1.54,13.5,-185
+draftkings,player_points_alternate,Over,Jamal Murray,1.54,23.5,-185
+draftkings,player_points_alternate,Under,Jamal Murray,2.3,23.5,129
+draftkings,player_points_alternate,Over,Jamal Murray,1.95,26.5,-105
+draftkings,player_points_alternate,Under,Jamal Murray,1.77,26.5,-129
+draftkings,player_points_alternate,Over,Jamal Murray,2.3,27.5,129
+draftkings,player_points_alternate,Under,Jamal Murray,1.54,27.5,-185
 draftkings,player_points_alternate,Over,Jordan Poole,1.56,15.5,-178
 draftkings,player_points_alternate,Under,Jordan Poole,2.3,15.5,129
 draftkings,player_points_alternate,Over,Jordan Poole,1.71,16.5,-140
 draftkings,player_points_alternate,Under,Jordan Poole,2.0,16.5,100
 draftkings,player_points_alternate,Over,Jordan Poole,2.15,18.5,114
 draftkings,player_points_alternate,Under,Jordan Poole,1.65,18.5,-153
-draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,1.51,8.5,-196
-draftkings,player_points_alternate,Under,Kentavious Caldwell Pope,2.4,8.5,140
-draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,2.65,12.5,165
-draftkings,player_points_alternate,Under,Kentavious Caldwell Pope,1.43,12.5,-232
+draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,1.45,8.5,-222
+draftkings,player_points_alternate,Under,Kentavious Caldwell Pope,2.55,8.5,154
+draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,2.5,12.5,150
+draftkings,player_points_alternate,Under,Kentavious Caldwell Pope,1.48,12.5,-208
 draftkings,player_points_alternate,Over,Kyle Kuzma,1.48,16.5,-208
 draftkings,player_points_alternate,Under,Kyle Kuzma,2.5,16.5,150
 draftkings,player_points_alternate,Over,Kyle Kuzma,2.15,20.5,114
 draftkings,player_points_alternate,Under,Kyle Kuzma,1.62,20.5,-161
 draftkings,player_points_alternate,Over,Michael Porter Jr ,1.71,15.5,-140
 draftkings,player_points_alternate,Under,Michael Porter Jr ,2.05,15.5,104
-draftkings,player_points_alternate,Over,Michael Porter Jr ,2.45,18.5,145
-draftkings,player_points_alternate,Under,Michael Porter Jr ,1.5,18.5,-200
-draftkings,player_points_alternate,Over,Nikola Jokic,1.69,25.5,-144
-draftkings,player_points_alternate,Under,Nikola Jokic,2.05,25.5,104
-draftkings,player_points_alternate,Over,Nikola Jokic,2.0,27.5,100
-draftkings,player_points_alternate,Under,Nikola Jokic,1.71,27.5,-140
-draftkings,player_points_alternate,Over,Nikola Jokic,2.2,28.5,120
-draftkings,player_points_alternate,Under,Nikola Jokic,1.59,28.5,-169
-draftkings,player_points_alternate,Over,Peyton Watson,1.65,6.5,-153
-draftkings,player_points_alternate,Under,Peyton Watson,2.1,6.5,110
-draftkings,player_points_alternate,Over,Peyton Watson,2.35,8.5,135
-draftkings,player_points_alternate,Under,Peyton Watson,1.54,8.5,-185
-draftkings,player_points_alternate,Over,Peyton Watson,3.65,10.5,265
-draftkings,player_points_alternate,Over,Reggie Jackson,1.61,8.5,-163
-draftkings,player_points_alternate,Under,Reggie Jackson,2.2,8.5,120
-draftkings,player_points_alternate,Over,Reggie Jackson,2.15,10.5,114
-draftkings,player_points_alternate,Under,Reggie Jackson,1.62,10.5,-161
-draftkings,player_points_alternate,Over,Tyus Jones,1.69,10.5,-144
-draftkings,player_points_alternate,Under,Tyus Jones,2.05,10.5,104
-draftkings,player_points_alternate,Over,Tyus Jones,2.2,12.5,120
-draftkings,player_points_alternate,Under,Tyus Jones,1.59,12.5,-169
-draftkings,player_points_alternate,Over,Tyus Jones,2.6,13.5,160
-draftkings,player_points_alternate,Under,Tyus Jones,1.44,13.5,-227
-draftkings,player_points_alternate,Over,Aaron Gordon,1.69,14.5,-144
-draftkings,player_points_alternate,Over,Aaron Gordon,2.45,17.5,145
-draftkings,player_points_alternate,Over,Aaron Gordon,3.35,19.5,235
-draftkings,player_points_alternate,Over,Jamal Murray,3.0,29.5,200
-draftkings,player_points_alternate,Over,Jamal Murray,6.0,34.5,500
+draftkings,player_points_alternate,Over,Michael Porter Jr ,2.4,18.5,140
+draftkings,player_points_alternate,Under,Michael Porter Jr ,1.51,18.5,-196
+draftkings,player_points_alternate,Over,Nikola Jokic,1.59,25.5,-169
+draftkings,player_points_alternate,Under,Nikola Jokic,2.2,25.5,120
+draftkings,player_points_alternate,Over,Nikola Jokic,1.71,26.5,-140
+draftkings,player_points_alternate,Under,Nikola Jokic,2.0,26.5,100
+draftkings,player_points_alternate,Over,Nikola Jokic,2.05,28.5,104
+draftkings,player_points_alternate,Under,Nikola Jokic,1.69,28.5,-144
+draftkings,player_points_alternate,Over,Tyus Jones,1.71,10.5,-140
+draftkings,player_points_alternate,Under,Tyus Jones,2.0,10.5,100
+draftkings,player_points_alternate,Over,Tyus Jones,2.25,12.5,125
+draftkings,player_points_alternate,Under,Tyus Jones,1.57,12.5,-175
+draftkings,player_points_alternate,Over,Tyus Jones,2.65,13.5,165
+draftkings,player_points_alternate,Under,Tyus Jones,1.43,13.5,-232
+draftkings,player_points_alternate,Over,Aaron Gordon,1.61,14.5,-163
+draftkings,player_points_alternate,Over,Aaron Gordon,2.3,17.5,129
+draftkings,player_points_alternate,Over,Aaron Gordon,3.1,19.5,210
+draftkings,player_points_alternate,Over,Deni Avdija,1.65,11.5,-153
+draftkings,player_points_alternate,Over,Deni Avdija,2.5,14.5,150
+draftkings,player_points_alternate,Over,Deni Avdija,4.2,17.5,320
+draftkings,player_points_alternate,Over,Jamal Murray,1.74,24.5,-135
+draftkings,player_points_alternate,Over,Jamal Murray,2.7,29.5,170
+draftkings,player_points_alternate,Over,Jamal Murray,5.25,34.5,425
 draftkings,player_points_alternate,Over,Jordan Poole,1.43,14.5,-232
 draftkings,player_points_alternate,Over,Jordan Poole,2.4,19.5,140
 draftkings,player_points_alternate,Over,Jordan Poole,5.25,24.5,425
-draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,1.37,7.5,-270
-draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,1.71,9.5,-140
-draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,2.25,11.5,125
-draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,3.8,14.5,280
+draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,1.65,9.5,-153
+draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,2.1,11.5,110
+draftkings,player_points_alternate,Over,Kentavious Caldwell Pope,3.55,14.5,254
 draftkings,player_points_alternate,Over,Kyle Kuzma,1.59,17.5,-169
 draftkings,player_points_alternate,Over,Kyle Kuzma,1.95,19.5,-105
 draftkings,player_points_alternate,Over,Kyle Kuzma,3.65,24.5,265
 draftkings,player_points_alternate,Over,Michael Porter Jr ,1.56,14.5,-178
-draftkings,player_points_alternate,Over,Michael Porter Jr ,2.15,17.5,114
-draftkings,player_points_alternate,Over,Michael Porter Jr ,2.8,19.5,179
-draftkings,player_points_alternate,Over,Michael Porter Jr ,6.0,24.5,500
-draftkings,player_points_alternate,Over,Nikola Jokic,1.57,24.5,-175
-draftkings,player_points_alternate,Over,Nikola Jokic,2.5,29.5,150
-draftkings,player_points_alternate,Over,Nikola Jokic,4.7,34.5,370
-draftkings,player_points_alternate,Over,Peyton Watson,2.9,9.5,190
-draftkings,player_points_alternate,Over,Peyton Watson,4.6,11.5,359
-draftkings,player_points_alternate,Over,Reggie Jackson,1.43,7.5,-232
-draftkings,player_points_alternate,Over,Reggie Jackson,2.55,11.5,154
-draftkings,player_points_alternate,Over,Reggie Jackson,4.7,14.5,370
-draftkings,player_points_alternate,Over,Tyus Jones,1.51,9.5,-196
+draftkings,player_points_alternate,Over,Michael Porter Jr ,2.1,17.5,110
+draftkings,player_points_alternate,Over,Michael Porter Jr ,2.7,19.5,170
+draftkings,player_points_alternate,Over,Michael Porter Jr ,5.75,24.5,475
+draftkings,player_points_alternate,Over,Nikola Jokic,1.5,24.5,-200
+draftkings,player_points_alternate,Over,Nikola Jokic,2.25,29.5,125
+draftkings,player_points_alternate,Over,Nikola Jokic,4.1,34.5,309
+draftkings,player_points_alternate,Over,Nikola Jokic,9.0,39.5,800
+draftkings,player_points_alternate,Over,Tyus Jones,1.53,9.5,-188
 draftkings,player_points_alternate,Over,Tyus Jones,3.15,14.5,215
 draftkings,player_points_alternate,Over,Tyus Jones,5.75,17.5,475
-draftkings,player_rebounds,Over,Aaron Gordon,1.83,6.5,-120
-draftkings,player_rebounds,Under,Aaron Gordon,1.91,6.5,-109
-draftkings,player_rebounds,Over,Christian Braun,2.24,3.5,124
-draftkings,player_rebounds,Under,Christian Braun,1.62,3.5,-161
-draftkings,player_rebounds,Over,Jamal Murray,1.67,3.5,-149
-draftkings,player_rebounds,Under,Jamal Murray,2.2,3.5,120
+draftkings,player_rebounds,Over,Aaron Gordon,1.71,6.5,-140
+draftkings,player_rebounds,Under,Aaron Gordon,2.1,6.5,110
+draftkings,player_rebounds,Over,Deni Avdija,1.67,4.5,-149
+draftkings,player_rebounds,Under,Deni Avdija,2.2,4.5,120
+draftkings,player_rebounds,Over,Jamal Murray,2.2,4.5,120
+draftkings,player_rebounds,Under,Jamal Murray,1.67,4.5,-149
 draftkings,player_rebounds,Over,Jordan Poole,2.3,2.5,129
 draftkings,player_rebounds,Under,Jordan Poole,1.56,2.5,-178
-draftkings,player_rebounds,Over,Kentavious Caldwell Pope,2.35,3.5,135
-draftkings,player_rebounds,Under,Kentavious Caldwell Pope,1.57,3.5,-175
+draftkings,player_rebounds,Over,Kentavious Caldwell Pope,2.3,3.5,129
+draftkings,player_rebounds,Under,Kentavious Caldwell Pope,1.6,3.5,-166
 draftkings,player_rebounds,Over,Kyle Kuzma,1.74,5.5,-135
 draftkings,player_rebounds,Under,Kyle Kuzma,2.05,5.5,104
 draftkings,player_rebounds,Over,Michael Porter Jr ,1.77,6.5,-129
 draftkings,player_rebounds,Under,Michael Porter Jr ,2.0,6.5,100
-draftkings,player_rebounds,Over,Nikola Jokic,1.71,11.5,-140
-draftkings,player_rebounds,Under,Nikola Jokic,2.1,11.5,110
-draftkings,player_rebounds,Over,Peyton Watson,1.69,2.5,-144
-draftkings,player_rebounds,Under,Peyton Watson,2.14,2.5,114
+draftkings,player_rebounds,Over,Nikola Jokic,1.83,12.5,-120
+draftkings,player_rebounds,Under,Nikola Jokic,1.91,12.5,-109
 draftkings,player_rebounds,Over,Tyus Jones,2.1,2.5,110
 draftkings,player_rebounds,Under,Tyus Jones,1.71,2.5,-140
-draftkings,player_rebounds_alternate,Over,Aaron Gordon,1.43,5.5,-232
-draftkings,player_rebounds_alternate,Under,Aaron Gordon,2.7,5.5,170
-draftkings,player_rebounds_alternate,Over,Aaron Gordon,3.35,8.5,235
-draftkings,player_rebounds_alternate,Under,Christian Braun,5.0,1.5,400
-draftkings,player_rebounds_alternate,Over,Christian Braun,1.49,2.5,-204
-draftkings,player_rebounds_alternate,Under,Christian Braun,2.45,2.5,145
-draftkings,player_rebounds_alternate,Over,Christian Braun,6.5,5.5,550
-draftkings,player_rebounds_alternate,Under,Jamal Murray,8.0,1.5,700
-draftkings,player_rebounds_alternate,Under,Jamal Murray,3.65,2.5,265
-draftkings,player_rebounds_alternate,Over,Jamal Murray,3.75,5.5,275
+draftkings,player_rebounds_alternate,Over,Aaron Gordon,1.37,5.5,-270
+draftkings,player_rebounds_alternate,Under,Aaron Gordon,2.9,5.5,190
+draftkings,player_rebounds_alternate,Over,Aaron Gordon,3.0,8.5,200
+draftkings,player_rebounds_alternate,Under,Aaron Gordon,1.34,8.5,-294
+draftkings,player_rebounds_alternate,Under,Deni Avdija,7.0,2.5,600
+draftkings,player_rebounds_alternate,Under,Deni Avdija,3.65,3.5,265
+draftkings,player_rebounds_alternate,Over,Deni Avdija,2.1,5.5,110
+draftkings,player_rebounds_alternate,Under,Deni Avdija,1.65,5.5,-153
+draftkings,player_rebounds_alternate,Over,Deni Avdija,3.1,6.5,210
+draftkings,player_rebounds_alternate,Under,Jamal Murray,4.1,2.5,309
+draftkings,player_rebounds_alternate,Over,Jamal Murray,1.54,3.5,-185
+draftkings,player_rebounds_alternate,Under,Jamal Murray,2.35,3.5,135
+draftkings,player_rebounds_alternate,Over,Jamal Murray,3.25,5.5,225
+draftkings,player_rebounds_alternate,Over,Jamal Murray,5.75,6.5,475
 draftkings,player_rebounds_alternate,Over,Jordan Poole,1.45,1.5,-222
 draftkings,player_rebounds_alternate,Under,Jordan Poole,2.55,1.5,154
 draftkings,player_rebounds_alternate,Over,Jordan Poole,4.4,3.5,340
-draftkings,player_rebounds_alternate,Under,Kentavious Caldwell Pope,4.7,1.5,370
-draftkings,player_rebounds_alternate,Over,Kentavious Caldwell Pope,1.54,2.5,-185
-draftkings,player_rebounds_alternate,Under,Kentavious Caldwell Pope,2.35,2.5,135
+draftkings,player_rebounds_alternate,Under,Kentavious Caldwell Pope,4.9,1.5,390
+draftkings,player_rebounds_alternate,Over,Kentavious Caldwell Pope,1.53,2.5,-188
+draftkings,player_rebounds_alternate,Under,Kentavious Caldwell Pope,2.4,2.5,140
 draftkings,player_rebounds_alternate,Over,Kentavious Caldwell Pope,7.0,5.5,600
 draftkings,player_rebounds_alternate,Under,Kyle Kuzma,4.9,3.5,390
-draftkings,player_rebounds_alternate,Over,Kyle Kuzma,2.3,6.5,129
-draftkings,player_rebounds_alternate,Under,Kyle Kuzma,1.56,6.5,-178
+draftkings,player_rebounds_alternate,Over,Kyle Kuzma,2.35,6.5,135
+draftkings,player_rebounds_alternate,Under,Kyle Kuzma,1.54,6.5,-185
 draftkings,player_rebounds_alternate,Over,Michael Porter Jr ,1.47,5.5,-212
 draftkings,player_rebounds_alternate,Under,Michael Porter Jr ,2.55,5.5,154
-draftkings,player_rebounds_alternate,Over,Michael Porter Jr ,3.6,8.5,260
-draftkings,player_rebounds_alternate,Over,Nikola Jokic,1.51,10.5,-196
-draftkings,player_rebounds_alternate,Under,Nikola Jokic,2.4,10.5,140
-draftkings,player_rebounds_alternate,Over,Nikola Jokic,2.2,12.5,120
-draftkings,player_rebounds_alternate,Under,Nikola Jokic,1.61,12.5,-163
-draftkings,player_rebounds_alternate,Over,Nikola Jokic,2.8,13.5,179
-draftkings,player_rebounds_alternate,Under,Nikola Jokic,1.4,13.5,-250
-draftkings,player_rebounds_alternate,Under,Peyton Watson,4.2,1.5,320
-draftkings,player_rebounds_alternate,Over,Peyton Watson,2.55,3.5,154
-draftkings,player_rebounds_alternate,Under,Peyton Watson,1.47,3.5,-212
-draftkings,player_rebounds_alternate,Over,Peyton Watson,8.5,5.5,750
+draftkings,player_rebounds_alternate,Over,Michael Porter Jr ,3.55,8.5,254
+draftkings,player_rebounds_alternate,Over,Nikola Jokic,1.42,10.5,-238
+draftkings,player_rebounds_alternate,Under,Nikola Jokic,2.7,10.5,170
+draftkings,player_rebounds_alternate,Over,Nikola Jokic,2.45,13.5,145
+draftkings,player_rebounds_alternate,Under,Nikola Jokic,1.5,13.5,-200
 draftkings,player_rebounds_alternate,Over,Tyus Jones,1.36,1.5,-277
 draftkings,player_rebounds_alternate,Under,Tyus Jones,2.95,1.5,195
 draftkings,player_rebounds_alternate,Over,Tyus Jones,3.6,3.5,260
-draftkings,player_rebounds_alternate,Over,Aaron Gordon,2.45,7.5,145
-draftkings,player_rebounds_alternate,Over,Aaron Gordon,5.25,9.5,425
-draftkings,player_rebounds_alternate,Over,Aaron Gordon,13.0,11.5,1200
-draftkings,player_rebounds_alternate,Over,Christian Braun,3.55,4.5,254
-draftkings,player_rebounds_alternate,Over,Jamal Murray,2.35,4.5,135
-draftkings,player_rebounds_alternate,Over,Jamal Murray,12.0,7.5,1100
+draftkings,player_rebounds_alternate,Over,Aaron Gordon,2.2,7.5,120
+draftkings,player_rebounds_alternate,Over,Aaron Gordon,4.4,9.5,340
+draftkings,player_rebounds_alternate,Over,Aaron Gordon,11.0,11.5,1000
+draftkings,player_rebounds_alternate,Over,Deni Avdija,4.7,7.5,370
+draftkings,player_rebounds_alternate,Over,Jamal Murray,10.0,7.5,900
 draftkings,player_rebounds_alternate,Over,Jordan Poole,9.5,4.5,850
-draftkings,player_rebounds_alternate,Over,Kentavious Caldwell Pope,3.85,4.5,285
+draftkings,player_rebounds_alternate,Over,Kentavious Caldwell Pope,3.65,4.5,265
 draftkings,player_rebounds_alternate,Over,Kyle Kuzma,1.34,4.5,-294
-draftkings,player_rebounds_alternate,Over,Kyle Kuzma,3.3,7.5,229
+draftkings,player_rebounds_alternate,Over,Kyle Kuzma,3.25,7.5,225
 draftkings,player_rebounds_alternate,Over,Kyle Kuzma,8.0,9.5,700
 draftkings,player_rebounds_alternate,Over,Michael Porter Jr ,2.5,7.5,150
 draftkings,player_rebounds_alternate,Over,Michael Porter Jr ,5.5,9.5,450
-draftkings,player_rebounds_alternate,Over,Nikola Jokic,3.25,14.5,225
-draftkings,player_rebounds_alternate,Over,Peyton Watson,4.6,4.5,359
-draftkings,player_rebounds_alternate,Over,Tyus Jones,7.5,4.5,650
-draftkings,player_steals,Over,Aaron Gordon,1.67,0.5,-149
-draftkings,player_steals,Under,Aaron Gordon,2.2,0.5,120
-draftkings,player_steals,Over,Christian Braun,2.45,0.5,145
-draftkings,player_steals,Under,Christian Braun,1.53,0.5,-188
-draftkings,player_steals,Over,Jamal Murray,1.43,0.5,-232
-draftkings,player_steals,Under,Jamal Murray,2.75,0.5,175
+draftkings,player_rebounds_alternate,Over,Nikola Jokic,1.56,11.5,-178
+draftkings,player_rebounds_alternate,Over,Nikola Jokic,2.9,14.5,190
+draftkings,player_rebounds_alternate,Over,Tyus Jones,6.0,4.5,500
+draftkings,player_steals,Over,Aaron Gordon,1.56,0.5,-178
+draftkings,player_steals,Under,Aaron Gordon,2.4,0.5,140
+draftkings,player_steals,Over,Deni Avdija,1.69,0.5,-144
+draftkings,player_steals,Under,Deni Avdija,2.14,0.5,114
+draftkings,player_steals,Over,Jamal Murray,2.75,1.5,175
+draftkings,player_steals,Under,Jamal Murray,1.43,1.5,-232
 draftkings,player_steals,Over,Jordan Poole,1.62,0.5,-161
 draftkings,player_steals,Under,Jordan Poole,2.24,0.5,124
-draftkings,player_steals,Over,Kentavious Caldwell Pope,1.83,1.5,-120
-draftkings,player_steals,Under,Kentavious Caldwell Pope,1.91,1.5,-109
-draftkings,player_steals,Over,Kyle Kuzma,1.74,0.5,-135
-draftkings,player_steals,Under,Kyle Kuzma,2.05,0.5,104
+draftkings,player_steals,Over,Kentavious Caldwell Pope,1.71,1.5,-140
+draftkings,player_steals,Under,Kentavious Caldwell Pope,2.1,1.5,110
+draftkings,player_steals,Over,Kyle Kuzma,1.71,0.5,-140
+draftkings,player_steals,Under,Kyle Kuzma,2.1,0.5,110
 draftkings,player_steals,Over,Michael Porter Jr ,1.8,0.5,-125
 draftkings,player_steals,Under,Michael Porter Jr ,1.95,0.5,-105
-draftkings,player_steals,Over,Nikola Jokic,2.7,1.5,170
-draftkings,player_steals,Under,Nikola Jokic,1.45,1.5,-222
-draftkings,player_steals,Over,Peyton Watson,2.0,0.5,100
-draftkings,player_steals,Under,Peyton Watson,1.77,0.5,-129
-draftkings,player_steals,Over,Reggie Jackson,1.71,0.5,-140
-draftkings,player_steals,Under,Reggie Jackson,2.1,0.5,110
+draftkings,player_steals,Over,Nikola Jokic,2.6,1.5,160
+draftkings,player_steals,Under,Nikola Jokic,1.48,1.5,-208
 draftkings,player_steals,Over,Tyus Jones,2.8,1.5,179
 draftkings,player_steals,Under,Tyus Jones,1.42,1.5,-238
-draftkings,player_steals_alternate,Over,Aaron Gordon,1.67,0.5,-149
-draftkings,player_steals_alternate,Over,Aaron Gordon,4.2,1.5,320
-draftkings,player_steals_alternate,Over,Christian Braun,2.45,0.5,145
-draftkings,player_steals_alternate,Over,Jamal Murray,1.43,0.5,-232
-draftkings,player_steals_alternate,Over,Jamal Murray,2.95,1.5,195
+draftkings,player_steals_alternate,Over,Aaron Gordon,1.56,0.5,-178
+draftkings,player_steals_alternate,Over,Aaron Gordon,3.55,1.5,254
+draftkings,player_steals_alternate,Over,Deni Avdija,1.69,0.5,-144
+draftkings,player_steals_alternate,Over,Deni Avdija,4.4,1.5,340
+draftkings,player_steals_alternate,Over,Jamal Murray,1.39,0.5,-256
+draftkings,player_steals_alternate,Over,Jamal Murray,2.75,1.5,175
 draftkings,player_steals_alternate,Over,Jordan Poole,1.62,0.5,-161
-draftkings,player_steals_alternate,Over,Jordan Poole,3.85,1.5,285
-draftkings,player_steals_alternate,Over,Kentavious Caldwell Pope,1.83,1.5,-120
-draftkings,player_steals_alternate,Over,Kentavious Caldwell Pope,3.6,2.5,260
-draftkings,player_steals_alternate,Over,Kyle Kuzma,1.74,0.5,-135
+draftkings,player_steals_alternate,Over,Jordan Poole,3.95,1.5,295
+draftkings,player_steals_alternate,Over,Kentavious Caldwell Pope,1.71,1.5,-140
+draftkings,player_steals_alternate,Over,Kentavious Caldwell Pope,3.2,2.5,220
+draftkings,player_steals_alternate,Over,Kyle Kuzma,1.69,0.5,-144
+draftkings,player_steals_alternate,Over,Kyle Kuzma,4.4,1.5,340
 draftkings,player_steals_alternate,Over,Michael Porter Jr ,1.8,0.5,-125
-draftkings,player_steals_alternate,Over,Nikola Jokic,1.38,0.5,-263
-draftkings,player_steals_alternate,Over,Nikola Jokic,2.75,1.5,175
-draftkings,player_steals_alternate,Over,Peyton Watson,2.0,0.5,100
-draftkings,player_steals_alternate,Over,Reggie Jackson,1.74,0.5,-135
-draftkings,player_steals_alternate,Over,Tyus Jones,1.41,0.5,-243
+draftkings,player_steals_alternate,Over,Nikola Jokic,1.36,0.5,-277
+draftkings,player_steals_alternate,Over,Nikola Jokic,2.6,1.5,160
+draftkings,player_steals_alternate,Over,Tyus Jones,1.4,0.5,-250
 draftkings,player_steals_alternate,Over,Tyus Jones,2.8,1.5,179
-draftkings,player_threes,Over,Aaron Gordon,2.14,0.5,114
-draftkings,player_threes,Under,Aaron Gordon,1.69,0.5,-144
-draftkings,player_threes,Over,Christian Braun,1.95,0.5,-105
-draftkings,player_threes,Under,Christian Braun,1.8,0.5,-125
-draftkings,player_threes,Over,Jamal Murray,2.1,2.5,110
-draftkings,player_threes,Under,Jamal Murray,1.71,2.5,-140
+draftkings,player_threes,Over,Aaron Gordon,2.0,0.5,100
+draftkings,player_threes,Under,Aaron Gordon,1.77,0.5,-129
+draftkings,player_threes,Over,Deni Avdija,1.57,0.5,-175
+draftkings,player_threes,Under,Deni Avdija,2.35,0.5,135
+draftkings,player_threes,Over,Jamal Murray,1.95,2.5,-105
+draftkings,player_threes,Under,Jamal Murray,1.8,2.5,-125
 draftkings,player_threes,Over,Jordan Poole,1.51,1.5,-196
 draftkings,player_threes,Under,Jordan Poole,2.5,1.5,150
-draftkings,player_threes,Over,Kentavious Caldwell Pope,1.87,1.5,-114
-draftkings,player_threes,Under,Kentavious Caldwell Pope,1.87,1.5,-114
-draftkings,player_threes,Over,Kyle Kuzma,1.69,1.5,-144
-draftkings,player_threes,Under,Kyle Kuzma,2.14,1.5,114
+draftkings,player_threes,Over,Kentavious Caldwell Pope,1.8,1.5,-125
+draftkings,player_threes,Under,Kentavious Caldwell Pope,1.95,1.5,-105
+draftkings,player_threes,Over,Kyle Kuzma,1.62,1.5,-161
+draftkings,player_threes,Under,Kyle Kuzma,2.24,1.5,124
 draftkings,player_threes,Over,Michael Porter Jr ,1.67,2.5,-149
 draftkings,player_threes,Under,Michael Porter Jr ,2.2,2.5,120
-draftkings,player_threes,Over,Nikola Jokic,1.69,0.5,-144
-draftkings,player_threes,Under,Nikola Jokic,2.14,0.5,114
-draftkings,player_threes,Over,Peyton Watson,1.57,0.5,-175
-draftkings,player_threes,Under,Peyton Watson,2.35,0.5,135
-draftkings,player_threes,Over,Reggie Jackson,2.8,1.5,179
-draftkings,player_threes,Under,Reggie Jackson,1.42,1.5,-238
-draftkings,player_threes,Over,Tyus Jones,2.35,1.5,135
-draftkings,player_threes,Under,Tyus Jones,1.57,1.5,-175
-draftkings,player_threes_alternate,Over,Jamal Murray,1.34,1.5,-294
-draftkings,player_threes_alternate,Over,Jamal Murray,3.45,3.5,245
-draftkings,player_threes_alternate,Over,Jordan Poole,2.45,2.5,145
+draftkings,player_threes,Over,Nikola Jokic,1.67,0.5,-149
+draftkings,player_threes,Under,Nikola Jokic,2.2,0.5,120
+draftkings,player_threes,Over,Tyus Jones,2.3,1.5,129
+draftkings,player_threes,Under,Tyus Jones,1.6,1.5,-166
+draftkings,player_threes_alternate,Over,Deni Avdija,3.5,1.5,250
+draftkings,player_threes_alternate,Over,Jamal Murray,3.15,3.5,215
+draftkings,player_threes_alternate,Over,Jordan Poole,2.4,2.5,140
 draftkings,player_threes_alternate,Over,Jordan Poole,4.7,3.5,370
-draftkings,player_threes_alternate,Over,Kentavious Caldwell Pope,3.45,2.5,245
-draftkings,player_threes_alternate,Over,Kyle Kuzma,2.85,2.5,185
+draftkings,player_threes_alternate,Over,Kentavious Caldwell Pope,3.2,2.5,220
+draftkings,player_threes_alternate,Over,Kyle Kuzma,2.7,2.5,170
 draftkings,player_threes_alternate,Over,Michael Porter Jr ,2.45,3.5,145
-draftkings,player_threes_alternate,Over,Michael Porter Jr ,4.2,4.5,320
-draftkings,player_threes_alternate,Over,Nikola Jokic,3.3,1.5,229
-draftkings,player_threes_alternate,Over,Peyton Watson,3.45,1.5,245
-draftkings,player_threes_alternate,Over,Reggie Jackson,1.38,0.5,-263
-draftkings,player_threes_alternate,Over,Tyus Jones,5.0,2.5,400
-draftkings,player_turnovers,Over,Aaron Gordon,2.54,1.5,154
-draftkings,player_turnovers,Under,Aaron Gordon,1.5,1.5,-200
-draftkings,player_turnovers,Over,Christian Braun,2.0,0.5,100
-draftkings,player_turnovers,Under,Christian Braun,1.77,0.5,-129
-draftkings,player_turnovers,Over,Jamal Murray,2.05,2.5,104
-draftkings,player_turnovers,Under,Jamal Murray,1.74,2.5,-135
-draftkings,player_turnovers,Over,Jordan Poole,1.77,1.5,-129
-draftkings,player_turnovers,Under,Jordan Poole,2.0,1.5,100
-draftkings,player_turnovers,Over,Kentavious Caldwell Pope,1.62,0.5,-161
-draftkings,player_turnovers,Under,Kentavious Caldwell Pope,2.24,0.5,124
-draftkings,player_turnovers,Over,Kyle Kuzma,1.74,2.5,-135
-draftkings,player_turnovers,Under,Kyle Kuzma,2.05,2.5,104
+draftkings,player_threes_alternate,Over,Michael Porter Jr ,4.1,4.5,309
+draftkings,player_threes_alternate,Over,Nikola Jokic,3.25,1.5,225
+draftkings,player_threes_alternate,Over,Tyus Jones,4.8,2.5,380
+draftkings,player_turnovers,Over,Aaron Gordon,2.5,1.5,150
+draftkings,player_turnovers,Under,Aaron Gordon,1.51,1.5,-196
+draftkings,player_turnovers,Over,Deni Avdija,1.53,1.5,-188
+draftkings,player_turnovers,Under,Deni Avdija,2.45,1.5,145
+draftkings,player_turnovers,Over,Jamal Murray,1.95,2.5,-105
+draftkings,player_turnovers,Under,Jamal Murray,1.8,2.5,-125
+draftkings,player_turnovers,Over,Jordan Poole,1.69,1.5,-144
+draftkings,player_turnovers,Under,Jordan Poole,2.14,1.5,114
+draftkings,player_turnovers,Over,Kentavious Caldwell Pope,1.6,0.5,-166
+draftkings,player_turnovers,Under,Kentavious Caldwell Pope,2.3,0.5,129
+draftkings,player_turnovers,Over,Kyle Kuzma,1.67,2.5,-149
+draftkings,player_turnovers,Under,Kyle Kuzma,2.2,2.5,120
 draftkings,player_turnovers,Over,Michael Porter Jr ,1.45,0.5,-222
 draftkings,player_turnovers,Under,Michael Porter Jr ,2.7,0.5,170
-draftkings,player_turnovers,Over,Nikola Jokic,2.14,3.5,114
-draftkings,player_turnovers,Under,Nikola Jokic,1.69,3.5,-144
-draftkings,player_turnovers,Over,Peyton Watson,2.0,0.5,100
-draftkings,player_turnovers,Under,Peyton Watson,1.77,0.5,-129
-draftkings,player_turnovers,Over,Reggie Jackson,2.6,1.5,160
-draftkings,player_turnovers,Under,Reggie Jackson,1.48,1.5,-208
-draftkings,player_turnovers,Over,Tyus Jones,1.5,0.5,-200
-draftkings,player_turnovers,Under,Tyus Jones,2.54,0.5,154
+draftkings,player_turnovers,Over,Nikola Jokic,2.05,3.5,104
+draftkings,player_turnovers,Under,Nikola Jokic,1.74,3.5,-135
+draftkings,player_turnovers,Over,Tyus Jones,1.45,0.5,-222
+draftkings,player_turnovers,Under,Tyus Jones,2.7,0.5,170
 draftkings,player_assists,Over,Bam Adebayo,2.1,4.5,110
 draftkings,player_assists,Under,Bam Adebayo,1.71,4.5,-140
 draftkings,player_assists,Over,Duncan Robinson,2.4,2.5,140
@@ -881,34 +469,35 @@ draftkings,player_assists,Over,Paolo Banchero,1.95,4.5,-105
 draftkings,player_assists,Under,Paolo Banchero,1.8,4.5,-125
 draftkings,player_assists,Over,Tyler Herro,1.83,3.5,-120
 draftkings,player_assists,Under,Tyler Herro,1.91,3.5,-109
-draftkings,player_assists_alternate,Under,Bam Adebayo,4.3,2.5,330
-draftkings,player_assists_alternate,Over,Bam Adebayo,1.51,3.5,-196
-draftkings,player_assists_alternate,Under,Bam Adebayo,2.4,3.5,140
-draftkings,player_assists_alternate,Over,Bam Adebayo,3.2,5.5,220
+draftkings,player_assists_alternate,Under,Bam Adebayo,4.4,2.5,340
+draftkings,player_assists_alternate,Over,Bam Adebayo,1.49,3.5,-204
+draftkings,player_assists_alternate,Under,Bam Adebayo,2.45,3.5,145
+draftkings,player_assists_alternate,Over,Bam Adebayo,3.15,5.5,215
 draftkings,player_assists_alternate,Over,Bam Adebayo,5.25,6.5,425
 draftkings,player_assists_alternate,Over,Duncan Robinson,1.47,1.5,-212
 draftkings,player_assists_alternate,Under,Duncan Robinson,2.55,1.5,154
 draftkings,player_assists_alternate,Over,Duncan Robinson,4.5,3.5,350
-draftkings,player_assists_alternate,Over,Jalen Suggs,1.48,1.5,-208
+draftkings,player_assists_alternate,Over,Jalen Suggs,1.47,1.5,-212
 draftkings,player_assists_alternate,Under,Jalen Suggs,2.5,1.5,150
 draftkings,player_assists_alternate,Over,Jalen Suggs,4.6,3.5,359
 draftkings,player_assists_alternate,Under,Jimmy Butler,6.0,2.5,500
-draftkings,player_assists_alternate,Under,Jimmy Butler,3.2,3.5,220
-draftkings,player_assists_alternate,Over,Jimmy Butler,2.4,5.5,140
-draftkings,player_assists_alternate,Under,Jimmy Butler,1.51,5.5,-196
-draftkings,player_assists_alternate,Over,Jimmy Butler,3.65,6.5,265
-draftkings,player_assists_alternate,Under,Paolo Banchero,4.4,2.5,340
+draftkings,player_assists_alternate,Under,Jimmy Butler,3.15,3.5,215
+draftkings,player_assists_alternate,Over,Jimmy Butler,2.35,5.5,135
+draftkings,player_assists_alternate,Under,Jimmy Butler,1.54,5.5,-185
+draftkings,player_assists_alternate,Over,Jimmy Butler,3.55,6.5,254
+draftkings,player_assists_alternate,Under,Paolo Banchero,4.5,2.5,350
 draftkings,player_assists_alternate,Over,Paolo Banchero,1.48,3.5,-208
 draftkings,player_assists_alternate,Under,Paolo Banchero,2.5,3.5,150
 draftkings,player_assists_alternate,Over,Paolo Banchero,3.1,5.5,210
-draftkings,player_assists_alternate,Over,Paolo Banchero,5.25,6.5,425
+draftkings,player_assists_alternate,Under,Paolo Banchero,1.34,5.5,-294
+draftkings,player_assists_alternate,Over,Paolo Banchero,5.0,6.5,400
 draftkings,player_assists_alternate,Under,Tyler Herro,6.0,1.5,500
 draftkings,player_assists_alternate,Over,Tyler Herro,1.38,2.5,-263
 draftkings,player_assists_alternate,Under,Tyler Herro,2.85,2.5,185
 draftkings,player_assists_alternate,Over,Tyler Herro,5.25,5.5,425
-draftkings,player_assists_alternate,Over,Bam Adebayo,9.0,7.5,800
-draftkings,player_assists_alternate,Over,Duncan Robinson,9.0,4.5,800
-draftkings,player_assists_alternate,Over,Jalen Suggs,10.5,4.5,950
+draftkings,player_assists_alternate,Over,Bam Adebayo,9.5,7.5,850
+draftkings,player_assists_alternate,Over,Duncan Robinson,9.5,4.5,850
+draftkings,player_assists_alternate,Over,Jalen Suggs,10.0,4.5,900
 draftkings,player_assists_alternate,Over,Jimmy Butler,6.0,7.5,500
 draftkings,player_assists_alternate,Over,Paolo Banchero,9.0,7.5,800
 draftkings,player_assists_alternate,Over,Tyler Herro,3.0,4.5,200
@@ -926,8 +515,8 @@ draftkings,player_blocks_alternate,Over,Bam Adebayo,1.42,0.5,-238
 draftkings,player_blocks_alternate,Over,Bam Adebayo,2.9,1.5,190
 draftkings,player_blocks_alternate,Over,Jalen Suggs,2.2,0.5,120
 draftkings,player_blocks_alternate,Over,Jimmy Butler,2.65,0.5,165
-draftkings,player_blocks_alternate,Over,Paolo Banchero,2.05,0.5,104
-draftkings,player_blocks_alternate,Over,Tyler Herro,4.1,0.5,309
+draftkings,player_blocks_alternate,Over,Paolo Banchero,2.0,0.5,100
+draftkings,player_blocks_alternate,Over,Tyler Herro,4.2,0.5,320
 draftkings,player_points,Over,Bam Adebayo,1.87,20.5,-114
 draftkings,player_points,Under,Bam Adebayo,1.87,20.5,-114
 draftkings,player_points,Over,Duncan Robinson,2.0,9.5,100
@@ -970,12 +559,12 @@ draftkings,player_points_alternate,Over,Paolo Banchero,1.95,25.5,-105
 draftkings,player_points_alternate,Under,Paolo Banchero,1.74,25.5,-135
 draftkings,player_points_alternate,Over,Paolo Banchero,2.2,26.5,120
 draftkings,player_points_alternate,Under,Paolo Banchero,1.61,26.5,-163
-draftkings,player_points_alternate,Over,Tyler Herro,1.62,20.5,-161
+draftkings,player_points_alternate,Over,Tyler Herro,1.65,20.5,-153
 draftkings,player_points_alternate,Under,Tyler Herro,2.15,20.5,114
-draftkings,player_points_alternate,Over,Tyler Herro,1.95,22.5,-105
-draftkings,player_points_alternate,Under,Tyler Herro,1.77,22.5,-129
-draftkings,player_points_alternate,Over,Tyler Herro,2.1,23.5,110
-draftkings,player_points_alternate,Under,Tyler Herro,1.65,23.5,-153
+draftkings,player_points_alternate,Over,Tyler Herro,2.0,22.5,100
+draftkings,player_points_alternate,Under,Tyler Herro,1.74,22.5,-135
+draftkings,player_points_alternate,Over,Tyler Herro,2.2,23.5,120
+draftkings,player_points_alternate,Under,Tyler Herro,1.61,23.5,-163
 draftkings,player_points_alternate,Over,Bam Adebayo,1.44,17.5,-227
 draftkings,player_points_alternate,Over,Bam Adebayo,1.69,19.5,-144
 draftkings,player_points_alternate,Over,Bam Adebayo,3.0,24.5,200
@@ -984,17 +573,17 @@ draftkings,player_points_alternate,Over,Duncan Robinson,1.49,7.5,-204
 draftkings,player_points_alternate,Over,Duncan Robinson,2.7,11.5,170
 draftkings,player_points_alternate,Over,Duncan Robinson,4.8,14.5,380
 draftkings,player_points_alternate,Over,Jalen Suggs,1.47,9.5,-212
-draftkings,player_points_alternate,Over,Jalen Suggs,2.9,14.5,190
+draftkings,player_points_alternate,Over,Jalen Suggs,3.0,14.5,200
 draftkings,player_points_alternate,Over,Jalen Suggs,5.25,17.5,425
 draftkings,player_points_alternate,Over,Jimmy Butler,1.4,17.5,-250
 draftkings,player_points_alternate,Over,Jimmy Butler,1.65,19.5,-153
 draftkings,player_points_alternate,Over,Jimmy Butler,2.95,24.5,195
 draftkings,player_points_alternate,Over,Jimmy Butler,6.5,29.5,550
 draftkings,player_points_alternate,Over,Paolo Banchero,3.15,29.5,215
-draftkings,player_points_alternate,Over,Paolo Banchero,6.5,34.5,550
-draftkings,player_points_alternate,Over,Tyler Herro,1.49,19.5,-204
-draftkings,player_points_alternate,Over,Tyler Herro,2.35,24.5,135
-draftkings,player_points_alternate,Over,Tyler Herro,4.6,29.5,359
+draftkings,player_points_alternate,Over,Paolo Banchero,7.0,34.5,600
+draftkings,player_points_alternate,Over,Tyler Herro,1.5,19.5,-200
+draftkings,player_points_alternate,Over,Tyler Herro,2.45,24.5,145
+draftkings,player_points_alternate,Over,Tyler Herro,4.7,29.5,370
 draftkings,player_rebounds,Over,Bam Adebayo,1.91,10.5,-109
 draftkings,player_rebounds,Under,Bam Adebayo,1.83,10.5,-120
 draftkings,player_rebounds,Over,Jalen Suggs,1.62,2.5,-161
@@ -1005,33 +594,33 @@ draftkings,player_rebounds,Over,Paolo Banchero,1.83,6.5,-120
 draftkings,player_rebounds,Under,Paolo Banchero,1.91,6.5,-109
 draftkings,player_rebounds,Over,Tyler Herro,2.2,5.5,120
 draftkings,player_rebounds,Under,Tyler Herro,1.67,5.5,-149
-draftkings,player_rebounds_alternate,Under,Bam Adebayo,3.1,8.5,210
-draftkings,player_rebounds_alternate,Over,Bam Adebayo,3.05,12.5,204
-draftkings,player_rebounds_alternate,Under,Bam Adebayo,1.34,12.5,-294
-draftkings,player_rebounds_alternate,Under,Jalen Suggs,4.2,1.5,320
-draftkings,player_rebounds_alternate,Over,Jalen Suggs,2.5,3.5,150
-draftkings,player_rebounds_alternate,Under,Jalen Suggs,1.47,3.5,-212
-draftkings,player_rebounds_alternate,Over,Jalen Suggs,8.5,5.5,750
+draftkings,player_rebounds_alternate,Over,Bam Adebayo,1.34,8.5,-294
+draftkings,player_rebounds_alternate,Under,Bam Adebayo,3.0,8.5,200
+draftkings,player_rebounds_alternate,Over,Bam Adebayo,3.1,12.5,210
+draftkings,player_rebounds_alternate,Under,Jalen Suggs,4.3,1.5,330
+draftkings,player_rebounds_alternate,Over,Jalen Suggs,2.45,3.5,145
+draftkings,player_rebounds_alternate,Under,Jalen Suggs,1.5,3.5,-200
+draftkings,player_rebounds_alternate,Over,Jalen Suggs,8.0,5.5,700
 draftkings,player_rebounds_alternate,Under,Jimmy Butler,5.5,2.5,450
-draftkings,player_rebounds_alternate,Over,Jimmy Butler,1.35,3.5,-285
+draftkings,player_rebounds_alternate,Over,Jimmy Butler,1.34,3.5,-294
 draftkings,player_rebounds_alternate,Under,Jimmy Butler,3.0,3.5,200
 draftkings,player_rebounds_alternate,Over,Jimmy Butler,2.5,5.5,150
 draftkings,player_rebounds_alternate,Under,Jimmy Butler,1.49,5.5,-204
-draftkings,player_rebounds_alternate,Over,Jimmy Butler,3.85,6.5,285
+draftkings,player_rebounds_alternate,Over,Jimmy Butler,3.75,6.5,275
 draftkings,player_rebounds_alternate,Over,Paolo Banchero,1.44,5.5,-227
 draftkings,player_rebounds_alternate,Under,Paolo Banchero,2.6,5.5,160
 draftkings,player_rebounds_alternate,Over,Paolo Banchero,3.45,8.5,245
-draftkings,player_rebounds_alternate,Under,Tyler Herro,3.45,3.5,245
-draftkings,player_rebounds_alternate,Over,Tyler Herro,3.2,6.5,220
-draftkings,player_rebounds_alternate,Over,Bam Adebayo,1.54,9.5,-185
+draftkings,player_rebounds_alternate,Under,Tyler Herro,3.6,3.5,260
+draftkings,player_rebounds_alternate,Over,Tyler Herro,3.15,6.5,215
+draftkings,player_rebounds_alternate,Over,Bam Adebayo,1.56,9.5,-178
 draftkings,player_rebounds_alternate,Over,Bam Adebayo,2.35,11.5,135
 draftkings,player_rebounds_alternate,Over,Bam Adebayo,5.75,14.5,475
 draftkings,player_rebounds_alternate,Over,Jalen Suggs,4.3,4.5,330
 draftkings,player_rebounds_alternate,Over,Jimmy Butler,6.5,7.5,550
 draftkings,player_rebounds_alternate,Over,Paolo Banchero,2.4,7.5,140
 draftkings,player_rebounds_alternate,Over,Paolo Banchero,5.25,9.5,425
-draftkings,player_rebounds_alternate,Over,Paolo Banchero,13.0,11.5,1200
-draftkings,player_rebounds_alternate,Over,Tyler Herro,1.61,4.5,-163
+draftkings,player_rebounds_alternate,Over,Paolo Banchero,14.0,11.5,1300
+draftkings,player_rebounds_alternate,Over,Tyler Herro,1.57,4.5,-175
 draftkings,player_rebounds_alternate,Over,Tyler Herro,5.0,7.5,400
 draftkings,player_steals,Over,Bam Adebayo,1.43,0.5,-232
 draftkings,player_steals,Under,Bam Adebayo,2.75,0.5,175
@@ -1045,15 +634,15 @@ draftkings,player_steals,Over,Paolo Banchero,1.53,0.5,-188
 draftkings,player_steals,Under,Paolo Banchero,2.45,0.5,145
 draftkings,player_steals,Over,Tyler Herro,1.41,0.5,-243
 draftkings,player_steals,Under,Tyler Herro,2.85,0.5,185
-draftkings,player_steals_alternate,Over,Bam Adebayo,1.43,0.5,-232
-draftkings,player_steals_alternate,Over,Bam Adebayo,3.0,1.5,200
+draftkings,player_steals_alternate,Over,Bam Adebayo,1.44,0.5,-227
+draftkings,player_steals_alternate,Over,Bam Adebayo,2.95,1.5,195
 draftkings,player_steals_alternate,Over,Duncan Robinson,2.05,0.5,104
 draftkings,player_steals_alternate,Over,Jalen Suggs,1.5,0.5,-200
 draftkings,player_steals_alternate,Over,Jalen Suggs,3.3,1.5,229
 draftkings,player_steals_alternate,Over,Jimmy Butler,2.15,1.5,114
 draftkings,player_steals_alternate,Over,Paolo Banchero,1.54,0.5,-185
 draftkings,player_steals_alternate,Over,Paolo Banchero,3.5,1.5,250
-draftkings,player_steals_alternate,Over,Tyler Herro,1.41,0.5,-243
+draftkings,player_steals_alternate,Over,Tyler Herro,1.43,0.5,-232
 draftkings,player_steals_alternate,Over,Tyler Herro,2.9,1.5,190
 draftkings,player_threes,Over,Duncan Robinson,2.3,2.5,129
 draftkings,player_threes,Under,Duncan Robinson,1.6,2.5,-166
@@ -1066,7 +655,7 @@ draftkings,player_threes,Under,Paolo Banchero,1.6,1.5,-166
 draftkings,player_threes,Over,Tyler Herro,2.24,3.5,124
 draftkings,player_threes,Under,Tyler Herro,1.62,3.5,-161
 draftkings,player_threes_alternate,Over,Duncan Robinson,1.4,1.5,-250
-draftkings,player_threes_alternate,Over,Duncan Robinson,3.9,3.5,290
+draftkings,player_threes_alternate,Over,Duncan Robinson,4.0,3.5,300
 draftkings,player_threes_alternate,Over,Jalen Suggs,3.4,2.5,240
 draftkings,player_threes_alternate,Over,Paolo Banchero,4.9,2.5,390
 draftkings,player_threes_alternate,Over,Tyler Herro,1.48,2.5,-208
@@ -1096,37 +685,38 @@ draftkings,player_assists,Under,Jayson Tatum,1.83,5.5,-120
 draftkings,player_assists,Over,Kristaps Porzingis,2.0,2.5,100
 draftkings,player_assists,Under,Kristaps Porzingis,1.77,2.5,-129
 draftkings,player_assists_alternate,Under,Alperen Sengun,5.25,2.5,425
-draftkings,player_assists_alternate,Over,Alperen Sengun,1.4,3.5,-250
-draftkings,player_assists_alternate,Under,Alperen Sengun,2.8,3.5,179
+draftkings,player_assists_alternate,Over,Alperen Sengun,1.38,3.5,-263
+draftkings,player_assists_alternate,Under,Alperen Sengun,2.85,3.5,185
 draftkings,player_assists_alternate,Over,Alperen Sengun,2.65,5.5,165
 draftkings,player_assists_alternate,Under,Alperen Sengun,1.43,5.5,-232
-draftkings,player_assists_alternate,Over,Alperen Sengun,4.3,6.5,330
-draftkings,player_assists_alternate,Under,Derrick White,3.8,3.5,280
+draftkings,player_assists_alternate,Over,Alperen Sengun,4.2,6.5,320
+draftkings,player_assists_alternate,Under,Derrick White,3.7,3.5,270
 draftkings,player_assists_alternate,Over,Derrick White,2.85,6.5,185
 draftkings,player_assists_alternate,Under,Derrick White,1.38,6.5,-263
 draftkings,player_assists_alternate,Under,Jalen Green,6.0,1.5,500
-draftkings,player_assists_alternate,Over,Jalen Green,1.42,2.5,-238
-draftkings,player_assists_alternate,Under,Jalen Green,2.7,2.5,170
+draftkings,player_assists_alternate,Over,Jalen Green,1.4,2.5,-250
+draftkings,player_assists_alternate,Under,Jalen Green,2.8,2.5,179
 draftkings,player_assists_alternate,Over,Jalen Green,5.5,5.5,450
 draftkings,player_assists_alternate,Under,Jaylen Brown,5.5,1.5,450
 draftkings,player_assists_alternate,Over,Jaylen Brown,1.45,2.5,-222
 draftkings,player_assists_alternate,Under,Jaylen Brown,2.55,2.5,154
 draftkings,player_assists_alternate,Over,Jaylen Brown,6.0,5.5,500
-draftkings,player_assists_alternate,Under,Jayson Tatum,4.2,3.5,320
-draftkings,player_assists_alternate,Over,Jayson Tatum,2.7,6.5,170
-draftkings,player_assists_alternate,Under,Jayson Tatum,1.42,6.5,-238
+draftkings,player_assists_alternate,Under,Jayson Tatum,4.4,3.5,340
+draftkings,player_assists_alternate,Over,Jayson Tatum,2.65,6.5,165
+draftkings,player_assists_alternate,Under,Jayson Tatum,1.43,6.5,-232
 draftkings,player_assists_alternate,Under,Kristaps Porzingis,3.15,1.5,215
-draftkings,player_assists_alternate,Over,Kristaps Porzingis,3.35,3.5,235
-draftkings,player_assists_alternate,Over,Alperen Sengun,7.5,7.5,650
-draftkings,player_assists_alternate,Over,Derrick White,1.44,4.5,-227
+draftkings,player_assists_alternate,Over,Kristaps Porzingis,3.45,3.5,245
+draftkings,player_assists_alternate,Over,Kristaps Porzingis,14.0,5.5,1300
+draftkings,player_assists_alternate,Over,Alperen Sengun,7.0,7.5,600
+draftkings,player_assists_alternate,Over,Derrick White,1.47,4.5,-212
 draftkings,player_assists_alternate,Over,Derrick White,4.1,7.5,309
 draftkings,player_assists_alternate,Over,Derrick White,11.0,9.5,1000
-draftkings,player_assists_alternate,Over,Jalen Green,3.2,4.5,220
-draftkings,player_assists_alternate,Over,Jaylen Brown,3.45,4.5,245
+draftkings,player_assists_alternate,Over,Jalen Green,3.1,4.5,210
+draftkings,player_assists_alternate,Over,Jaylen Brown,3.35,4.5,235
 draftkings,player_assists_alternate,Over,Jayson Tatum,1.44,4.5,-227
 draftkings,player_assists_alternate,Over,Jayson Tatum,4.1,7.5,309
 draftkings,player_assists_alternate,Over,Jayson Tatum,11.0,9.5,1000
-draftkings,player_assists_alternate,Over,Kristaps Porzingis,6.5,4.5,550
+draftkings,player_assists_alternate,Over,Kristaps Porzingis,7.0,4.5,600
 draftkings,player_blocks,Over,Alperen Sengun,1.62,0.5,-161
 draftkings,player_blocks,Under,Alperen Sengun,2.24,0.5,124
 draftkings,player_blocks,Over,Derrick White,1.62,0.5,-161
@@ -1139,37 +729,35 @@ draftkings,player_blocks,Over,Jayson Tatum,1.91,0.5,-109
 draftkings,player_blocks,Under,Jayson Tatum,1.83,0.5,-120
 draftkings,player_blocks,Over,Kristaps Porzingis,2.35,2.5,135
 draftkings,player_blocks,Under,Kristaps Porzingis,1.57,2.5,-175
-draftkings,player_blocks_alternate,Over,Alperen Sengun,1.62,0.5,-161
+draftkings,player_blocks_alternate,Over,Alperen Sengun,1.65,0.5,-153
 draftkings,player_blocks_alternate,Over,Alperen Sengun,4.0,1.5,300
 draftkings,player_blocks_alternate,Over,Derrick White,1.62,0.5,-161
 draftkings,player_blocks_alternate,Over,Derrick White,4.0,1.5,300
-draftkings,player_blocks_alternate,Over,Jalen Green,4.0,0.5,300
+draftkings,player_blocks_alternate,Over,Jalen Green,4.1,0.5,309
 draftkings,player_blocks_alternate,Over,Jaylen Brown,1.77,0.5,-129
-draftkings,player_blocks_alternate,Over,Jayson Tatum,1.95,0.5,-105
-draftkings,player_blocks_alternate,Over,Kristaps Porzingis,1.45,1.5,-222
+draftkings,player_blocks_alternate,Over,Jayson Tatum,1.91,0.5,-109
+draftkings,player_blocks_alternate,Over,Kristaps Porzingis,1.48,1.5,-208
 draftkings,player_blocks_alternate,Over,Kristaps Porzingis,2.4,2.5,140
-draftkings,player_points,Over,Alperen Sengun,1.91,24.5,-109
-draftkings,player_points,Under,Alperen Sengun,1.83,24.5,-120
+draftkings,player_points,Over,Alperen Sengun,1.8,23.5,-125
+draftkings,player_points,Under,Alperen Sengun,1.95,23.5,-105
 draftkings,player_points,Over,Derrick White,1.8,14.5,-125
 draftkings,player_points,Under,Derrick White,1.95,14.5,-105
-draftkings,player_points,Over,Dillon Brooks,2.0,12.5,100
-draftkings,player_points,Under,Dillon Brooks,1.77,12.5,-129
-draftkings,player_points,Over,Jalen Green,1.8,19.5,-125
-draftkings,player_points,Under,Jalen Green,1.95,19.5,-105
-draftkings,player_points,Over,Jaylen Brown,1.95,24.5,-105
-draftkings,player_points,Under,Jaylen Brown,1.8,24.5,-125
+draftkings,player_points,Over,Dillon Brooks,1.77,11.5,-129
+draftkings,player_points,Under,Dillon Brooks,2.0,11.5,100
+draftkings,player_points,Over,Jalen Green,1.95,20.5,-105
+draftkings,player_points,Under,Jalen Green,1.8,20.5,-125
+draftkings,player_points,Over,Jaylen Brown,1.8,23.5,-125
+draftkings,player_points,Under,Jaylen Brown,1.95,23.5,-105
 draftkings,player_points,Over,Jayson Tatum,1.8,27.5,-125
 draftkings,player_points,Under,Jayson Tatum,1.95,27.5,-105
 draftkings,player_points,Over,Kristaps Porzingis,1.8,17.5,-125
 draftkings,player_points,Under,Kristaps Porzingis,1.95,17.5,-105
-draftkings,player_points_alternate,Over,Alperen Sengun,1.59,22.5,-169
-draftkings,player_points_alternate,Under,Alperen Sengun,2.25,22.5,125
-draftkings,player_points_alternate,Over,Alperen Sengun,1.71,23.5,-140
-draftkings,player_points_alternate,Under,Alperen Sengun,2.0,23.5,100
-draftkings,player_points_alternate,Over,Alperen Sengun,2.1,25.5,110
-draftkings,player_points_alternate,Under,Alperen Sengun,1.67,25.5,-149
-draftkings,player_points_alternate,Over,Alperen Sengun,2.35,26.5,135
-draftkings,player_points_alternate,Under,Alperen Sengun,1.54,26.5,-185
+draftkings,player_points_alternate,Over,Alperen Sengun,1.51,21.5,-196
+draftkings,player_points_alternate,Under,Alperen Sengun,2.4,21.5,140
+draftkings,player_points_alternate,Over,Alperen Sengun,1.67,22.5,-149
+draftkings,player_points_alternate,Under,Alperen Sengun,2.1,22.5,110
+draftkings,player_points_alternate,Over,Alperen Sengun,2.25,25.5,125
+draftkings,player_points_alternate,Under,Alperen Sengun,1.57,25.5,-175
 draftkings,player_points_alternate,Over,Derrick White,1.44,12.5,-227
 draftkings,player_points_alternate,Under,Derrick White,2.6,12.5,160
 draftkings,player_points_alternate,Over,Derrick White,1.59,13.5,-169
@@ -1178,49 +766,51 @@ draftkings,player_points_alternate,Over,Derrick White,1.95,15.5,-105
 draftkings,player_points_alternate,Under,Derrick White,1.77,15.5,-129
 draftkings,player_points_alternate,Over,Derrick White,2.2,16.5,120
 draftkings,player_points_alternate,Under,Derrick White,1.61,16.5,-163
-draftkings,player_points_alternate,Over,Dillon Brooks,1.54,10.5,-185
-draftkings,player_points_alternate,Under,Dillon Brooks,2.35,10.5,135
-draftkings,player_points_alternate,Over,Dillon Brooks,2.25,13.5,125
-draftkings,player_points_alternate,Under,Dillon Brooks,1.59,13.5,-169
+draftkings,player_points_alternate,Over,Dillon Brooks,1.57,10.5,-175
+draftkings,player_points_alternate,Under,Dillon Brooks,2.25,10.5,125
+draftkings,player_points_alternate,Over,Dillon Brooks,2.0,12.5,100
+draftkings,player_points_alternate,Under,Dillon Brooks,1.71,12.5,-140
+draftkings,player_points_alternate,Over,Dillon Brooks,2.35,13.5,135
+draftkings,player_points_alternate,Under,Dillon Brooks,1.54,13.5,-185
 draftkings,player_points_alternate,Over,Jalen Green,1.62,18.5,-161
 draftkings,player_points_alternate,Under,Jalen Green,2.15,18.5,114
-draftkings,player_points_alternate,Over,Jalen Green,1.95,20.5,-105
-draftkings,player_points_alternate,Under,Jalen Green,1.74,20.5,-135
-draftkings,player_points_alternate,Over,Jalen Green,2.2,21.5,120
-draftkings,player_points_alternate,Under,Jalen Green,1.61,21.5,-163
+draftkings,player_points_alternate,Over,Jalen Green,2.15,21.5,114
+draftkings,player_points_alternate,Under,Jalen Green,1.65,21.5,-153
+draftkings,player_points_alternate,Over,Jalen Green,2.4,22.5,140
+draftkings,player_points_alternate,Under,Jalen Green,1.51,22.5,-196
+draftkings,player_points_alternate,Over,Jaylen Brown,1.54,21.5,-185
+draftkings,player_points_alternate,Under,Jaylen Brown,2.35,21.5,135
 draftkings,player_points_alternate,Over,Jaylen Brown,1.65,22.5,-153
 draftkings,player_points_alternate,Under,Jaylen Brown,2.1,22.5,110
-draftkings,player_points_alternate,Over,Jaylen Brown,1.77,23.5,-129
-draftkings,player_points_alternate,Under,Jaylen Brown,1.95,23.5,-105
 draftkings,player_points_alternate,Over,Jaylen Brown,2.15,25.5,114
 draftkings,player_points_alternate,Under,Jaylen Brown,1.62,25.5,-161
-draftkings,player_points_alternate,Over,Jaylen Brown,2.4,26.5,140
-draftkings,player_points_alternate,Under,Jaylen Brown,1.51,26.5,-196
 draftkings,player_points_alternate,Over,Jayson Tatum,1.54,25.5,-185
 draftkings,player_points_alternate,Under,Jayson Tatum,2.35,25.5,135
 draftkings,player_points_alternate,Over,Jayson Tatum,1.65,26.5,-153
 draftkings,player_points_alternate,Under,Jayson Tatum,2.1,26.5,110
 draftkings,player_points_alternate,Over,Jayson Tatum,1.91,28.5,-109
 draftkings,player_points_alternate,Under,Jayson Tatum,1.8,28.5,-125
-draftkings,player_points_alternate,Over,Kristaps Porzingis,1.5,15.5,-200
-draftkings,player_points_alternate,Under,Kristaps Porzingis,2.45,15.5,145
+draftkings,player_points_alternate,Over,Kristaps Porzingis,1.49,15.5,-204
+draftkings,player_points_alternate,Under,Kristaps Porzingis,2.5,15.5,150
 draftkings,player_points_alternate,Over,Kristaps Porzingis,1.65,16.5,-153
 draftkings,player_points_alternate,Under,Kristaps Porzingis,2.15,16.5,114
 draftkings,player_points_alternate,Over,Kristaps Porzingis,2.0,18.5,100
-draftkings,player_points_alternate,Under,Kristaps Porzingis,1.71,18.5,-140
-draftkings,player_points_alternate,Over,Alperen Sengun,3.35,29.5,235
-draftkings,player_points_alternate,Over,Alperen Sengun,7.0,34.5,600
+draftkings,player_points_alternate,Under,Kristaps Porzingis,1.74,18.5,-135
+draftkings,player_points_alternate,Over,Alperen Sengun,1.95,24.5,-105
+draftkings,player_points_alternate,Over,Alperen Sengun,3.6,29.5,260
+draftkings,player_points_alternate,Over,Alperen Sengun,8.0,34.5,700
 draftkings,player_points_alternate,Over,Derrick White,1.34,11.5,-294
 draftkings,player_points_alternate,Over,Derrick White,2.5,17.5,150
 draftkings,player_points_alternate,Over,Derrick White,3.35,19.5,235
-draftkings,player_points_alternate,Over,Dillon Brooks,1.41,9.5,-243
-draftkings,player_points_alternate,Over,Dillon Brooks,1.71,11.5,-140
-draftkings,player_points_alternate,Over,Dillon Brooks,2.65,14.5,165
-draftkings,player_points_alternate,Over,Dillon Brooks,4.5,17.5,350
+draftkings,player_points_alternate,Over,Dillon Brooks,1.42,9.5,-238
+draftkings,player_points_alternate,Over,Dillon Brooks,2.75,14.5,175
+draftkings,player_points_alternate,Over,Dillon Brooks,4.8,17.5,380
 draftkings,player_points_alternate,Over,Jalen Green,1.5,17.5,-200
-draftkings,player_points_alternate,Over,Jalen Green,3.2,24.5,220
+draftkings,player_points_alternate,Over,Jalen Green,1.77,19.5,-129
+draftkings,player_points_alternate,Over,Jalen Green,3.1,24.5,210
 draftkings,player_points_alternate,Over,Jalen Green,7.0,29.5,600
 draftkings,player_points_alternate,Over,Jaylen Brown,1.34,19.5,-294
+draftkings,player_points_alternate,Over,Jaylen Brown,1.95,24.5,-105
 draftkings,player_points_alternate,Over,Jaylen Brown,3.4,29.5,240
 draftkings,player_points_alternate,Over,Jaylen Brown,7.0,34.5,600
 draftkings,player_points_alternate,Over,Jayson Tatum,1.45,24.5,-222
@@ -1229,7 +819,7 @@ draftkings,player_points_alternate,Over,Jayson Tatum,3.6,34.5,260
 draftkings,player_points_alternate,Over,Jayson Tatum,7.5,39.5,650
 draftkings,player_points_alternate,Over,Kristaps Porzingis,1.39,14.5,-256
 draftkings,player_points_alternate,Over,Kristaps Porzingis,2.25,19.5,125
-draftkings,player_points_alternate,Over,Kristaps Porzingis,4.6,24.5,359
+draftkings,player_points_alternate,Over,Kristaps Porzingis,4.8,24.5,380
 draftkings,player_rebounds,Over,Alperen Sengun,2.05,10.5,104
 draftkings,player_rebounds,Under,Alperen Sengun,1.74,10.5,-135
 draftkings,player_rebounds,Over,Derrick White,1.83,3.5,-120
@@ -1244,22 +834,22 @@ draftkings,player_rebounds,Over,Jayson Tatum,1.83,8.5,-120
 draftkings,player_rebounds,Under,Jayson Tatum,1.91,8.5,-109
 draftkings,player_rebounds,Over,Kristaps Porzingis,1.74,7.5,-135
 draftkings,player_rebounds,Under,Kristaps Porzingis,2.05,7.5,104
-draftkings,player_rebounds_alternate,Over,Alperen Sengun,1.39,8.5,-256
-draftkings,player_rebounds_alternate,Under,Alperen Sengun,2.8,8.5,179
+draftkings,player_rebounds_alternate,Over,Alperen Sengun,1.4,8.5,-250
+draftkings,player_rebounds_alternate,Under,Alperen Sengun,2.75,8.5,175
 draftkings,player_rebounds_alternate,Over,Alperen Sengun,3.45,12.5,245
 draftkings,player_rebounds_alternate,Under,Derrick White,6.5,1.5,550
 draftkings,player_rebounds_alternate,Under,Derrick White,3.1,2.5,210
-draftkings,player_rebounds_alternate,Over,Derrick White,4.6,5.5,359
-draftkings,player_rebounds_alternate,Under,Dillon Brooks,5.75,1.5,475
+draftkings,player_rebounds_alternate,Over,Derrick White,4.7,5.5,370
+draftkings,player_rebounds_alternate,Under,Dillon Brooks,6.0,1.5,500
 draftkings,player_rebounds_alternate,Over,Dillon Brooks,1.41,2.5,-243
 draftkings,player_rebounds_alternate,Under,Dillon Brooks,2.75,2.5,175
-draftkings,player_rebounds_alternate,Over,Dillon Brooks,5.5,5.5,450
+draftkings,player_rebounds_alternate,Over,Dillon Brooks,5.25,5.5,425
 draftkings,player_rebounds_alternate,Under,Jalen Green,5.0,2.5,400
 draftkings,player_rebounds_alternate,Over,Jalen Green,1.39,3.5,-256
 draftkings,player_rebounds_alternate,Under,Jalen Green,2.8,3.5,179
 draftkings,player_rebounds_alternate,Over,Jalen Green,2.6,5.5,160
 draftkings,player_rebounds_alternate,Under,Jalen Green,1.44,5.5,-227
-draftkings,player_rebounds_alternate,Over,Jalen Green,4.0,6.5,300
+draftkings,player_rebounds_alternate,Over,Jalen Green,4.1,6.5,309
 draftkings,player_rebounds_alternate,Under,Jaylen Brown,4.5,3.5,350
 draftkings,player_rebounds_alternate,Over,Jaylen Brown,2.5,6.5,150
 draftkings,player_rebounds_alternate,Under,Jaylen Brown,1.48,6.5,-208
@@ -1273,14 +863,14 @@ draftkings,player_rebounds_alternate,Under,Kristaps Porzingis,1.59,8.5,-169
 draftkings,player_rebounds_alternate,Over,Alperen Sengun,1.67,9.5,-149
 draftkings,player_rebounds_alternate,Over,Alperen Sengun,2.6,11.5,160
 draftkings,player_rebounds_alternate,Over,Alperen Sengun,7.0,14.5,600
-draftkings,player_rebounds_alternate,Over,Derrick White,2.75,4.5,175
-draftkings,player_rebounds_alternate,Over,Dillon Brooks,3.0,4.5,200
+draftkings,player_rebounds_alternate,Over,Derrick White,2.7,4.5,170
+draftkings,player_rebounds_alternate,Over,Dillon Brooks,3.05,4.5,204
 draftkings,player_rebounds_alternate,Over,Jalen Green,7.0,7.5,600
 draftkings,player_rebounds_alternate,Over,Jaylen Brown,1.42,4.5,-238
-draftkings,player_rebounds_alternate,Over,Jaylen Brown,3.75,7.5,275
+draftkings,player_rebounds_alternate,Over,Jaylen Brown,3.65,7.5,265
 draftkings,player_rebounds_alternate,Over,Jaylen Brown,10.0,9.5,900
 draftkings,player_rebounds_alternate,Over,Jayson Tatum,1.48,7.5,-208
-draftkings,player_rebounds_alternate,Over,Jayson Tatum,2.3,9.5,129
+draftkings,player_rebounds_alternate,Over,Jayson Tatum,2.35,9.5,135
 draftkings,player_rebounds_alternate,Over,Jayson Tatum,4.3,11.5,330
 draftkings,player_rebounds_alternate,Over,Kristaps Porzingis,3.05,9.5,204
 draftkings,player_rebounds_alternate,Over,Kristaps Porzingis,6.5,11.5,550
@@ -1299,16 +889,16 @@ draftkings,player_steals,Under,Jayson Tatum,1.48,1.5,-208
 draftkings,player_steals,Over,Kristaps Porzingis,1.53,0.5,-188
 draftkings,player_steals,Under,Kristaps Porzingis,2.45,0.5,145
 draftkings,player_steals_alternate,Over,Alperen Sengun,2.5,1.5,150
-draftkings,player_steals_alternate,Over,Derrick White,1.39,0.5,-256
+draftkings,player_steals_alternate,Over,Derrick White,1.38,0.5,-263
 draftkings,player_steals_alternate,Over,Derrick White,2.75,1.5,175
 draftkings,player_steals_alternate,Over,Dillon Brooks,1.59,0.5,-169
 draftkings,player_steals_alternate,Over,Dillon Brooks,3.85,1.5,285
-draftkings,player_steals_alternate,Over,Jalen Green,1.95,0.5,-105
+draftkings,player_steals_alternate,Over,Jalen Green,1.91,0.5,-109
 draftkings,player_steals_alternate,Over,Jaylen Brown,2.2,1.5,120
 draftkings,player_steals_alternate,Over,Jayson Tatum,1.36,0.5,-277
 draftkings,player_steals_alternate,Over,Jayson Tatum,2.6,1.5,160
-draftkings,player_steals_alternate,Over,Kristaps Porzingis,1.53,0.5,-188
-draftkings,player_steals_alternate,Over,Kristaps Porzingis,3.45,1.5,245
+draftkings,player_steals_alternate,Over,Kristaps Porzingis,1.54,0.5,-185
+draftkings,player_steals_alternate,Over,Kristaps Porzingis,3.55,1.5,254
 draftkings,player_threes,Over,Alperen Sengun,2.5,0.5,150
 draftkings,player_threes,Under,Alperen Sengun,1.51,0.5,-196
 draftkings,player_threes,Over,Derrick White,1.91,2.5,-109
@@ -1327,9 +917,9 @@ draftkings,player_threes_alternate,Over,Derrick White,3.05,3.5,204
 draftkings,player_threes_alternate,Over,Dillon Brooks,4.6,2.5,359
 draftkings,player_threes_alternate,Over,Jalen Green,2.95,3.5,195
 draftkings,player_threes_alternate,Over,Jaylen Brown,1.4,1.5,-250
-draftkings,player_threes_alternate,Over,Jaylen Brown,3.85,3.5,285
+draftkings,player_threes_alternate,Over,Jaylen Brown,3.95,3.5,295
 draftkings,player_threes_alternate,Over,Jayson Tatum,2.45,3.5,145
-draftkings,player_threes_alternate,Over,Jayson Tatum,4.1,4.5,309
+draftkings,player_threes_alternate,Over,Jayson Tatum,4.2,4.5,320
 draftkings,player_threes_alternate,Over,Kristaps Porzingis,3.2,2.5,220
 draftkings,player_turnovers,Over,Alperen Sengun,1.67,2.5,-149
 draftkings,player_turnovers,Under,Alperen Sengun,2.2,2.5,120
@@ -1342,7 +932,6 @@ draftkings,player_turnovers,Under,Jalen Green,1.69,2.5,-144
 draftkings,player_turnovers,Over,Jaylen Brown,1.6,2.5,-166
 draftkings,player_turnovers,Under,Jaylen Brown,2.3,2.5,129
 draftkings,player_turnovers,Over,Jayson Tatum,1.69,2.5,-144
-draftkings,player_turnovers,Under,Jayson Tatum,2.14,2.5,114
 draftkings,player_turnovers,Over,Kristaps Porzingis,1.77,1.5,-129
 draftkings,player_turnovers,Under,Kristaps Porzingis,2.0,1.5,100
 draftkings,player_assists,Over,Bradley Beal,1.74,4.5,-135
@@ -1359,20 +948,20 @@ draftkings,player_assists,Over,Pascal Siakam,1.69,3.5,-144
 draftkings,player_assists,Under,Pascal Siakam,2.14,3.5,114
 draftkings,player_assists,Over,Tyrese Haliburton,2.1,12.5,110
 draftkings,player_assists,Under,Tyrese Haliburton,1.71,12.5,-140
-draftkings,player_assists_alternate,Under,Bradley Beal,6.0,2.5,500
+draftkings,player_assists_alternate,Under,Bradley Beal,5.75,2.5,475
 draftkings,player_assists_alternate,Under,Bradley Beal,3.1,3.5,210
 draftkings,player_assists_alternate,Over,Bradley Beal,2.45,5.5,145
 draftkings,player_assists_alternate,Under,Bradley Beal,1.5,5.5,-200
 draftkings,player_assists_alternate,Over,Bradley Beal,3.7,6.5,270
 draftkings,player_assists_alternate,Under,Devin Booker,3.4,5.5,240
-draftkings,player_assists_alternate,Over,Devin Booker,1.53,6.5,-188
-draftkings,player_assists_alternate,Under,Devin Booker,2.35,6.5,135
+draftkings,player_assists_alternate,Over,Devin Booker,1.56,6.5,-178
+draftkings,player_assists_alternate,Under,Devin Booker,2.3,6.5,129
 draftkings,player_assists_alternate,Over,Devin Booker,2.65,8.5,165
 draftkings,player_assists_alternate,Under,Devin Booker,1.43,8.5,-232
 draftkings,player_assists_alternate,Under,Grayson Allen,4.4,1.5,340
 draftkings,player_assists_alternate,Over,Grayson Allen,2.35,3.5,135
 draftkings,player_assists_alternate,Under,Grayson Allen,1.53,3.5,-188
-draftkings,player_assists_alternate,Over,Grayson Allen,7.5,5.5,650
+draftkings,player_assists_alternate,Over,Grayson Allen,8.0,5.5,700
 draftkings,player_assists_alternate,Under,Jusuf Nurkic,5.0,1.5,400
 draftkings,player_assists_alternate,Over,Jusuf Nurkic,2.3,3.5,129
 draftkings,player_assists_alternate,Under,Jusuf Nurkic,1.56,3.5,-178
@@ -1382,10 +971,10 @@ draftkings,player_assists_alternate,Over,Kevin Durant,1.34,3.5,-294
 draftkings,player_assists_alternate,Under,Kevin Durant,3.05,3.5,204
 draftkings,player_assists_alternate,Over,Kevin Durant,2.45,5.5,145
 draftkings,player_assists_alternate,Under,Kevin Durant,1.5,5.5,-200
-draftkings,player_assists_alternate,Over,Kevin Durant,3.7,6.5,270
+draftkings,player_assists_alternate,Over,Kevin Durant,3.75,6.5,275
 draftkings,player_assists_alternate,Under,Pascal Siakam,8.0,1.5,700
 draftkings,player_assists_alternate,Under,Pascal Siakam,3.6,2.5,260
-draftkings,player_assists_alternate,Over,Pascal Siakam,3.85,5.5,285
+draftkings,player_assists_alternate,Over,Pascal Siakam,3.95,5.5,295
 draftkings,player_assists_alternate,Over,Tyrese Haliburton,1.4,10.5,-250
 draftkings,player_assists_alternate,Under,Tyrese Haliburton,2.75,10.5,175
 draftkings,player_assists_alternate,Over,Tyrese Haliburton,2.6,13.5,160
@@ -1393,13 +982,13 @@ draftkings,player_assists_alternate,Under,Tyrese Haliburton,1.45,13.5,-222
 draftkings,player_assists_alternate,Over,Bradley Beal,6.0,7.5,500
 draftkings,player_assists_alternate,Over,Devin Booker,3.8,9.5,280
 draftkings,player_assists_alternate,Over,Devin Booker,9.0,11.5,800
-draftkings,player_assists_alternate,Over,Grayson Allen,4.2,4.5,320
+draftkings,player_assists_alternate,Over,Grayson Allen,4.1,4.5,309
 draftkings,player_assists_alternate,Over,Jusuf Nurkic,3.7,4.5,270
 draftkings,player_assists_alternate,Over,Kevin Durant,6.5,7.5,550
 draftkings,player_assists_alternate,Over,Pascal Siakam,2.4,4.5,140
 draftkings,player_assists_alternate,Over,Pascal Siakam,13.0,7.5,1200
 draftkings,player_assists_alternate,Over,Tyrese Haliburton,1.69,11.5,-144
-draftkings,player_assists_alternate,Over,Tyrese Haliburton,3.1,14.5,210
+draftkings,player_assists_alternate,Over,Tyrese Haliburton,3.15,14.5,215
 draftkings,player_blocks,Over,Aaron Nesmith,2.24,0.5,124
 draftkings,player_blocks,Under,Aaron Nesmith,1.62,0.5,-161
 draftkings,player_blocks,Over,Bradley Beal,2.9,0.5,190
@@ -1419,17 +1008,17 @@ draftkings,player_blocks,Under,Pascal Siakam,1.37,0.5,-270
 draftkings,player_blocks,Over,Tyrese Haliburton,2.65,0.5,165
 draftkings,player_blocks,Under,Tyrese Haliburton,1.47,0.5,-212
 draftkings,player_blocks_alternate,Over,Aaron Nesmith,2.25,0.5,125
-draftkings,player_blocks_alternate,Over,Bradley Beal,2.95,0.5,195
+draftkings,player_blocks_alternate,Over,Bradley Beal,2.85,0.5,185
 draftkings,player_blocks_alternate,Over,Devin Booker,3.4,0.5,240
 draftkings,player_blocks_alternate,Over,Eric Gordon,3.6,0.5,260
 draftkings,player_blocks_alternate,Over,Grayson Allen,1.95,0.5,-105
 draftkings,player_blocks_alternate,Over,Jusuf Nurkic,1.51,0.5,-196
-draftkings,player_blocks_alternate,Over,Jusuf Nurkic,3.35,1.5,235
+draftkings,player_blocks_alternate,Over,Jusuf Nurkic,3.45,1.5,245
 draftkings,player_blocks_alternate,Over,Kevin Durant,1.39,0.5,-256
 draftkings,player_blocks_alternate,Over,Kevin Durant,2.8,1.5,179
 draftkings,player_blocks_alternate,Over,Myles Turner,1.8,1.5,-125
 draftkings,player_blocks_alternate,Over,Myles Turner,3.45,2.5,245
-draftkings,player_blocks_alternate,Over,Pascal Siakam,3.0,0.5,200
+draftkings,player_blocks_alternate,Over,Pascal Siakam,3.1,0.5,210
 draftkings,player_blocks_alternate,Over,Tyrese Haliburton,2.65,0.5,165
 draftkings,player_points,Over,Aaron Nesmith,1.91,11.5,-109
 draftkings,player_points,Under,Aaron Nesmith,1.83,11.5,-120
@@ -1453,16 +1042,16 @@ draftkings,player_points,Over,Tyrese Haliburton,1.74,20.5,-135
 draftkings,player_points,Under,Tyrese Haliburton,2.05,20.5,104
 draftkings,player_points_alternate,Over,Aaron Nesmith,1.69,10.5,-144
 draftkings,player_points_alternate,Under,Aaron Nesmith,2.05,10.5,104
-draftkings,player_points_alternate,Over,Aaron Nesmith,2.2,12.5,120
-draftkings,player_points_alternate,Under,Aaron Nesmith,1.61,12.5,-163
+draftkings,player_points_alternate,Over,Aaron Nesmith,2.25,12.5,125
+draftkings,player_points_alternate,Under,Aaron Nesmith,1.59,12.5,-169
 draftkings,player_points_alternate,Over,Aaron Nesmith,2.55,13.5,154
 draftkings,player_points_alternate,Under,Aaron Nesmith,1.47,13.5,-212
-draftkings,player_points_alternate,Over,Bradley Beal,1.53,16.5,-188
-draftkings,player_points_alternate,Under,Bradley Beal,2.35,16.5,135
+draftkings,player_points_alternate,Over,Bradley Beal,1.56,16.5,-178
+draftkings,player_points_alternate,Under,Bradley Beal,2.3,16.5,129
 draftkings,player_points_alternate,Over,Bradley Beal,2.35,20.5,135
 draftkings,player_points_alternate,Under,Bradley Beal,1.54,20.5,-185
 draftkings,player_points_alternate,Over,Devin Booker,1.54,25.5,-185
-draftkings,player_points_alternate,Under,Devin Booker,2.35,25.5,135
+draftkings,player_points_alternate,Under,Devin Booker,2.3,25.5,129
 draftkings,player_points_alternate,Over,Devin Booker,1.65,26.5,-153
 draftkings,player_points_alternate,Under,Devin Booker,2.1,26.5,110
 draftkings,player_points_alternate,Over,Devin Booker,1.95,28.5,-105
@@ -1471,7 +1060,7 @@ draftkings,player_points_alternate,Over,Eric Gordon,1.54,8.5,-185
 draftkings,player_points_alternate,Under,Eric Gordon,2.35,8.5,135
 draftkings,player_points_alternate,Over,Eric Gordon,2.7,12.5,170
 draftkings,player_points_alternate,Under,Eric Gordon,1.42,12.5,-238
-draftkings,player_points_alternate,Over,Grayson Allen,1.69,12.5,-144
+draftkings,player_points_alternate,Over,Grayson Allen,1.67,12.5,-149
 draftkings,player_points_alternate,Under,Grayson Allen,2.05,12.5,104
 draftkings,player_points_alternate,Over,Grayson Allen,2.4,15.5,140
 draftkings,player_points_alternate,Under,Grayson Allen,1.51,15.5,-196
@@ -1489,26 +1078,26 @@ draftkings,player_points_alternate,Over,Kevin Durant,1.95,28.5,-105
 draftkings,player_points_alternate,Under,Kevin Durant,1.77,28.5,-129
 draftkings,player_points_alternate,Over,Myles Turner,1.74,15.5,-135
 draftkings,player_points_alternate,Under,Myles Turner,1.95,15.5,-105
-draftkings,player_points_alternate,Over,Myles Turner,2.6,18.5,160
-draftkings,player_points_alternate,Under,Myles Turner,1.45,18.5,-222
+draftkings,player_points_alternate,Over,Myles Turner,2.55,18.5,154
+draftkings,player_points_alternate,Under,Myles Turner,1.47,18.5,-212
 draftkings,player_points_alternate,Over,Pascal Siakam,1.67,20.5,-149
 draftkings,player_points_alternate,Under,Pascal Siakam,2.1,20.5,110
 draftkings,player_points_alternate,Over,Pascal Siakam,2.05,22.5,104
 draftkings,player_points_alternate,Under,Pascal Siakam,1.71,22.5,-140
 draftkings,player_points_alternate,Over,Pascal Siakam,2.25,23.5,125
 draftkings,player_points_alternate,Under,Pascal Siakam,1.57,23.5,-175
-draftkings,player_points_alternate,Over,Tyrese Haliburton,1.44,18.5,-227
-draftkings,player_points_alternate,Under,Tyrese Haliburton,2.6,18.5,160
-draftkings,player_points_alternate,Over,Tyrese Haliburton,1.83,21.5,-120
-draftkings,player_points_alternate,Under,Tyrese Haliburton,1.87,21.5,-114
+draftkings,player_points_alternate,Over,Tyrese Haliburton,1.45,18.5,-222
+draftkings,player_points_alternate,Under,Tyrese Haliburton,2.55,18.5,154
+draftkings,player_points_alternate,Over,Tyrese Haliburton,1.87,21.5,-114
+draftkings,player_points_alternate,Under,Tyrese Haliburton,1.83,21.5,-120
 draftkings,player_points_alternate,Over,Tyrese Haliburton,2.05,22.5,104
 draftkings,player_points_alternate,Under,Tyrese Haliburton,1.69,22.5,-144
 draftkings,player_points_alternate,Over,Aaron Nesmith,1.51,9.5,-196
 draftkings,player_points_alternate,Over,Aaron Nesmith,3.05,14.5,204
 draftkings,player_points_alternate,Over,Aaron Nesmith,5.25,17.5,425
-draftkings,player_points_alternate,Over,Bradley Beal,1.67,17.5,-149
+draftkings,player_points_alternate,Over,Bradley Beal,1.71,17.5,-140
 draftkings,player_points_alternate,Over,Bradley Beal,2.0,19.5,100
-draftkings,player_points_alternate,Over,Bradley Beal,4.2,24.5,320
+draftkings,player_points_alternate,Over,Bradley Beal,4.1,24.5,309
 draftkings,player_points_alternate,Over,Devin Booker,1.44,24.5,-227
 draftkings,player_points_alternate,Over,Devin Booker,2.15,29.5,114
 draftkings,player_points_alternate,Over,Devin Booker,3.65,34.5,265
@@ -1517,10 +1106,10 @@ draftkings,player_points_alternate,Over,Eric Gordon,1.37,7.5,-270
 draftkings,player_points_alternate,Over,Eric Gordon,1.71,9.5,-140
 draftkings,player_points_alternate,Over,Eric Gordon,2.3,11.5,129
 draftkings,player_points_alternate,Over,Eric Gordon,3.9,14.5,290
-draftkings,player_points_alternate,Over,Grayson Allen,1.54,11.5,-185
+draftkings,player_points_alternate,Over,Grayson Allen,1.53,11.5,-188
 draftkings,player_points_alternate,Over,Grayson Allen,2.1,14.5,110
 draftkings,player_points_alternate,Over,Grayson Allen,3.25,17.5,225
-draftkings,player_points_alternate,Over,Grayson Allen,4.5,19.5,350
+draftkings,player_points_alternate,Over,Grayson Allen,4.7,19.5,370
 draftkings,player_points_alternate,Over,Jusuf Nurkic,1.42,9.5,-238
 draftkings,player_points_alternate,Over,Jusuf Nurkic,3.0,14.5,200
 draftkings,player_points_alternate,Over,Jusuf Nurkic,5.5,17.5,450
@@ -1528,18 +1117,18 @@ draftkings,player_points_alternate,Over,Kevin Durant,1.43,24.5,-232
 draftkings,player_points_alternate,Over,Kevin Durant,2.1,29.5,110
 draftkings,player_points_alternate,Over,Kevin Durant,3.65,34.5,265
 draftkings,player_points_alternate,Over,Kevin Durant,7.5,39.5,650
-draftkings,player_points_alternate,Over,Myles Turner,1.61,14.5,-163
+draftkings,player_points_alternate,Over,Myles Turner,1.59,14.5,-169
 draftkings,player_points_alternate,Over,Myles Turner,2.25,17.5,125
-draftkings,player_points_alternate,Over,Myles Turner,3.0,19.5,200
+draftkings,player_points_alternate,Over,Myles Turner,2.9,19.5,190
 draftkings,player_points_alternate,Over,Myles Turner,7.0,24.5,600
 draftkings,player_points_alternate,Over,Pascal Siakam,1.34,17.5,-294
 draftkings,player_points_alternate,Over,Pascal Siakam,1.54,19.5,-185
 draftkings,player_points_alternate,Over,Pascal Siakam,2.55,24.5,154
-draftkings,player_points_alternate,Over,Pascal Siakam,5.0,29.5,400
+draftkings,player_points_alternate,Over,Pascal Siakam,5.25,29.5,425
 draftkings,player_points_alternate,Over,Tyrese Haliburton,1.35,17.5,-285
-draftkings,player_points_alternate,Over,Tyrese Haliburton,1.56,19.5,-178
+draftkings,player_points_alternate,Over,Tyrese Haliburton,1.57,19.5,-175
 draftkings,player_points_alternate,Over,Tyrese Haliburton,2.55,24.5,154
-draftkings,player_points_alternate,Over,Tyrese Haliburton,5.0,29.5,400
+draftkings,player_points_alternate,Over,Tyrese Haliburton,5.25,29.5,425
 draftkings,player_rebounds,Over,Aaron Nesmith,1.95,3.5,-105
 draftkings,player_rebounds,Under,Aaron Nesmith,1.8,3.5,-125
 draftkings,player_rebounds,Over,Bradley Beal,2.0,4.5,100
@@ -1561,21 +1150,21 @@ draftkings,player_rebounds,Under,Tyrese Haliburton,1.95,3.5,-105
 draftkings,player_rebounds_alternate,Under,Aaron Nesmith,6.0,1.5,500
 draftkings,player_rebounds_alternate,Over,Aaron Nesmith,1.38,2.5,-263
 draftkings,player_rebounds_alternate,Under,Aaron Nesmith,2.85,2.5,185
-draftkings,player_rebounds_alternate,Over,Aaron Nesmith,5.25,5.5,425
+draftkings,player_rebounds_alternate,Over,Aaron Nesmith,5.0,5.5,400
 draftkings,player_rebounds_alternate,Under,Bradley Beal,4.6,2.5,359
-draftkings,player_rebounds_alternate,Over,Bradley Beal,1.45,3.5,-222
-draftkings,player_rebounds_alternate,Under,Bradley Beal,2.55,3.5,154
+draftkings,player_rebounds_alternate,Over,Bradley Beal,1.43,3.5,-232
+draftkings,player_rebounds_alternate,Under,Bradley Beal,2.6,3.5,160
 draftkings,player_rebounds_alternate,Over,Bradley Beal,2.95,5.5,195
 draftkings,player_rebounds_alternate,Under,Bradley Beal,1.36,5.5,-277
-draftkings,player_rebounds_alternate,Over,Bradley Beal,4.6,6.5,359
+draftkings,player_rebounds_alternate,Over,Bradley Beal,4.8,6.5,380
 draftkings,player_rebounds_alternate,Under,Devin Booker,5.0,2.5,400
 draftkings,player_rebounds_alternate,Over,Devin Booker,1.4,3.5,-250
 draftkings,player_rebounds_alternate,Under,Devin Booker,2.8,3.5,179
 draftkings,player_rebounds_alternate,Over,Devin Booker,2.7,5.5,170
 draftkings,player_rebounds_alternate,Under,Devin Booker,1.42,5.5,-238
 draftkings,player_rebounds_alternate,Over,Devin Booker,4.3,6.5,330
-draftkings,player_rebounds_alternate,Under,Grayson Allen,8.0,1.5,700
-draftkings,player_rebounds_alternate,Under,Grayson Allen,3.6,2.5,260
+draftkings,player_rebounds_alternate,Under,Grayson Allen,8.5,1.5,750
+draftkings,player_rebounds_alternate,Under,Grayson Allen,3.7,2.5,270
 draftkings,player_rebounds_alternate,Over,Grayson Allen,3.7,5.5,270
 draftkings,player_rebounds_alternate,Over,Jusuf Nurkic,1.48,10.5,-208
 draftkings,player_rebounds_alternate,Under,Jusuf Nurkic,2.5,10.5,150
@@ -1596,18 +1185,18 @@ draftkings,player_rebounds_alternate,Under,Pascal Siakam,2.25,5.5,125
 draftkings,player_rebounds_alternate,Over,Pascal Siakam,4.2,8.5,320
 draftkings,player_rebounds_alternate,Under,Tyrese Haliburton,7.0,1.5,600
 draftkings,player_rebounds_alternate,Under,Tyrese Haliburton,3.1,2.5,210
-draftkings,player_rebounds_alternate,Over,Tyrese Haliburton,4.6,5.5,359
-draftkings,player_rebounds_alternate,Over,Aaron Nesmith,3.0,4.5,200
+draftkings,player_rebounds_alternate,Over,Tyrese Haliburton,4.5,5.5,350
+draftkings,player_rebounds_alternate,Over,Aaron Nesmith,2.95,4.5,195
 draftkings,player_rebounds_alternate,Over,Bradley Beal,8.0,7.5,700
 draftkings,player_rebounds_alternate,Over,Devin Booker,7.0,7.5,600
 draftkings,player_rebounds_alternate,Over,Grayson Allen,2.35,4.5,135
-draftkings,player_rebounds_alternate,Over,Grayson Allen,12.0,7.5,1100
+draftkings,player_rebounds_alternate,Over,Grayson Allen,11.0,7.5,1000
 draftkings,player_rebounds_alternate,Over,Jusuf Nurkic,3.4,14.5,240
 draftkings,player_rebounds_alternate,Over,Kevin Durant,2.9,7.5,190
-draftkings,player_rebounds_alternate,Over,Kevin Durant,7.0,9.5,600
+draftkings,player_rebounds_alternate,Over,Kevin Durant,6.5,9.5,550
 draftkings,player_rebounds_alternate,Over,Myles Turner,4.0,9.5,300
-draftkings,player_rebounds_alternate,Over,Myles Turner,10.0,11.5,900
-draftkings,player_rebounds_alternate,Over,Pascal Siakam,2.8,7.5,179
+draftkings,player_rebounds_alternate,Over,Myles Turner,9.5,11.5,850
+draftkings,player_rebounds_alternate,Over,Pascal Siakam,2.9,7.5,190
 draftkings,player_rebounds_alternate,Over,Pascal Siakam,6.5,9.5,550
 draftkings,player_rebounds_alternate,Over,Tyrese Haliburton,2.7,4.5,170
 draftkings,player_steals,Over,Aaron Nesmith,1.51,0.5,-196
@@ -1630,12 +1219,12 @@ draftkings,player_steals,Over,Pascal Siakam,1.67,0.5,-149
 draftkings,player_steals,Under,Pascal Siakam,2.2,0.5,120
 draftkings,player_steals,Over,Tyrese Haliburton,1.5,0.5,-200
 draftkings,player_steals,Under,Tyrese Haliburton,2.54,0.5,154
-draftkings,player_steals_alternate,Over,Aaron Nesmith,1.51,0.5,-196
-draftkings,player_steals_alternate,Over,Aaron Nesmith,3.3,1.5,229
+draftkings,player_steals_alternate,Over,Aaron Nesmith,1.5,0.5,-200
+draftkings,player_steals_alternate,Over,Aaron Nesmith,3.35,1.5,235
 draftkings,player_steals_alternate,Over,Bradley Beal,1.45,0.5,-222
-draftkings,player_steals_alternate,Over,Bradley Beal,3.15,1.5,215
+draftkings,player_steals_alternate,Over,Bradley Beal,3.1,1.5,210
 draftkings,player_steals_alternate,Over,Devin Booker,1.62,0.5,-161
-draftkings,player_steals_alternate,Over,Devin Booker,4.1,1.5,309
+draftkings,player_steals_alternate,Over,Devin Booker,4.0,1.5,300
 draftkings,player_steals_alternate,Over,Eric Gordon,1.67,0.5,-149
 draftkings,player_steals_alternate,Over,Eric Gordon,4.4,1.5,340
 draftkings,player_steals_alternate,Over,Grayson Allen,1.53,0.5,-188
@@ -1646,7 +1235,7 @@ draftkings,player_steals_alternate,Over,Kevin Durant,1.65,0.5,-153
 draftkings,player_steals_alternate,Over,Kevin Durant,4.0,1.5,300
 draftkings,player_steals_alternate,Over,Myles Turner,2.1,0.5,110
 draftkings,player_steals_alternate,Over,Pascal Siakam,1.65,0.5,-153
-draftkings,player_steals_alternate,Over,Pascal Siakam,4.2,1.5,320
+draftkings,player_steals_alternate,Over,Pascal Siakam,4.1,1.5,309
 draftkings,player_steals_alternate,Over,Tyrese Haliburton,1.49,0.5,-204
 draftkings,player_steals_alternate,Over,Tyrese Haliburton,3.25,1.5,225
 draftkings,player_threes,Over,Aaron Nesmith,1.62,1.5,-161
@@ -1672,13 +1261,13 @@ draftkings,player_threes,Under,Tyrese Haliburton,2.1,2.5,110
 draftkings,player_threes_alternate,Over,Aaron Nesmith,2.75,2.5,175
 draftkings,player_threes_alternate,Over,Bradley Beal,4.1,2.5,309
 draftkings,player_threes_alternate,Over,Devin Booker,1.35,1.5,-285
-draftkings,player_threes_alternate,Over,Devin Booker,3.6,3.5,260
+draftkings,player_threes_alternate,Over,Devin Booker,3.5,3.5,250
 draftkings,player_threes_alternate,Over,Eric Gordon,2.45,2.5,145
-draftkings,player_threes_alternate,Over,Eric Gordon,4.6,3.5,359
+draftkings,player_threes_alternate,Over,Eric Gordon,4.7,3.5,370
 draftkings,player_threes_alternate,Over,Grayson Allen,2.6,3.5,160
-draftkings,player_threes_alternate,Over,Grayson Allen,4.6,4.5,359
+draftkings,player_threes_alternate,Over,Grayson Allen,4.7,4.5,370
 draftkings,player_threes_alternate,Over,Kevin Durant,1.36,1.5,-277
-draftkings,player_threes_alternate,Over,Kevin Durant,3.6,3.5,260
+draftkings,player_threes_alternate,Over,Kevin Durant,3.7,3.5,270
 draftkings,player_threes_alternate,Over,Myles Turner,4.2,2.5,320
 draftkings,player_threes_alternate,Over,Tyrese Haliburton,2.55,3.5,154
 draftkings,player_threes_alternate,Over,Tyrese Haliburton,4.5,4.5,350
@@ -1702,120 +1291,118 @@ draftkings,player_turnovers,Over,Pascal Siakam,1.67,1.5,-149
 draftkings,player_turnovers,Under,Pascal Siakam,2.2,1.5,120
 draftkings,player_turnovers,Over,Tyrese Haliburton,2.4,2.5,140
 draftkings,player_turnovers,Under,Tyrese Haliburton,1.56,2.5,-178
-draftkings,player_assists,Over,Anfernee Simons,2.0,5.5,100
-draftkings,player_assists,Under,Anfernee Simons,1.77,5.5,-129
-draftkings,player_assists,Over,Anthony Davis,2.24,4.5,124
-draftkings,player_assists,Under,Anthony Davis,1.62,4.5,-161
-draftkings,player_assists,Over,LeBron James,2.14,7.5,114
-draftkings,player_assists,Under,LeBron James,1.69,7.5,-144
-draftkings,player_assists_alternate,Under,Anfernee Simons,4.1,3.5,309
-draftkings,player_assists_alternate,Over,Anfernee Simons,2.85,6.5,185
-draftkings,player_assists_alternate,Under,Anfernee Simons,1.38,6.5,-263
-draftkings,player_assists_alternate,Under,Anthony Davis,4.0,2.5,300
-draftkings,player_assists_alternate,Over,Anthony Davis,1.56,3.5,-178
-draftkings,player_assists_alternate,Under,Anthony Davis,2.3,3.5,129
-draftkings,player_assists_alternate,Over,Anthony Davis,3.45,5.5,245
-draftkings,player_assists_alternate,Over,Anthony Davis,5.75,6.5,475
-draftkings,player_assists_alternate,Under,LeBron James,3.15,5.5,215
-draftkings,player_assists_alternate,Over,LeBron James,1.61,6.5,-163
-draftkings,player_assists_alternate,Under,LeBron James,2.2,6.5,120
-draftkings,player_assists_alternate,Over,LeBron James,2.8,8.5,179
-draftkings,player_assists_alternate,Under,LeBron James,1.39,8.5,-256
-draftkings,player_assists_alternate,Over,Anfernee Simons,1.49,4.5,-204
-draftkings,player_assists_alternate,Over,Anfernee Simons,4.5,7.5,350
-draftkings,player_assists_alternate,Over,Anfernee Simons,13.0,9.5,1200
-draftkings,player_assists_alternate,Over,Anthony Davis,11.0,7.5,1000
-draftkings,player_assists_alternate,Over,LeBron James,4.1,9.5,309
-draftkings,player_assists_alternate,Over,LeBron James,10.5,11.5,950
-draftkings,player_blocks,Over,Anfernee Simons,5.5,0.5,450
+draftkings,player_assists,Over,Anfernee Simons,2.14,5.5,114
+draftkings,player_assists,Under,Anfernee Simons,1.69,5.5,-144
+draftkings,player_assists,Over,Anthony Davis,1.67,3.5,-149
+draftkings,player_assists,Under,Anthony Davis,2.2,3.5,120
+draftkings,player_assists,Over,LeBron James,2.05,7.5,104
+draftkings,player_assists,Under,LeBron James,1.74,7.5,-135
+draftkings,player_assists_alternate,Under,Anfernee Simons,3.7,3.5,270
+draftkings,player_assists_alternate,Over,Anfernee Simons,3.1,6.5,210
+draftkings,player_assists_alternate,Under,Anthony Davis,8.5,1.5,750
+draftkings,player_assists_alternate,Under,Anthony Davis,3.75,2.5,275
+draftkings,player_assists_alternate,Over,Anthony Davis,3.7,5.5,270
+draftkings,player_assists_alternate,Under,LeBron James,3.2,5.5,220
+draftkings,player_assists_alternate,Over,LeBron James,1.59,6.5,-169
+draftkings,player_assists_alternate,Under,LeBron James,2.25,6.5,125
+draftkings,player_assists_alternate,Over,LeBron James,2.75,8.5,175
+draftkings,player_assists_alternate,Under,LeBron James,1.41,8.5,-243
+draftkings,player_assists_alternate,Over,Anfernee Simons,1.56,4.5,-178
+draftkings,player_assists_alternate,Over,Anfernee Simons,5.0,7.5,400
+draftkings,player_assists_alternate,Over,Anthony Davis,2.35,4.5,135
+draftkings,player_assists_alternate,Over,Anthony Davis,12.0,7.5,1100
+draftkings,player_assists_alternate,Over,LeBron James,3.95,9.5,295
+draftkings,player_assists_alternate,Over,LeBron James,10.0,11.5,900
+draftkings,player_blocks,Over,Anfernee Simons,5.0,0.5,400
 draftkings,player_blocks,Over,Anthony Davis,2.0,2.5,100
 draftkings,player_blocks,Under,Anthony Davis,1.77,2.5,-129
-draftkings,player_blocks,Over,LeBron James,2.0,0.5,100
-draftkings,player_blocks,Under,LeBron James,1.77,0.5,-129
+draftkings,player_blocks,Over,LeBron James,2.14,0.5,114
+draftkings,player_blocks,Under,LeBron James,1.69,0.5,-144
 draftkings,player_blocks_alternate,Over,Anthony Davis,1.34,1.5,-294
 draftkings,player_blocks_alternate,Over,Anthony Davis,2.0,2.5,100
-draftkings,player_blocks_alternate,Over,LeBron James,2.0,0.5,100
-draftkings,player_points,Over,Anfernee Simons,1.83,22.5,-120
-draftkings,player_points,Under,Anfernee Simons,1.91,22.5,-109
-draftkings,player_points,Over,Anthony Davis,1.87,26.5,-114
-draftkings,player_points,Under,Anthony Davis,1.87,26.5,-114
-draftkings,player_points,Over,LeBron James,1.8,25.5,-125
-draftkings,player_points,Under,LeBron James,1.95,25.5,-105
-draftkings,player_points_alternate,Over,Anfernee Simons,1.53,20.5,-188
-draftkings,player_points_alternate,Under,Anfernee Simons,2.35,20.5,135
-draftkings,player_points_alternate,Over,Anfernee Simons,1.65,21.5,-153
-draftkings,player_points_alternate,Under,Anfernee Simons,2.1,21.5,110
-draftkings,player_points_alternate,Over,Anfernee Simons,1.95,23.5,-105
-draftkings,player_points_alternate,Under,Anfernee Simons,1.77,23.5,-129
-draftkings,player_points_alternate,Over,Anthony Davis,1.69,25.5,-144
-draftkings,player_points_alternate,Under,Anthony Davis,2.05,25.5,104
-draftkings,player_points_alternate,Over,Anthony Davis,2.05,27.5,104
-draftkings,player_points_alternate,Under,Anthony Davis,1.71,27.5,-140
-draftkings,player_points_alternate,Over,Anthony Davis,2.25,28.5,125
-draftkings,player_points_alternate,Under,Anthony Davis,1.57,28.5,-175
-draftkings,player_points_alternate,Over,LeBron James,1.54,23.5,-185
-draftkings,player_points_alternate,Under,LeBron James,2.3,23.5,129
-draftkings,player_points_alternate,Over,LeBron James,1.95,26.5,-105
-draftkings,player_points_alternate,Under,LeBron James,1.74,26.5,-135
-draftkings,player_points_alternate,Over,LeBron James,2.15,27.5,114
-draftkings,player_points_alternate,Under,LeBron James,1.62,27.5,-161
-draftkings,player_points_alternate,Over,Anfernee Simons,1.43,19.5,-232
-draftkings,player_points_alternate,Over,Anfernee Simons,2.15,24.5,114
-draftkings,player_points_alternate,Over,Anfernee Simons,3.8,29.5,280
-draftkings,player_points_alternate,Over,Anfernee Simons,8.5,34.5,750
-draftkings,player_points_alternate,Over,Anthony Davis,1.57,24.5,-175
-draftkings,player_points_alternate,Over,Anthony Davis,2.5,29.5,150
-draftkings,player_points_alternate,Over,Anthony Davis,4.9,34.5,390
-draftkings,player_points_alternate,Over,LeBron James,1.65,24.5,-153
-draftkings,player_points_alternate,Over,LeBron James,2.7,29.5,170
-draftkings,player_points_alternate,Over,LeBron James,5.0,34.5,400
+draftkings,player_blocks_alternate,Over,LeBron James,2.1,0.5,110
+draftkings,player_points,Over,Anfernee Simons,1.95,23.5,-105
+draftkings,player_points,Under,Anfernee Simons,1.8,23.5,-125
+draftkings,player_points,Over,Anthony Davis,1.83,26.5,-120
+draftkings,player_points,Under,Anthony Davis,1.91,26.5,-109
+draftkings,player_points,Over,LeBron James,1.91,26.5,-109
+draftkings,player_points,Under,LeBron James,1.83,26.5,-120
+draftkings,player_points_alternate,Over,Anfernee Simons,1.59,21.5,-169
+draftkings,player_points_alternate,Under,Anfernee Simons,2.25,21.5,125
+draftkings,player_points_alternate,Over,Anfernee Simons,1.71,22.5,-140
+draftkings,player_points_alternate,Under,Anfernee Simons,2.0,22.5,100
+draftkings,player_points_alternate,Over,Anfernee Simons,2.3,25.5,129
+draftkings,player_points_alternate,Under,Anfernee Simons,1.56,25.5,-178
+draftkings,player_points_alternate,Over,Anthony Davis,1.67,25.5,-149
+draftkings,player_points_alternate,Under,Anthony Davis,2.1,25.5,110
+draftkings,player_points_alternate,Over,Anthony Davis,2.0,27.5,100
+draftkings,player_points_alternate,Under,Anthony Davis,1.74,27.5,-135
+draftkings,player_points_alternate,Over,Anthony Davis,2.2,28.5,120
+draftkings,player_points_alternate,Under,Anthony Davis,1.59,28.5,-169
+draftkings,player_points_alternate,Over,LeBron James,1.74,25.5,-135
+draftkings,player_points_alternate,Under,LeBron James,2.0,25.5,100
+draftkings,player_points_alternate,Over,LeBron James,2.1,27.5,110
+draftkings,player_points_alternate,Under,LeBron James,1.67,27.5,-149
+draftkings,player_points_alternate,Over,LeBron James,2.3,28.5,129
+draftkings,player_points_alternate,Under,LeBron James,1.56,28.5,-178
+draftkings,player_points_alternate,Over,Anfernee Simons,1.38,19.5,-263
+draftkings,player_points_alternate,Over,Anfernee Simons,2.05,24.5,104
+draftkings,player_points_alternate,Over,Anfernee Simons,3.75,29.5,275
+draftkings,player_points_alternate,Over,Anfernee Simons,8.0,34.5,700
+draftkings,player_points_alternate,Over,Anthony Davis,1.56,24.5,-178
+draftkings,player_points_alternate,Over,Anthony Davis,2.45,29.5,145
+draftkings,player_points_alternate,Over,Anthony Davis,4.8,34.5,380
+draftkings,player_points_alternate,Over,LeBron James,1.61,24.5,-163
+draftkings,player_points_alternate,Over,LeBron James,2.5,29.5,150
+draftkings,player_points_alternate,Over,LeBron James,4.7,34.5,370
 draftkings,player_rebounds,Over,Anfernee Simons,1.62,2.5,-161
 draftkings,player_rebounds,Under,Anfernee Simons,2.24,2.5,124
-draftkings,player_rebounds,Over,Anthony Davis,1.87,12.5,-114
-draftkings,player_rebounds,Under,Anthony Davis,1.87,12.5,-114
-draftkings,player_rebounds,Over,LeBron James,1.95,7.5,-105
-draftkings,player_rebounds,Under,LeBron James,1.8,7.5,-125
+draftkings,player_rebounds,Over,Anthony Davis,1.95,12.5,-105
+draftkings,player_rebounds,Under,Anthony Davis,1.8,12.5,-125
+draftkings,player_rebounds,Over,LeBron James,2.14,7.5,114
+draftkings,player_rebounds,Under,LeBron James,1.69,7.5,-144
 draftkings,player_rebounds_alternate,Under,Anfernee Simons,4.0,1.5,300
 draftkings,player_rebounds_alternate,Over,Anfernee Simons,2.45,3.5,145
 draftkings,player_rebounds_alternate,Under,Anfernee Simons,1.5,3.5,-200
-draftkings,player_rebounds_alternate,Over,Anfernee Simons,9.5,5.5,850
-draftkings,player_rebounds_alternate,Over,Anthony Davis,1.38,10.5,-263
-draftkings,player_rebounds_alternate,Under,Anthony Davis,2.85,10.5,185
-draftkings,player_rebounds_alternate,Over,Anthony Davis,2.3,13.5,129
-draftkings,player_rebounds_alternate,Under,Anthony Davis,1.56,13.5,-178
-draftkings,player_rebounds_alternate,Under,LeBron James,3.35,5.5,235
-draftkings,player_rebounds_alternate,Over,LeBron James,1.56,6.5,-178
-draftkings,player_rebounds_alternate,Under,LeBron James,2.3,6.5,129
-draftkings,player_rebounds_alternate,Over,LeBron James,2.6,8.5,160
-draftkings,player_rebounds_alternate,Under,LeBron James,1.44,8.5,-227
-draftkings,player_rebounds_alternate,Over,Anfernee Simons,4.7,4.5,370
-draftkings,player_rebounds_alternate,Over,Anthony Davis,1.57,11.5,-175
-draftkings,player_rebounds_alternate,Over,Anthony Davis,2.9,14.5,190
-draftkings,player_rebounds_alternate,Over,LeBron James,3.65,9.5,265
-draftkings,player_rebounds_alternate,Over,LeBron James,8.0,11.5,700
-draftkings,player_steals,Over,Anfernee Simons,1.8,0.5,-125
-draftkings,player_steals,Under,Anfernee Simons,1.95,0.5,-105
+draftkings,player_rebounds_alternate,Over,Anfernee Simons,9.0,5.5,800
+draftkings,player_rebounds_alternate,Over,Anthony Davis,1.43,10.5,-232
+draftkings,player_rebounds_alternate,Under,Anthony Davis,2.65,10.5,165
+draftkings,player_rebounds_alternate,Over,Anthony Davis,2.45,13.5,145
+draftkings,player_rebounds_alternate,Under,Anthony Davis,1.5,13.5,-200
+draftkings,player_rebounds_alternate,Over,LeBron James,1.34,5.5,-294
+draftkings,player_rebounds_alternate,Under,LeBron James,3.05,5.5,204
+draftkings,player_rebounds_alternate,Over,LeBron James,1.65,6.5,-153
+draftkings,player_rebounds_alternate,Under,LeBron James,2.15,6.5,114
+draftkings,player_rebounds_alternate,Over,LeBron James,2.85,8.5,185
+draftkings,player_rebounds_alternate,Under,LeBron James,1.38,8.5,-263
+draftkings,player_rebounds_alternate,Over,Anfernee Simons,4.6,4.5,359
+draftkings,player_rebounds_alternate,Over,Anthony Davis,1.65,11.5,-153
+draftkings,player_rebounds_alternate,Over,Anthony Davis,3.15,14.5,215
+draftkings,player_rebounds_alternate,Over,LeBron James,4.1,9.5,309
+draftkings,player_rebounds_alternate,Over,LeBron James,10.0,11.5,900
+draftkings,player_steals,Over,Anfernee Simons,1.77,0.5,-129
+draftkings,player_steals,Under,Anfernee Simons,2.0,0.5,100
 draftkings,player_steals,Over,Anthony Davis,2.35,1.5,135
 draftkings,player_steals,Under,Anthony Davis,1.57,1.5,-175
-draftkings,player_steals,Over,LeBron James,2.35,1.5,135
-draftkings,player_steals,Under,LeBron James,1.57,1.5,-175
-draftkings,player_steals_alternate,Over,Anfernee Simons,1.8,0.5,-125
-draftkings,player_steals_alternate,Over,Anthony Davis,2.35,1.5,135
-draftkings,player_steals_alternate,Over,LeBron James,2.35,1.5,135
+draftkings,player_steals,Over,LeBron James,2.3,1.5,129
+draftkings,player_steals,Under,LeBron James,1.6,1.5,-166
+draftkings,player_steals_alternate,Over,Anfernee Simons,1.77,0.5,-129
+draftkings,player_steals_alternate,Over,Anthony Davis,2.3,1.5,129
+draftkings,player_steals_alternate,Over,LeBron James,2.25,1.5,125
 draftkings,player_threes,Over,Anfernee Simons,1.91,3.5,-109
 draftkings,player_threes,Under,Anfernee Simons,1.83,3.5,-120
-draftkings,player_threes,Over,Anthony Davis,3.2,0.5,220
-draftkings,player_threes,Under,Anthony Davis,1.34,0.5,-294
-draftkings,player_threes,Over,LeBron James,1.57,1.5,-175
-draftkings,player_threes,Under,LeBron James,2.35,1.5,135
-draftkings,player_threes_alternate,Over,Anfernee Simons,1.35,2.5,-285
-draftkings,player_threes_alternate,Over,Anfernee Simons,2.8,4.5,179
+draftkings,player_threes,Over,Anthony Davis,3.1,0.5,210
+draftkings,player_threes,Under,Anthony Davis,1.36,0.5,-277
+draftkings,player_threes,Over,LeBron James,1.51,1.5,-196
+draftkings,player_threes,Under,LeBron James,2.5,1.5,150
+draftkings,player_threes_alternate,Over,Anfernee Simons,1.36,2.5,-277
+draftkings,player_threes_alternate,Over,Anfernee Simons,2.85,4.5,185
 draftkings,player_threes_alternate,Over,Anfernee Simons,4.8,5.5,380
-draftkings,player_threes_alternate,Over,LeBron James,2.6,2.5,160
-draftkings,player_threes_alternate,Over,LeBron James,5.25,3.5,425
-draftkings,player_turnovers,Over,Anfernee Simons,2.1,2.5,110
-draftkings,player_turnovers,Under,Anfernee Simons,1.71,2.5,-140
-draftkings,player_turnovers,Over,Anthony Davis,2.3,2.5,129
-draftkings,player_turnovers,Under,Anthony Davis,1.6,2.5,-166
-draftkings,player_turnovers,Over,LeBron James,1.91,3.5,-109
-draftkings,player_turnovers,Under,LeBron James,1.83,3.5,-120
+draftkings,player_threes_alternate,Over,LeBron James,2.4,2.5,140
+draftkings,player_threes_alternate,Over,LeBron James,4.5,3.5,350
+draftkings,player_turnovers,Over,Anfernee Simons,2.2,2.5,120
+draftkings,player_turnovers,Under,Anfernee Simons,1.67,2.5,-149
+draftkings,player_turnovers,Over,Anthony Davis,2.24,2.5,124
+draftkings,player_turnovers,Under,Anthony Davis,1.62,2.5,-161
+draftkings,player_turnovers,Over,LeBron James,1.83,3.5,-120
+draftkings,player_turnovers,Under,LeBron James,1.91,3.5,-109
