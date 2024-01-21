@@ -185,7 +185,9 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
                          for outcome in market['outcomes']
                          if 'point' in outcome]
             df = pd.DataFrame(odds_data, columns=['bookmaker', 'market', 'outcome', 'description', 'price', 'point'])
-            dfs.append(df)
+            if not df.empty:
+                dfs.append(df)
+
     if dfs:
         final_df = pd.concat(dfs, ignore_index=True)
         final_df.rename(columns={'description': 'player_names', 'price': 'odds', 'point': 'stat_threshold',
@@ -197,6 +199,7 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
             filtered_odds_df.to_csv(csv_path, index=False)
         return filtered_odds_df
     return pd.DataFrame()
+
 
 # Define the calculate_edge function for calculating the edge value
 def calculate_edge(row):
