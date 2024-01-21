@@ -149,15 +149,16 @@ def make_api_request(url):
         logging.error(f"Request error occurred: {e}")
         return None
 
-def construct_url(endpoint, params):
+def construct_url(endpoint, params, odds_api_key):
     full_url = f"{ODDS_API_BASE_URL}/{endpoint}"
     param_str = '&'.join([f'{key}={value}' for key, value in params.items()])
-    return f"{full_url}?{param_str}&apiKey={ODDS_API_KEY}"
+    return f"{full_url}?{param_str}&apiKey={odds_api_key}"
 
-def fetch_nba_game_ids():
+
+def fetch_nba_game_ids(odds_api_key):
     endpoint = "sports/basketball_nba/odds"
     params = {"regions": "us", "markets": "h2h", "dateFormat": "iso", "oddsFormat": "decimal"}
-    url = construct_url(endpoint, params)
+    url = construct_url(endpoint, params, odds_api_key)
     response = make_api_request(url)
     return [game['id'] for game in response] if response else []
 
@@ -166,7 +167,7 @@ def convert_decimal_to_us_odds(decimal_odds):
         return 0
     return int((decimal_odds - 1) * 100) if decimal_odds >= 2.00 else int(-100 / (decimal_odds - 1))
 
-def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'):
+def fetch_nba_player_odds(game_ids, odds_api_key, save_to_csv=True, csv_path='player_odds.csv'):
     dfs = []
     for game_id in game_ids:
         endpoint = f"sports/basketball_nba/events/{game_id}/odds"
@@ -176,7 +177,7 @@ def fetch_nba_player_odds(game_ids, save_to_csv=True, csv_path='player_odds.csv'
                    "player_turnovers"]
         params = {"regions": "us", "markets": ",".join(markets), "dateFormat": "iso", "oddsFormat": "decimal",
                   "bookmakers": "draftkings"}
-        url = construct_url(endpoint, params)
+        url = construct_url(endpoint, params, odds_api_key)
         response = make_api_request(url)
         if response and 'bookmakers' in response:
             odds_data = [[bookmaker['key'], market['key'], outcome['name'], outcome['description'], outcome['price'], outcome['point']]
@@ -227,23 +228,49 @@ def calculate_edge(row):
     
 
 
-# Where all the functions will be called
-game_ids = fetch_nba_game_ids()
-odds_df = fetch_nba_player_odds(game_ids)
-current_date = datetime.now().strftime('%Y-%m-%d')
-auth_token = get_auth_token(DEFAULT_EMAIL, DEFAULT_PASSWORD)
-games_df = get_games_data(auth_token, current_date)
-slates = get_slates(auth_token, current_date)
-player_projections_df = get_player_projections(auth_token, current_date, slates)
-# Create master_df by merging player_projections_df and odds_df
-master_df = pd.merge(player_projections_df, odds_df, on='player_names', how='right')
-master_df = master_df.dropna(subset=['team'])
-# Apply the calculate_edge function to each row to create the 'edge' column
-master_df['edge'] = master_df.apply(calculate_edge, axis=1)
-# Remove rows with edge < 1
-master_df = master_df[master_df['edge'] >= 1]
-# Sort the master_df by the 'edge' column in descending order
-master_df = master_df.sort_values(by='edge', ascending=False)
-# Save the updated master_df to CSV
-master_df.to_csv('master_df.csv', index=False)
+def main():
+    st.title("NBA Game Data Analysis App")
+
+    with st.sidebar:
+        st.header("User Authentication")
+        email = st.text_input("Email", value=DEFAULT_EMAIL)
+        password = st.text_input("Password", type="password", value=DEFAULT_PASSWORD)
+
+        st.header("Odds API Key")
+        user_provided_odds_api_key = st.text_input("Enter Odds API Key (optional)", value="")
+
+        st.header("Select Date")
+        selected_date = st.date_input("Date", datetime.now())
+
+    # Use user-provided key if available, else use the one from .env
+    active_odds_api_key = user_provided_odds_api_key if user_provided_odds_api_key else ODDS_API_KEY
+
+    if st.sidebar.button("Fetch Data"):
+        auth_token = get_auth_token(email, password)
+        if auth_token:
+            try:
+                games_df = get_games_data(auth_token, selected_date.strftime('%Y-%m-%d'))
+                slates = get_slates(auth_token, selected_date.strftime('%Y-%m-%d'))
+                player_projections_df = get_player_projections(auth_token, selected_date.strftime('%Y-%m-%d'), slates)
+                
+                # Fetch and process odds data
+                game_ids = fetch_nba_game_ids(active_odds_api_key)
+                odds_df = fetch_nba_player_odds(game_ids, active_odds_api_key, save_to_csv=True, csv_path='player_odds.csv')
+
+                master_df = pd.merge(player_projections_df, odds_df, on='player_names', how='right')
+                master_df = master_df.dropna(subset=['team'])
+                master_df['edge'] = master_df.apply(calculate_edge, axis=1)
+                master_df = master_df[master_df['edge'] >= 1]
+                master_df = master_df.sort_values(by='edge', ascending=False)
+                
+                st.write("Games Data:", games_df)
+                st.write("Master Dataframe:", master_df)
+                
+            except Exception as e:
+                st.error(f"An error occurred: {e}")
+        else:
+            st.error("Authentication failed.")
+
+if __name__ == "__main__":
+    main()
 
