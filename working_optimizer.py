@@ -17,6 +17,7 @@ ODDS_API_KEY = os.getenv('ODDS_API_KEY')
 DEFAULT_EMAIL = os.getenv('SABERSIM_EMAIL')
 DEFAULT_PASSWORD = os.getenv('SABERSIM_PASSWORD')
 
+
 # Initialize a session to improve performance by reusing TCP connections
 session = requests.Session()
 session.headers.update({
@@ -177,7 +178,7 @@ def fetch_nba_player_odds(game_ids, odds_api_key, save_to_csv=True, csv_path='pl
                    "player_blocks", "player_blocks_alternate", "player_steals", "player_steals_alternate",
                    "player_turnovers"]
         params = {"regions": "us", "markets": ",".join(markets), "dateFormat": "iso", "oddsFormat": "decimal",
-                  "bookmakers": "draftkings"}
+                  "bookmakers": 'draftkings'}
         url = construct_url(endpoint, params, odds_api_key)
         response = make_api_request(url)
         if response and 'bookmakers' in response:
@@ -196,10 +197,10 @@ def fetch_nba_player_odds(game_ids, odds_api_key, save_to_csv=True, csv_path='pl
                                  'bookmaker': 'sports_book', 'market': 'bet_type', 'outcome': 'over/under'}, inplace=True)
         final_df['player_names'] = final_df['player_names'].str.replace(r'[.-]', ' ', regex=True)
         final_df['us_odds'] = final_df['odds'].apply(convert_decimal_to_us_odds)
-        filtered_odds_df = final_df[final_df['us_odds'] > -300]
+
         if save_to_csv:
-            filtered_odds_df.to_csv(csv_path, index=False)
-        return filtered_odds_df
+            final_df.to_csv(csv_path, index=False)
+        return final_df
     return pd.DataFrame()
 
 
@@ -227,85 +228,49 @@ def calculate_edge(row):
     else:
         return None
 
-# Additional Functions from the second script
+# START OF THE PARLAY OPTIMIZER CODE SECTION
+# Function to load the data
 def load_data(file_path):
     return pd.read_csv(file_path)
 
+# Function to apply filters to the dataset
 def apply_filters(data, filters):
     for key, values in filters.items():
         if key in data.columns:
-            if isinstance(values, list):
+            if isinstance(values, list) and values:
                 data = data[data[key].isin(values)]
             elif isinstance(values, (int, float)):
                 data = data[data[key] >= values]
-            else:
-                data = data[data[key] == values]
     return data
 
+# Function to calculate the edge for each bet
 def calculate_parlay_edge(data, bet_type_to_stat):
-    """
-    Calculate the edge for each bet in the dataset for parlay optimization.
-    """
-    data['projected_stat'] = data['bet_type'].map(bet_type_to_stat)
-    data['edge'] = data.apply(lambda row: row[row['projected_stat']] - row['stat_threshold']
-                                        if row['over/under'] == 'Over'
-                                        else row['stat_threshold'] - row[row['projected_stat']],
-                              axis=1)
+    data = data.assign(projected_stat=data['bet_type'].map(bet_type_to_stat))
+    over_condition = (data['over/under'] == 'Over')
+    under_condition = ~over_condition
+    data['edge'] = 0
+    data.loc[over_condition, 'edge'] = data[over_condition]['projected_stat'] - data[over_condition]['stat_threshold']
+    data.loc[under_condition, 'edge'] = data[under_condition]['stat_threshold'] - data[under_condition]['projected_stat']
     return data.drop(columns=['projected_stat'])
 
+# Function to convert decimal odds to American odds
 def decimal_to_american(decimal_odds):
-    """
-    Convert decimal odds to American odds.
-    """
     return int((decimal_odds - 1) * 100 if decimal_odds >= 2.0 else -100 / (decimal_odds - 1))
 
-def calculate_position_strength(data):
-    """
-    Calculates each player's performance relative to their position average.
-    """
-    position_averages = data.groupby('position')[['points', 'assists', 'rebounds']].mean().add_suffix('_pos_avg')
-    data = data.join(position_averages, on='position')
-    for stat in ['points', 'assists', 'rebounds']:
-        data[f'{stat}_diff'] = data[stat] - data[f'{stat}_pos_avg']
-    return data
-
-def get_best_stat(data):
-    """
-    Determine the best stat for each player.
-    """
-    stats_diff = data[['player_names', 'points_diff', 'assists_diff', 'rebounds_diff']]
-    player_best_stat = stats_diff.groupby('player_names').mean()
-    player_best_stat['best_stat'] = player_best_stat.idxmax(axis=1).str.replace('_diff', '')
-    return player_best_stat
-
-def optimize_parlay(data, num_legs, num_parlays, player_strengths):
-    """
-    Optimize parlay bets with the specified number of legs and parlays, ensuring uniqueness.
-    """
+# Function to optimize parlay bets
+def optimize_parlay(data, num_legs, num_parlays):
     if 'odds' not in data.columns:
         raise ValueError("Data does not contain 'odds' column.")
 
-    data['best_stat'] = data['player_names'].map(player_strengths['best_stat'])
-
-    # Sort data by 'edge' in descending order to prioritize high edge bets
     data = data.sort_values(by='edge', ascending=False)
-
-    # Remove bets with negative edge
     data = data[data['edge'] > 0]
-
-    # Use all available bets indices for creating parlays
     all_bets_indices = data.index
-
     return create_parlay_combinations(data, all_bets_indices, num_parlays, num_legs)
 
+# Function to create unique parlays
 def create_parlay_combinations(data, all_bets_indices, num_parlays, num_legs):
-    """
-    Create parlays with specified number of legs, ensuring each parlay is unique.
-    """
     parlay_details = []
     used_bets = set()
-
-    # Generate all possible combinations of bets
     all_combinations = list(itertools.combinations(all_bets_indices, num_legs))
 
     for combo in all_combinations:
@@ -317,147 +282,120 @@ def create_parlay_combinations(data, all_bets_indices, num_parlays, num_legs):
             combined_odds = combo_df['odds'].product()
             american_combined_odds = decimal_to_american(combined_odds)
             parlay_details.append((combo_df, american_combined_odds))
-            used_bets.update(combo)  # Add these bets to the used set
+            used_bets.update(combo) 
 
     return parlay_details
 
+# Function to combine and save parlay details
 def combine_and_save_parlays(parlays):
-    """
-    Combines and saves parlay details.
-    """
     combined_parlay_df = pd.DataFrame()
     for i, (parlay_df, total_odds) in enumerate(parlays):
-        parlay_df['Parlay_Number'] = f"Parlay {i+1} (Edge Maximizing)"
+        parlay_df['Parlay_Number'] = f"Parlay {i+1}"
         parlay_df['Total_Odds'] = total_odds
         combined_parlay_df = pd.concat([combined_parlay_df, parlay_df], ignore_index=True)
     return combined_parlay_df
-
-def run_parlay_optimizer_app(file_path):
-    """
-    Streamlit app to run the parlay optimizer with the "Edge Maximizing" strategy.
-    """
-    st.title("Parlay Optimizer")
-
-    # Load data directly from the given file path
-    data = load_data(file_path)
-    team_input = st.multiselect('Select Teams', options=data['team'].unique(), default=data['team'].unique())
-    default_bet_types = ['player_points', 'player_points_alternate', 'player_assists', 'player_assists_alternate','player_rebounds', 'player_rebounds_alternate']
-    bet_type_input = st.multiselect('Select Bet Types', options=data['bet_type'].unique(), default=default_bet_types)
-    over_under_input = st.radio('Over/Under', ['Over', 'Under', 'Both'], index=0)
-    min_minutes = st.slider('Minimum Minutes', 0, int(data['minutes'].max()), 28)
-
-    filters = {
-        'team': team_input,
-        'bet_type': bet_type_input,
-        'minutes': min_minutes
-    }
-    if over_under_input != 'Both':
-        filters['over/under'] = over_under_input
-
-    # Removed multiple strategy options, defaulting to "Edge Maximizing"
-    strategy = "Edge Maximizing"
-
-    num_legs = st.slider('Number of Legs', 1, 10, 3)
-    num_parlays = st.slider('Number of Parlays', 1, 10, 5)
-
-    if st.button('Calculate Parlays'):
-        filtered_data = apply_filters(data, filters)
-        bet_type_to_stat = {
-            "player_points": "points",
-            "player_points_alternate": "points",
-            "player_rebounds": "rebounds",
-            "player_rebounds_alternate": "rebounds",
-            "player_assists": "assists",
-            "player_assists_alternate": "assists"
-        }
-        data_with_edge = calculate_parlay_edge(filtered_data, bet_type_to_stat)
-        data_with_position_strength = calculate_position_strength(data)
-        player_strengths = get_best_stat(data_with_position_strength)
-        
-        available_bets_count = len(data_with_edge['player_names'].unique())
-        
-        if num_legs > available_bets_count:
-            num_legs = available_bets_count
-            st.warning(f"Adjusted number of legs to {num_legs} due to limited available bets.")
-
-        parlays = optimize_parlay(data_with_edge, num_legs, num_parlays, player_strengths)
-        if len(parlays) > 0:
-            combined_parlays = combine_and_save_parlays(parlays)
-            unique_parlay_numbers = combined_parlays['Parlay_Number'].unique()
-            
-            for parlay_number in unique_parlay_numbers:
-                st.subheader(f"{parlay_number}")
-                parlay_group = combined_parlays[combined_parlays['Parlay_Number'] == parlay_number]
-                # Sort the parlay group by 'edge' in descending order
-                parlay_group_sorted = parlay_group.sort_values(by='edge', ascending=False)
-                st.write(parlay_group_sorted[['player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds', 'edge', 
-                                                'position', 'team', 'opp', 'minutes', 'possessions', 'points', 'assists', 'rebounds', 'Total_Odds']])
-        else:
-            st.error("Not enough bets available to form a parlay with the specified criteria.")
 
 # Main function
 def main():
     # Set Streamlit page configuration to wide mode
     st.set_page_config(layout="wide")
-    
+
     # Initialize session state variables
     if 'data_fetched' not in st.session_state:
         st.session_state['data_fetched'] = False
     if 'master_df_path' not in st.session_state:
         st.session_state['master_df_path'] = ''
-
-    st.title("NBA Game Data Analysis App")
-
+    
+    
     with st.sidebar:
         st.header("User Authentication")
         email = st.text_input("Email", value=DEFAULT_EMAIL)
         password = st.text_input("Password", type="password", value=DEFAULT_PASSWORD)
-
+        
         st.header("Odds API Key")
         user_provided_odds_api_key = st.text_input("Enter Odds API Key (optional)", value="")
-
+        
         st.header("Select Date")
         selected_date = st.date_input("Date", datetime.now())
 
     # Use user-provided key if available, else use the one from .env
     active_odds_api_key = user_provided_odds_api_key if user_provided_odds_api_key else ODDS_API_KEY
+   
+
+    # ... (previous imports and function definitions) ...
 
     if st.sidebar.button("Fetch Data"):
         auth_token = get_auth_token(email, password)
         if auth_token:
             try:
-                games_df = get_games_data(auth_token, selected_date.strftime('%Y-%m-%d'))
+                # Fetching data logic
                 slates = get_slates(auth_token, selected_date.strftime('%Y-%m-%d'))
+                games_df = get_games_data(auth_token, selected_date.strftime('%Y-%m-%d'))
                 player_projections_df = get_player_projections(auth_token, selected_date.strftime('%Y-%m-%d'), slates)
-                
-                # Fetch and process odds data
                 game_ids = fetch_nba_game_ids(active_odds_api_key)
                 odds_df = fetch_nba_player_odds(game_ids, active_odds_api_key, save_to_csv=True, csv_path='player_odds.csv')
-
                 master_df = pd.merge(player_projections_df, odds_df, on='player_names', how='right')
                 master_df = master_df.dropna(subset=['team'])
                 master_df['edge'] = master_df.apply(calculate_edge, axis=1)
-                master_df = master_df[master_df['edge'] >= 1]
+                master_df = master_df[master_df['edge'] > 0]
                 master_df = master_df.sort_values(by='edge', ascending=False)
-
-                # Save the master dataframe to a CSV file
+                master_df = master_df[master_df['us_odds'] > -300]
+                master_df = pd.merge(master_df, games_df, on='gid', how='left')
+                master_df['matchup'] = master_df['team'] + " vs " + master_df['opp']
                 master_df.to_csv('master_df.csv', index=False)
                 st.session_state['data_fetched'] = True
                 st.session_state['master_df_path'] = 'master_df.csv'
-
-                # UNCOMMENT THE CODE BELOW IF YOU WANT THE DATAFRAMES DISPLAYED ONTO THE STREAMLIT APP
-                # st.write("Games Data:", games_df)
-                # st.write("Master Dataframe:", master_df)
                 
             except Exception as e:
                 st.error(f"An error occurred: {e}")
         else:
             st.error("Authentication failed.")
 
-    # Only run the parlay optimizer if the data has been fetched
     if st.session_state['data_fetched']:
-        run_parlay_optimizer_app(st.session_state['master_df_path'])
+        st.success("Data successfully fetched and prepared for optimization.")
+        master_df = pd.read_csv(st.session_state['master_df_path'])
+
+        # Filters moved from sidebar to main area
+        teams = sorted(set(master_df['team'].dropna().unique().tolist() + master_df['opp'].dropna().unique().tolist()))
+        selected_teams = st.multiselect("Select Teams", teams, default=teams)
+
+        bet_types = sorted(master_df['bet_type'].dropna().unique().tolist())
+        default_bet_types = [bt for bt in bet_types if 'blocks' not in bt and 'steals' not in bt and 'threes' not in bt]
+        selected_bet_types = st.multiselect("Select Bet Types", bet_types, default=default_bet_types)
+
+        min_minutes = st.slider("Minimum Minutes", 0, int(master_df['minutes'].max()), 0)
+
+        over_under_option = st.radio("Over/Under", ['Over', 'Under', 'Both'], index=2)
+
+        # Apply Filters
+        if selected_teams:
+            master_df = master_df[master_df['team'].isin(selected_teams) | master_df['opp'].isin(selected_teams)]
+        if selected_bet_types:
+            master_df = master_df[master_df['bet_type'].isin(selected_bet_types)]
+        master_df = master_df[master_df['minutes'] >= min_minutes]
+        if over_under_option != 'Both':
+            master_df = master_df[master_df['over/under'] == over_under_option]
+
+        # Parlay Optimization Input and Logic
+        num_legs = st.number_input("Number of Legs", min_value=1, max_value=10, value=4)
+        num_parlays = st.number_input("Number of Parlays", min_value=1, max_value=10, value=2)
+
+        optimize_button = st.button("Optimize Parlays")
+        if optimize_button:
+            with st.spinner("Optimizing parlays... Please wait."):
+                try:
+                    optimized_parlays = optimize_parlay(master_df, num_legs, num_parlays)
+                    for i, (parlay_df, total_odds) in enumerate(optimized_parlays):
+                        st.subheader(f"Parlay {i + 1} (Total Odds: {total_odds})")
+                        columns_to_display = ['player_names','team', 'bet_type', 'over/under', 'stat_threshold', 'us_odds','edge', 'opp', 'minutes', 'possessions', 
+                                            'points', 'assists', 'rebounds', 'sports_book']
+                        st.dataframe(parlay_df[columns_to_display])
+                    st.success("Parlays optimized successfully!")
+                except Exception as e:
+                    st.error(f"Error in parlay optimization: {e}")
+                    st.experimental_rerun()  # Rerun the app to reset the state
+
+    # ... (end of Streamlit app code) ...
 
 if __name__ == "__main__":
     main()
-
