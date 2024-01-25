@@ -337,7 +337,7 @@ def main():
                 master_df = pd.merge(player_projections_df, odds_df, on='player_names', how='right')
                 master_df = master_df.dropna(subset=['team'])
                 master_df['edge'] = master_df.apply(calculate_edge, axis=1)
-                master_df = master_df[master_df['edge'] > 0]
+                master_df = master_df[master_df['edge'] > 1]
                 master_df = master_df.sort_values(by='edge', ascending=False)
                 master_df = master_df[master_df['us_odds'] > -300]
                 master_df = pd.merge(master_df, games_df, on='gid', how='left')
