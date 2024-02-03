@@ -358,13 +358,10 @@ def main():
         # Filters moved from sidebar to main area
         teams = sorted(set(master_df['team'].dropna().unique().tolist() + master_df['opp'].dropna().unique().tolist()))
         selected_teams = st.multiselect("Select Teams", teams, default=teams)
-
         bet_types = sorted(master_df['bet_type'].dropna().unique().tolist())
         default_bet_types = [bt for bt in bet_types if 'blocks' not in bt and 'steals' not in bt and 'threes' not in bt]
         selected_bet_types = st.multiselect("Select Bet Types", bet_types, default=default_bet_types)
-
         min_minutes = st.slider("Minimum Minutes", 0, int(master_df['minutes'].max()), 0)
-
         over_under_option = st.radio("Over/Under", ['Over', 'Under', 'Both'], index=2)
 
         # Apply Filters

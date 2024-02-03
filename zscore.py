@@ -1,4 +1,3 @@
-# Integrating the composite z-score calculation into the provided code
 import pandas as pd
 from scipy.stats import norm
 
@@ -9,7 +8,19 @@ def american_odds_to_probability(american_odds):
     else:
         return -american_odds / (-american_odds + 100)
 
-# Updated function to calculate implied probability from actual stat projections
+# Function to calculate the Kelly criterion fraction
+def kelly_criterion(implied_prob, american_odds, bankroll):
+    if american_odds > 0:
+        b = american_odds / 100
+    else:
+        b = -100 / american_odds
+    p = implied_prob
+    q = 1 - p
+    f_star = (b * p - q) / b
+    bet_amount = f_star * bankroll
+    return max(bet_amount, 0)  # Ensure the bet amount is not negative
+
+# Function to calculate implied probability from actual stat projections
 def calculate_implied_probability_from_actual_stats(row, scoring_rules, bet_type_to_stat):
     bet_type = row['bet_type']
     if bet_type in bet_type_to_stat:
@@ -44,7 +55,7 @@ scoring_rules = {
     'rebounds': 1.2,
     'blocks': 3,
     'steals': 3,
-    'three_pt_fg': 3  # Assuming each three-point field goal is worth 3 points
+    'three_pt_fg': 3
 }
 bet_type_to_stat = {
     'player_assists': 'assists',
@@ -65,18 +76,24 @@ bet_type_to_stat = {
 file_path = 'master_df.csv'
 master_df = pd.read_csv(file_path)
 
+# Set your bankroll
+bankroll = 10  # Example bankroll, adjust as needed
+
 # Calculate sportsbook implied probability
 master_df['sportsbook_prob'] = master_df['us_odds'].apply(american_odds_to_probability)
 
-# Calculate implied probabilities, edge, and EV for each bet
+# Calculate implied probabilities, edge, EV, and bet size using Kelly criterion for each bet
 for index, row in master_df.iterrows():
-    implied_prob = calculate_implied_probability_from_actual_stats(
-        row, scoring_rules, bet_type_to_stat)
-    sportsbook_prob = row['sportsbook_prob']
-    edge, ev = calculate_edge_and_ev(implied_prob, sportsbook_prob, 1)  # Assuming bet size of 1 for simplicity
-    master_df.at[index, 'implied_probability'] = implied_prob
-    master_df.at[index, 'edge'] = edge
-    master_df.at[index, 'ev'] = ev
+    implied_prob = calculate_implied_probability_from_actual_stats(row, scoring_rules, bet_type_to_stat)
+    if implied_prob is not None:
+        sportsbook_prob = row['sportsbook_prob']
+        edge, ev = calculate_edge_and_ev(implied_prob, sportsbook_prob, 1)  # Placeholder bet size
+        kelly_bet_size = kelly_criterion(implied_prob, row['us_odds'], bankroll)
+        
+        master_df.at[index, 'implied_probability'] = implied_prob
+        master_df.at[index, 'edge'] = edge
+        master_df.at[index, 'ev'] = ev
+        master_df.at[index, 'kelly_bet_size'] = kelly_bet_size
 
 # Calculate mean and standard deviation for edge, EV, and implied probability
 edge_mean = master_df['edge'].mean()
@@ -96,17 +113,17 @@ def calculate_composite_z_score(row):
 # Apply the function to calculate the composite score
 master_df['composite_z_score'] = master_df.apply(calculate_composite_z_score, axis=1)
 
-# Select relevant columns to display, including the composite z-score
+# Select relevant columns to display, including the composite z-score and Kelly bet size
 output_columns = [
-    'player_names', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds',
-    'implied_probability', 'sportsbook_prob', 'edge', 'ev', 'composite_z_score'
+    'player_names', 'team', 'bet_type', 'over/under', 'stat_threshold', 'odds', 'us_odds',
+    'implied_probability', 'sportsbook_prob', 'edge', 'ev', 'composite_z_score', 'kelly_bet_size'
 ]
 
-# Output the processed DataFrame with calculated probabilities, edge, EV, and composite z-score
+# Output the processed DataFrame with calculated probabilities, edge, EV, composite z-score, and Kelly bet size
 output_df = master_df[output_columns]
 
 # Display the first few rows of the output DataFrame, including the composite z-score
-output_df.head()
+print(output_df.head())
 
 # Save the output DataFrame to a CSV file
 output_df.to_csv('output_df.csv', index=False)
