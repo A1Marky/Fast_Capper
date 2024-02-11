@@ -177,7 +177,7 @@ def fetch_nba_player_odds(game_ids, odds_api_key, save_to_csv=True, csv_path='pl
                    "player_blocks", "player_blocks_alternate", "player_steals", "player_steals_alternate",
                    "player_turnovers"]
         params = {"regions": "us", "markets": ",".join(markets), "dateFormat": "iso", "oddsFormat": "decimal",
-                  "bookmakers": "draftkings"}
+                  "bookmakers": "espnbet"}
         url = construct_url(endpoint, params, odds_api_key)
         response = make_api_request(url)
         if response and 'bookmakers' in response:
